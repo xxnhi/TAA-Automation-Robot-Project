@@ -3,8 +3,8 @@ Library    Browser
 # Library    Selenium 
 
 *** Variables ***
-${URL}    https://www.google.com
-
+${URL}    http://localhost:3000/register
+${usernameField}    (//input[@id='formBasicEmail'])[1]
 *** Test Cases ***
 tiyiy
     Open Google Page
@@ -12,4 +12,5 @@ tiyiy
 *** Keywords ***
 Open Google Page
     New Browser    browser=chromium    headless=False
-    New Page    url=https://www.google.com
+    New Page    ${URL}
+    Click    ${usernameField}
