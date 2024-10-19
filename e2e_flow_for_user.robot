@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    This Feature verifies the solution E2E scenario of website
+Documentation    This Feature verifies the solution E2E scenario of website for user
 Library    Browser
 Library    Collections
 
@@ -64,23 +64,23 @@ ${EmailFieldLogIn}    //input[@id='formBasicEmail']
 ${PasswordFieldLogIn}    //input[@id='formBasicPassword']
 ${LoginButtonLogIn}    //button[@class='login_btn body-large']
 *** Test Cases ***
-Test case E2E    
-    # When The unauthenticated user goes to website
-    # Then The unauthenticated user should be able to see home page    ${titleSecTionHomePageText}
-    # When The unauthenticated user navigates to product page
-    # Then The unauthenticated user should be able to see product page
-    # When The unauthenticated user navigates to see news page
-    # Then The unauthenticated user should be able to see news page
-    # When The unauthenticated user navigates to see about us page
-    # Then The unauthenticated user should be able to see about us page
-    # When The unauthenticated user navigates to see purchase instruction page
-    # Then The unauthenticated user should be able to see purchase instruction page
-    # When The unauthenticated user navigates to see policy page
-    # Then The unauthenticated user should be able to see policy page
-    # When The unauthenticated user registers an account
+Test case E2E for user    
+    When The unauthenticated user goes to website
+    Then The unauthenticated user should be able to see home page    ${titleSecTionHomePageText}
+    When The unauthenticated user navigates to product page
+    Then The unauthenticated user should be able to see product page
+    When The unauthenticated user navigates to see news page
+    Then The unauthenticated user should be able to see news page
+    When The unauthenticated user navigates to see about us page
+    Then The unauthenticated user should be able to see about us page
+    When The unauthenticated user navigates to see purchase instruction page
+    Then The unauthenticated user should be able to see purchase instruction page
+    When The unauthenticated user navigates to see policy page
+    Then The unauthenticated user should be able to see policy page
+    When The unauthenticated user registers an account
     Then The user should be able to login into web with "${username}" username and "${password}" password
     And The user should be able to see their "${username}" username in home page
-    When The user searchs "${productName}" product name
+    When The user searches for the product "${productName}" 
     Then The user should be able to see product "${productName}" in product page
     When The user hovers and clicks "Quick View" button on the product "${productName}"
     Then The user should be able to see "${ProductQuickView}" in quick view
@@ -88,17 +88,17 @@ Test case E2E
     Then The user should be able to see "${ProductDetail}" in the product detail page
     When The user clicks on "${AddCartButton}" button
     Then The product should be able to add to cart successfully
-    When The user navigates to cart page
-    And The user edits quantity of cart item
+    When The user navigates to see cart page
+    And The user edits the quantity of cart item
     And The user clicks on "${ProceedOrderButton}" button
-    Then The user should be able to go order page
-    When The user fills shipping address, shipping method , payment method
+    Then The user should be able to go to order page
+    When The user fills shipping address, shipping method, payment method
     And The user clicks on "${OrderButton}" button
     Then The users should be able to see the order successfully placed notification
     When The user navigates to order page by click on ${ViewOrdersButton}
     Then The user should be able to see ${OrderPlaced}
-    When The user clicks on ${LogOutButton} on menu
-    And The user clicks on ${LogOutButtonPopup} on log out popup
+    When The user clicks on ${LogOutButton} in the menu
+    And The user clicks on ${LogOutButtonPopup} in the log out popup
     Then The user logs out of the website successfully 
 *** Keywords ***
 The unauthenticated user goes to website
@@ -171,7 +171,7 @@ The user should be able to login into web with "${username}" username and "${pas
 The user should be able to see their "${username}" username in home page
     Get Text    ${UsernameHomePage}    ==    ${username}
 
-The user searchs "${productName}" product name
+The user searchs for the product "${productName}" 
     Fill Text    ${SearchFieldHomPages}    ${productName}
     ...    
 The user should be able to see product "${productName}" in product page
