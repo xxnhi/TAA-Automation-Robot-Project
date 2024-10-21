@@ -27,14 +27,24 @@ ${GuilineTab}    //a[@role='button'][contains(text(),'Hướng dẫn')]
 ${PurchaseInstructionSubTab}    //a[@role='button']//a[contains(text(),'Hướng dẫn mua hàng')]
 ${PolicySubTab}    //a[@role='button']//a[normalize-space()='Chính sách']
 ${RegisterButton}    //a[contains(text(),'Đăng ký')]
-
+${CartIcon}    //a[@class='cart_link']//*[name()='svg']
 # Home Page
 ${TitleSectionHomePage}    //h1[contains(text(),'Sản phẩm nổi bật trong tuần')]
 ${UsernameHomePage}    //div[@class='user_name col']
 ${SearchFieldHomPages}    //input[@placeholder='Tìm kiếm']
 ${SearchedProductText}    //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')]
+${SearchButton}    //div[@class='search-bar']//*[name()='svg']
+
+
 # Product Page
 ${ProductCategory}    //div[@class='product__category col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4']
+${ProductDivItem}    //div[@class='product__item body-large']
+${QuickViewButtonWhenHover}    //div[@class='product__item__view']
+${ProductQuickView}    //div[@class='quick__view__body modal-body']
+${ViewDetailButton}    //button[@class='button__detail__view']//span[1]
+${ProductDetail}    //div[@class='productDetail']
+${AddCartButton}    //button[contains(text(),'Thêm vào giỏ hàng')]
+${AddCartSuccessfullyText}    //div[@class='modal-noti-add-cart-success-body modal-body']
 
 # News Page
 ${TitleSectionNewsPage}    //h1[contains(text(),'TUẦN VỪA QUA')]
@@ -48,7 +58,15 @@ ${TitleSectionPurchaseInstructionPage}    //h1[contains(text(),'HƯỚNG DẪN M
 # Policy Page
 ${TitleSectionPolicyPage}    //div[@class='policy__title1 display-large']
 
+#Cart Page
+${TickAllCheckBox}    //div[@class='item__checkbox__all']//*[name()='svg']//*[name()='path' and contains(@d,'M14 0h-12c')]
+${PlusQuantityProduct}    //div[@class='item__number__increase']
+${MinusQuantityProduct}    //div[@class='item__number__decrease']
+${MoneyTotal}    //div[@class='money__total__value']
+${ProceedOrderButton}    //div[@class='cart__content__bill col-xl-3 col-lg-3 col-md-12']//span[1]
 
+#Order Page
+${ContentOrderPage}    //div[@class='content_rootLayout']
 
 # Register Page
 ${UsernameField}    (//input[@id='formBasicEmail'])[1]
@@ -65,41 +83,41 @@ ${PasswordFieldLogIn}    //input[@id='formBasicPassword']
 ${LoginButtonLogIn}    //button[@class='login_btn body-large']
 *** Test Cases ***
 Test case E2E for user    
-    When The unauthenticated user goes to website
-    Then The unauthenticated user should be able to see home page    ${titleSecTionHomePageText}
-    When The unauthenticated user navigates to product page
-    Then The unauthenticated user should be able to see product page
-    When The unauthenticated user navigates to see news page
-    Then The unauthenticated user should be able to see news page
-    When The unauthenticated user navigates to see about us page
-    Then The unauthenticated user should be able to see about us page
-    When The unauthenticated user navigates to see purchase instruction page
-    Then The unauthenticated user should be able to see purchase instruction page
-    When The unauthenticated user navigates to see policy page
-    Then The unauthenticated user should be able to see policy page
-    When The unauthenticated user registers an account
-    Then The user should be able to login into web with "${username}" username and "${password}" password
-    And The user should be able to see their "${username}" username in home page
-    When The user searches for the product "${productName}" 
-    Then The user should be able to see product "${productName}" in product page
+    # When The unauthenticated user goes to website
+    # Then The unauthenticated user should be able to see home page    ${titleSecTionHomePageText}
+    # When The unauthenticated user navigates to product page
+    # Then The unauthenticated user should be able to see product page
+    # When The unauthenticated user navigates to see news page
+    # Then The unauthenticated user should be able to see news page
+    # When The unauthenticated user navigates to see about us page
+    # Then The unauthenticated user should be able to see about us page
+    # When The unauthenticated user navigates to see purchase instruction page
+    # Then The unauthenticated user should be able to see purchase instruction page
+    # When The unauthenticated user navigates to see policy page
+    # Then The unauthenticated user should be able to see policy page
+    # When The unauthenticated user registers an account
+    # Then The user should be able to login into web with "${emailaccount9}" email and "${passwordaccount9}" password
+    # And The user should be able to see their "${username}" username in home page
+    # When The user searches for the product "${productName}" 
+    # Then The user should be able to see product "${productName}" in product page
     When The user hovers and clicks "Quick View" button on the product "${productName}"
     Then The user should be able to see "${ProductQuickView}" in quick view
-    When The user clicks on "${ViewDetailButton}" button
+    When The user clicks on "${ViewDetailButton}" view detail button
     Then The user should be able to see "${ProductDetail}" in the product detail page
-    When The user clicks on "${AddCartButton}" button
+    When The user clicks on "${AddCartButton}" add cart button
     Then The product should be able to add to cart successfully
     When The user navigates to see cart page
     And The user edits the quantity of cart item
-    And The user clicks on "${ProceedOrderButton}" button
+    And The user clicks on "${ProceedOrderButton}" proceed order button
     Then The user should be able to go to order page
-    When The user fills shipping address, shipping method, payment method
-    And The user clicks on "${OrderButton}" button
-    Then The users should be able to see the order successfully placed notification
-    When The user navigates to order page by click on ${ViewOrdersButton}
-    Then The user should be able to see ${OrderPlaced}
-    When The user clicks on ${LogOutButton} in the menu
-    And The user clicks on ${LogOutButtonPopup} in the log out popup
-    Then The user logs out of the website successfully 
+    # When The user fills shipping address, shipping method, payment method
+    # And The user clicks on "${OrderButton}" button
+    # Then The users should be able to see the order successfully placed notification
+    # When The user navigates to order page by click on ${ViewOrdersButton}
+    # Then The user should be able to see ${OrderPlaced}
+    # When The user clicks on ${LogOutButton} in the menu
+    # And The user clicks on ${LogOutButtonPopup} in the log out popup
+    # Then The user logs out of the website successfully 
 *** Keywords ***
 The unauthenticated user goes to website
     [Documentation]    This keyword verifies that user can go to website
@@ -161,9 +179,9 @@ The unauthenticated user registers an account
     Click    ${LabelCheckBox}
     Click    ${RegisterButtonResPage}
 
-The user should be able to login into web with "${username}" username and "${password}" password
-    New Browser    browser=chromium    headless=False
-    New Page    url=http://localhost:3000/log_in
+The user should be able to login into web with "${username}" email and "${password}" password
+    # New Browser    browser=chromium    headless=False
+    # New Page    url=http://localhost:3000/log_in
     Fill Text    ${EmailFieldLogIn}    ${emailaccount9}
     Fill Text    ${PasswordFieldLogIn}    ${passwordaccount9}
     Click    ${LoginButtonLogIn}
@@ -171,12 +189,54 @@ The user should be able to login into web with "${username}" username and "${pas
 The user should be able to see their "${username}" username in home page
     Get Text    ${UsernameHomePage}    ==    ${username}
 
-The user searchs for the product "${productName}" 
+The user searches for the product "${productName}" 
     Fill Text    ${SearchFieldHomPages}    ${productName}
-    ...    
+    Click    ${SearchButton}     
 The user should be able to see product "${productName}" in product page
     Wait For Elements State    ${SearchedProductText}
     Get Text    ${SearchedProductText}    ==    ${productName}
 
 The user hovers and clicks "Quick View" button on the product "${productName}"
-    Hover    ${SearchedProductText}
+    New Browser    browser=chromium    headless=False
+    New Page    url=http://localhost:3000/search?keyword=Nh%E1%BA%ABn%20c%E1%BA%B7p%20d%E1%BB%85%20th%C6%B0%C6%A1ng%20d%C3%A0nh%20cho%20c%E1%BA%B7p%20%C4%91%C3%B4i
+    Hover    ${ProductDivItem}
+    Wait For Elements State    ${QuickViewButtonWhenHover}    visible    timeout=10s
+    Click    ${QuickViewButtonWhenHover}
+
+The user should be able to see "${ProductQuickView}" in quick view
+    Wait For Elements State    ${ProductQuickView}    visible    timeout=10s
+    Sleep    3s
+
+The user clicks on "${ViewDetailButton}" view detail button
+    Click    ${ViewDetailButton}
+
+The user should be able to see "${ProductDetail}" in the product detail page
+    Wait For Elements State    ${ProductDetail}    visible    timeout=10s
+    Scroll To    vertical=bottom
+
+The user clicks on "${AddCartButton}" add cart button
+    Click    ${AddCartButton}
+
+The product should be able to add to cart successfully
+    Wait For Elements State    ${AddCartSuccessfullyText}    visible
+
+The user navigates to see cart page
+    Click    ${CartIcon}
+
+The user edits the quantity of cart item
+    Click    ${TickAllCheckBox}
+    Wait For Elements State    ${MoneyTotal}    visible
+    Get Text    ${MoneyTotal}    ==    145.000 đ
+    Click    ${PlusQuantityProduct}
+    Wait For Elements State    ${MoneyTotal}    visible
+    Get Text    ${MoneyTotal}    ==    295.000 đ
+    Click    ${MinusQuantityProduct}
+    Wait For Elements State    ${MoneyTotal}    visible
+    Get Text    ${MoneyTotal}    ==    145.000 đ
+
+The user clicks on "${ProceedOrderButton}" proceed order button
+    Click    ${ProceedOrderButton}
+
+The user should be able to go to order page
+    Wait For Elements State    ${ContentOrderPage}    visible
+    

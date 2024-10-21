@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-21T21:33:16.666590" rpa="false" schemaversion="5">
+<suite id="s1" name="E2E Flow For User" source="D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\e2e_flow_for_user.robot">
+<test id="s1-t1" name="Test case E2E for user" line="68">
+<kw name="Then The user should be able to login into web with &quot;${emailaccount9}&quot; email and &quot;${passwordaccount9}&quot; password" source_name="The user should be able to login into web with &quot;${username}&quot; email and &quot;${password}&quot; password">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-10-21T21:33:17.055886" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\cc7367a6-79ff-48a6-bd4d-b9f4691f5134"}</msg>
+<msg time="2024-10-21T21:33:17.096254" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 62818</msg>
+<msg time="2024-10-21T21:33:17.096797" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '62818']</msg>
+<msg time="2024-10-21T21:33:18.548507" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\cc7367a6-79ff-48a6-bd4d-b9f4691f5134"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-10-21T21:33:17.052409" elapsed="1.496827"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-10-21T21:33:22.508394" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
+<msg time="2024-10-21T21:33:22.508992" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=http://localhost:3000/log_in</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-10-21T21:33:18.549777" elapsed="3.959944"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-21T21:33:22.511686" level="INFO">Fills the text 'xxnhi2712@gmail.com' in the given field.</msg>
+<arg>${EmailFieldLogIn}</arg>
+<arg>${emailaccount9}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-21T21:33:22.510254" elapsed="0.346070"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-21T21:33:22.858270" level="INFO">Fills the text 'Xuannhi03!' in the given field.</msg>
+<arg>${PasswordFieldLogIn}</arg>
+<arg>${passwordaccount9}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-21T21:33:22.856858" elapsed="0.042123"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-21T21:33:22.901453" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
+<arg>${LoginButtonLogIn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-21T21:33:22.899516" elapsed="0.113954"/>
+</kw>
+<status status="PASS" start="2024-10-21T21:33:17.049622" elapsed="5.964285"/>
+</kw>
+<kw name="And The user should be able to see their &quot;${username}&quot; username in home page" source_name="The user should be able to see their &quot;${username}&quot; username in home page">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-21T21:33:25.467549" level="INFO">Text: 'xxnhi2712'</msg>
+<arg>${UsernameHomePage}</arg>
+<arg>==</arg>
+<arg>${username}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-21T21:33:23.015986" elapsed="2.452174"/>
+</kw>
+<status status="PASS" start="2024-10-21T21:33:23.014737" elapsed="2.453857"/>
+</kw>
+<kw name="When The user searches for the product &quot;${productName}&quot;" source_name="The user searches for the product &quot;${productName}&quot;">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-21T21:33:25.472430" level="INFO">Fills the text 'Nhẫn cặp dễ thương dành cho cặp đôi' in the given field.</msg>
+<arg>${SearchFieldHomPages}</arg>
+<arg>${productName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-21T21:33:25.471141" elapsed="0.037972"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-21T21:33:25.510701" level="INFO">Clicks the element '//div[@class='search-bar']//*[name()='svg']'.</msg>
+<arg>${SearchButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-21T21:33:25.509575" elapsed="0.358453"/>
+</kw>
+<status status="PASS" start="2024-10-21T21:33:25.469464" elapsed="0.398981"/>
+</kw>
+<kw name="Then The user should be able to see product &quot;${productName}&quot; in product page" source_name="The user should be able to see product &quot;${productName}&quot; in product page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-21T21:33:26.713653" level="INFO">Waited for Element with selector //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')] at state visible</msg>
+<arg>${SearchedProductText}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-21T21:33:25.870499" elapsed="0.843789"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-21T21:33:26.751849" level="INFO">Text: 'Nhẫn cặp dễ thương dành cho cặp đôi'</msg>
+<arg>${SearchedProductText}</arg>
+<arg>==</arg>
+<arg>${productName}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-21T21:33:26.714669" elapsed="0.037788"/>
+</kw>
+<status status="PASS" start="2024-10-21T21:33:25.869151" elapsed="0.883569"/>
+</kw>
+<status status="PASS" start="2024-10-21T21:33:17.044645" elapsed="9.709295"/>
+</test>
+<doc>This Feature verifies the solution E2E scenario of website for user</doc>
+<status status="PASS" start="2024-10-21T21:33:16.673703" elapsed="10.221325"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="E2E Flow For User">E2E Flow For User</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
