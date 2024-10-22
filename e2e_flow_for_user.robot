@@ -18,6 +18,9 @@ ${titleSectionAboutUsText}    VỀ CHÚNG TÔI
 ${titleSectionPInstructionText}    HƯỚNG DẪN MUA HÀNG TRÊN WEBSITE
 ${titleSectionPolicyText}    CHÍNH SÁCH BẢO HÀNH
 ${productName}    Nhẫn cặp dễ thương dành cho cặp đôi
+${generalAddress}    Thủ Đức, Hồ Chí Minh, and
+${detailAddress}    KTX Khu A. Linh Trung
+
 # Header
 ${URL}    http://localhost:3000/
 ${ProductTab}    //a[contains(text(),'Sản phẩm')]
@@ -59,15 +62,29 @@ ${TitleSectionPurchaseInstructionPage}    //h1[contains(text(),'HƯỚNG DẪN M
 ${TitleSectionPolicyPage}    //div[@class='policy__title1 display-large']
 
 #Cart Page
-${TickAllCheckBox}    //div[@class='item__checkbox__all']//*[name()='svg']//*[name()='path' and contains(@d,'M14 0h-12c')]
+${TickAllCheckBox}    //td[@class='item__checkbox']//*[name()='svg']
 ${PlusQuantityProduct}    //div[@class='item__number__increase']
 ${MinusQuantityProduct}    //div[@class='item__number__decrease']
 ${MoneyTotal}    //div[@class='money__total__value']
 ${ProceedOrderButton}    //div[@class='cart__content__bill col-xl-3 col-lg-3 col-md-12']//span[1]
 
+
 #Order Page
 ${ContentOrderPage}    //div[@class='content_rootLayout']
-
+${AddAddressButton}    //div[@class='location__button']//button[@type='submit']
+${RecipientNameAddAddress}    //input[@id='loca_pers_name']
+${PhoneNumberAddAddress}    //input[@id='loca_pers_phone']
+${GeneralAddressAddAddress}    //input[@id='loca_address']
+${DetailAddressAddAddress}    //input[@id='loca_detail']
+${AcceptButtonAddAddress}    //div[@class='btn__wrapper']//button[@type='submit']
+${Option1ShippingMethod}    //span[contains(text(),'Giao hàng nhanh trong 2 giờ (Trễ tặng 100k)')]
+${Option2ShippingMethod}    //span[contains(text(),'Giao hàng trong 72 giờ')]
+${Option1PaymentMethod}    //span[contains(text(),'Thanh toán tiền khi nhận hàng (COD)')]
+${Option2PaymentMethod}    //span[contains(text(),'Thanh toán trực tuyến')]
+${OrderButton}    //div[@class='order__content__bill col-lg-4 col-md-12']//span[1]
+${OrderSuccesfullyText}    //div[@class='order-payment-status']
+${ViewOrdersButton}    (//button[@type='button'])[3]
+${OrderPlaced}    //p[@class='body-medium']
 # Register Page
 ${UsernameField}    (//input[@id='formBasicEmail'])[1]
 ${PhoneNumberField}    (//input[@id='formBasicEmail'])[2]
@@ -96,10 +113,10 @@ Test case E2E for user
     # When The unauthenticated user navigates to see policy page
     # Then The unauthenticated user should be able to see policy page
     # When The unauthenticated user registers an account
-    # Then The user should be able to login into web with "${emailaccount9}" email and "${passwordaccount9}" password
-    # And The user should be able to see their "${username}" username in home page
-    # When The user searches for the product "${productName}" 
-    # Then The user should be able to see product "${productName}" in product page
+    Then The user should be able to login into web with "${emailaccount9}" email and "${passwordaccount9}" password
+    And The user should be able to see their "${username}" username in home page
+    When The user searches for the product "${productName}" 
+    Then The user should be able to see product "${productName}" in product page
     When The user hovers and clicks "Quick View" button on the product "${productName}"
     Then The user should be able to see "${ProductQuickView}" in quick view
     When The user clicks on "${ViewDetailButton}" view detail button
@@ -110,11 +127,11 @@ Test case E2E for user
     And The user edits the quantity of cart item
     And The user clicks on "${ProceedOrderButton}" proceed order button
     Then The user should be able to go to order page
-    # When The user fills shipping address, shipping method, payment method
-    # And The user clicks on "${OrderButton}" button
-    # Then The users should be able to see the order successfully placed notification
-    # When The user navigates to order page by click on ${ViewOrdersButton}
-    # Then The user should be able to see ${OrderPlaced}
+    When The user fills shipping address, shipping method, payment method
+    And The user clicks on "${OrderButton}" button
+    Then The users should be able to see the order successfully placed notification
+    When The user navigates to order page by click on ${ViewOrdersButton}
+    Then The user should be able to see ${OrderPlaced}
     # When The user clicks on ${LogOutButton} in the menu
     # And The user clicks on ${LogOutButtonPopup} in the log out popup
     # Then The user logs out of the website successfully 
@@ -180,8 +197,8 @@ The unauthenticated user registers an account
     Click    ${RegisterButtonResPage}
 
 The user should be able to login into web with "${username}" email and "${password}" password
-    # New Browser    browser=chromium    headless=False
-    # New Page    url=http://localhost:3000/log_in
+    New Browser    browser=chromium    headless=False
+    New Page    url=http://localhost:3000/log_in
     Fill Text    ${EmailFieldLogIn}    ${emailaccount9}
     Fill Text    ${PasswordFieldLogIn}    ${passwordaccount9}
     Click    ${LoginButtonLogIn}
@@ -197,8 +214,6 @@ The user should be able to see product "${productName}" in product page
     Get Text    ${SearchedProductText}    ==    ${productName}
 
 The user hovers and clicks "Quick View" button on the product "${productName}"
-    New Browser    browser=chromium    headless=False
-    New Page    url=http://localhost:3000/search?keyword=Nh%E1%BA%ABn%20c%E1%BA%B7p%20d%E1%BB%85%20th%C6%B0%C6%A1ng%20d%C3%A0nh%20cho%20c%E1%BA%B7p%20%C4%91%C3%B4i
     Hover    ${ProductDivItem}
     Wait For Elements State    ${QuickViewButtonWhenHover}    visible    timeout=10s
     Click    ${QuickViewButtonWhenHover}
@@ -240,3 +255,27 @@ The user clicks on "${ProceedOrderButton}" proceed order button
 The user should be able to go to order page
     Wait For Elements State    ${ContentOrderPage}    visible
     
+The user fills shipping address, shipping method, payment method
+    There is no address then the user add a new address
+    Click    ${Option1ShippingMethod}
+    Click    ${Option1PaymentMethod}
+
+There is no address then the user add a new address
+    Click    ${AddAddressButton}
+    Fill Text    ${RecipientNameAddAddress}    ${username}
+    Fill Text    ${PhoneNumberAddAddress}    ${phoneNumber}
+    Fill Text    ${GeneralAddressAddAddress}    ${generalAddress}
+    Fill Text    ${DetailAddressAddAddress}    ${detailAddress}
+    Click    ${AcceptButtonAddAddress}
+
+The user clicks on "${OrderButton}" button
+    Click    ${OrderButton}
+
+The users should be able to see the order successfully placed notification
+    Get Text    ${OrderSuccesfullyText}    ==    Đặt hàng thành công!
+
+The user navigates to order page by click on ${ViewOrdersButton}
+    Click    ${ViewOrdersButton}
+
+Then The user should be able to see ${OrderPlaced}
+    Get Text    ${OrderPlaced}    ==    Trang cung cấp thông tin về các đơn hàng theo danh mục

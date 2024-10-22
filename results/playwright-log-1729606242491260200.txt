@@ -1,0 +1,254 @@
+{"level":30,"time":"2024-10-22T14:10:43.508Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Listening on 51851"}
+(node:13964) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-10-22T14:10:43.723Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-10-22T14:10:44.059Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-10-22T14:10:44.061Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-10-22T14:10:44.060Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-10-22T14:10:44.073Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-10-22T14:10:44.074Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-10-22T14:10:44.103Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Changed active context"}
+{"level":30,"time":"2024-10-22T14:10:44.512Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-10-22T14:10:44.512Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-10-22T14:10:47.813Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-10-22T14:10:47.826Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-10-22T14:10:47.827Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
+{"level":30,"time":"2024-10-22T14:10:48.161Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-10-22T14:10:48.169Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-10-22T14:10:48.170Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
+{"level":30,"time":"2024-10-22T14:10:48.201Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-10-22T14:10:48.210Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-22T14:10:48.211Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[@class='login_btn body-large'] in page."}
+{"level":30,"time":"2024-10-22T14:10:48.351Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-10-22T14:10:48.364Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:10:48.365Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='user_name col'] in page."}
+{"level":30,"time":"2024-10-22T14:10:50.598Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='user_name col'] containing xxnhi2712"}
+{"level":30,"time":"2024-10-22T14:10:50.599Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:10:50.614Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-10-22T14:10:50.614Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@placeholder='Tìm kiếm'] in page."}
+{"level":30,"time":"2024-10-22T14:10:50.637Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-10-22T14:10:50.644Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-22T14:10:50.644Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='search-bar']//*[name()='svg'] in page."}
+{"level":30,"time":"2024-10-22T14:10:50.804Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-10-22T14:10:50.812Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:50.812Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')] in page."}
+{"level":30,"time":"2024-10-22T14:10:51.640Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:51.646Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:10:51.646Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')] in page."}
+{"level":30,"time":"2024-10-22T14:10:51.665Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')] containing Nhẫn cặp dễ thương dành cho cặp đôi"}
+{"level":30,"time":"2024-10-22T14:10:51.665Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:10:51.673Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method hover"}
+{"level":30,"time":"2024-10-22T14:10:51.673Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='product__item body-large'] in page."}
+{"level":30,"time":"2024-10-22T14:10:51.695Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method hover"}
+{"level":30,"time":"2024-10-22T14:10:51.699Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:51.700Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='product__item__view'] in page."}
+{"level":30,"time":"2024-10-22T14:10:51.706Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:51.714Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-22T14:10:51.714Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='product__item__view'] in page."}
+{"level":30,"time":"2024-10-22T14:10:51.876Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-10-22T14:10:51.882Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:51.882Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='quick__view__body modal-body'] in page."}
+{"level":30,"time":"2024-10-22T14:10:51.887Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:54.899Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-22T14:10:54.899Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[@class='button__detail__view']//span[1] in page."}
+{"level":30,"time":"2024-10-22T14:10:55.083Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-10-22T14:10:55.090Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:55.090Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='productDetail'] in page."}
+{"level":30,"time":"2024-10-22T14:10:55.095Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:55.106Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.113Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.120Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.127Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.135Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.140Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.144Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.146Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.152Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.156Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-10-22T14:10:55.163Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-22T14:10:55.163Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[contains(text(),'Thêm vào giỏ hàng')] in page."}
+{"level":30,"time":"2024-10-22T14:10:57.858Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-10-22T14:10:57.870Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:57.870Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='modal-noti-add-cart-success-body modal-body'] in page."}
+{"level":30,"time":"2024-10-22T14:10:57.897Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:10:57.912Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-22T14:10:57.912Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[@class='cart_link']//*[name()='svg'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.030Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-10-22T14:11:01.037Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-22T14:11:01.037Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='item__checkbox__all']//*[name()='svg']//*[name()='path' and contains(@d,'M14 0h-12c')] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.162Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-10-22T14:11:01.172Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:11:01.172Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.244Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-22T14:11:01.257Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.257Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.287Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.287Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.301Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.301Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.322Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.322Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.337Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.337Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.361Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.361Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.374Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.374Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.385Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.385Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.397Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.397Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.408Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.408Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.421Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.421Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.432Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.432Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.445Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.445Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.458Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.458Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.471Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.471Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.483Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.483Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.497Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.497Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.516Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.516Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.531Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.531Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.551Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.551Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.565Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.565Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.582Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.582Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.596Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.596Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.612Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.612Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.626Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.626Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.641Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.641Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.657Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.657Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.675Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.675Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.689Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.689Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.708Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.708Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.722Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.723Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.742Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.742Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.756Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.756Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.772Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.772Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.785Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.785Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.797Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.797Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.810Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.811Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.826Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.826Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.839Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.839Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.851Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.851Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.864Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.864Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.880Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.880Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.893Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.893Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.908Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.908Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.921Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.921Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.937Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.937Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.950Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.950Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.963Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.963Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.976Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:01.976Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:01.990Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:01.990Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.003Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.003Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.016Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.016Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.029Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.029Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.046Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.046Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.059Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.059Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.074Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.074Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.087Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.087Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.101Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.101Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.113Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.113Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.124Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.124Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.136Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.137Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.150Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.150Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.163Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.163Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.177Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.177Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.189Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.190Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.202Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.203Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.216Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.216Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.227Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.227Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.240Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.240Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.252Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.252Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.264Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.264Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.277Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.277Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.290Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.290Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //div[@class='money__total__value'] in page."}
+{"level":30,"time":"2024-10-22T14:11:02.301Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Retrieved text for element //div[@class='money__total__value'] containing 0 đ"}
+{"level":30,"time":"2024-10-22T14:11:02.301Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getText"}
+{"level":30,"time":"2024-10-22T14:11:02.304Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-10-22T14:11:02.304Z","pid":13964,"hostname":"NoahBui-DellG3","Take screenshot with options: ":{"path":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-10-22T14:11:02.490Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-10-22T14:11:10.789Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Removed page=13346813-5721-484f-9279-d979ae010d03 from context=bd5ab57e-5040-4dd6-bff8-3a7a450ebd94 page stack"}
+{"level":30,"time":"2024-10-22T14:11:19.554Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.555Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.558Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.558Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.561Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Changed active context"}
+{"level":30,"time":"2024-10-22T14:11:19.564Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.565Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.568Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T14:11:19.568Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T14:11:19.571Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T14:11:19.571Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T14:11:19.577Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.578Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.580Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Changed active context"}
+{"level":30,"time":"2024-10-22T14:11:19.581Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-10-22T14:11:19.595Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-10-22T14:11:19.605Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.605Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T14:11:19.644Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-10-22T14:11:19.985Z","pid":13964,"hostname":"NoahBui-DellG3","msg":"End of node method closeAllBrowsers"}

@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-21T21:33:16.666590" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-22T21:18:18.616937" rpa="false" schemaversion="5">
 <suite id="s1" name="E2E Flow For User" source="D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\e2e_flow_for_user.robot">
-<test id="s1-t1" name="Test case E2E for user" line="68">
+<test id="s1-t1" name="Test case E2E for user" line="85">
 <kw name="Then The user should be able to login into web with &quot;${emailaccount9}&quot; email and &quot;${passwordaccount9}&quot; password" source_name="The user should be able to login into web with &quot;${username}&quot; email and &quot;${password}&quot; password">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-10-21T21:33:17.055886" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\cc7367a6-79ff-48a6-bd4d-b9f4691f5134"}</msg>
-<msg time="2024-10-21T21:33:17.096254" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 62818</msg>
-<msg time="2024-10-21T21:33:17.096797" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '62818']</msg>
-<msg time="2024-10-21T21:33:18.548507" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\cc7367a6-79ff-48a6-bd4d-b9f4691f5134"}</msg>
+<msg time="2024-10-22T21:18:18.923540" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\158ee948-1d14-4251-98e0-56ffab7a2d25"}</msg>
+<msg time="2024-10-22T21:18:18.966131" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 52288</msg>
+<msg time="2024-10-22T21:18:18.966739" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '52288']</msg>
+<msg time="2024-10-22T21:18:20.399832" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\158ee948-1d14-4251-98e0-56ffab7a2d25"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-10-21T21:33:17.052409" elapsed="1.496827"/>
+<status status="PASS" start="2024-10-22T21:18:18.922491" elapsed="1.478013"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-10-21T21:33:22.508394" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<msg time="2024-10-21T21:33:22.508992" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-10-22T21:18:24.146009" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
+<msg time="2024-10-22T21:18:24.146444" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>url=http://localhost:3000/log_in</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-10-21T21:33:18.549777" elapsed="3.959944"/>
+<status status="PASS" start="2024-10-22T21:18:20.401080" elapsed="3.745797"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-10-21T21:33:22.511686" level="INFO">Fills the text 'xxnhi2712@gmail.com' in the given field.</msg>
+<msg time="2024-10-22T21:18:24.150062" level="INFO">Fills the text 'xxnhi2712@gmail.com' in the given field.</msg>
 <arg>${EmailFieldLogIn}</arg>
 <arg>${emailaccount9}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-10-21T21:33:22.510254" elapsed="0.346070"/>
+<status status="PASS" start="2024-10-22T21:18:24.147304" elapsed="0.351522"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-10-21T21:33:22.858270" level="INFO">Fills the text 'Xuannhi03!' in the given field.</msg>
+<msg time="2024-10-22T21:18:24.500479" level="INFO">Fills the text 'Xuannhi03!' in the given field.</msg>
 <arg>${PasswordFieldLogIn}</arg>
 <arg>${passwordaccount9}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-10-21T21:33:22.856858" elapsed="0.042123"/>
+<status status="PASS" start="2024-10-22T21:18:24.499422" elapsed="0.038614"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-10-21T21:33:22.901453" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
+<msg time="2024-10-22T21:18:24.539946" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
 <arg>${LoginButtonLogIn}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-21T21:33:22.899516" elapsed="0.113954"/>
+<status status="PASS" start="2024-10-22T21:18:24.538538" elapsed="0.102393"/>
 </kw>
-<status status="PASS" start="2024-10-21T21:33:17.049622" elapsed="5.964285"/>
+<status status="PASS" start="2024-10-22T21:18:18.920986" elapsed="5.720441"/>
 </kw>
 <kw name="And The user should be able to see their &quot;${username}&quot; username in home page" source_name="The user should be able to see their &quot;${username}&quot; username in home page">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-10-21T21:33:25.467549" level="INFO">Text: 'xxnhi2712'</msg>
+<msg time="2024-10-22T21:18:26.854257" level="INFO">Text: 'xxnhi2712'</msg>
 <arg>${UsernameHomePage}</arg>
 <arg>==</arg>
 <arg>${username}</arg>
@@ -62,41 +62,41 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-21T21:33:23.015986" elapsed="2.452174"/>
+<status status="PASS" start="2024-10-22T21:18:24.644222" elapsed="2.211773"/>
 </kw>
-<status status="PASS" start="2024-10-21T21:33:23.014737" elapsed="2.453857"/>
+<status status="PASS" start="2024-10-22T21:18:24.642191" elapsed="2.215082"/>
 </kw>
 <kw name="When The user searches for the product &quot;${productName}&quot;" source_name="The user searches for the product &quot;${productName}&quot;">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-10-21T21:33:25.472430" level="INFO">Fills the text 'Nhẫn cặp dễ thương dành cho cặp đôi' in the given field.</msg>
+<msg time="2024-10-22T21:18:26.863100" level="INFO">Fills the text 'Nhẫn cặp dễ thương dành cho cặp đôi' in the given field.</msg>
 <arg>${SearchFieldHomPages}</arg>
 <arg>${productName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-10-21T21:33:25.471141" elapsed="0.037972"/>
+<status status="PASS" start="2024-10-22T21:18:26.860906" elapsed="0.042584"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-10-21T21:33:25.510701" level="INFO">Clicks the element '//div[@class='search-bar']//*[name()='svg']'.</msg>
+<msg time="2024-10-22T21:18:26.906038" level="INFO">Clicks the element '//div[@class='search-bar']//*[name()='svg']'.</msg>
 <arg>${SearchButton}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-21T21:33:25.509575" elapsed="0.358453"/>
+<status status="PASS" start="2024-10-22T21:18:26.904041" elapsed="0.379412"/>
 </kw>
-<status status="PASS" start="2024-10-21T21:33:25.469464" elapsed="0.398981"/>
+<status status="PASS" start="2024-10-22T21:18:26.859011" elapsed="0.424916"/>
 </kw>
 <kw name="Then The user should be able to see product &quot;${productName}&quot; in product page" source_name="The user should be able to see product &quot;${productName}&quot; in product page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-21T21:33:26.713653" level="INFO">Waited for Element with selector //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')] at state visible</msg>
+<msg time="2024-10-22T21:18:27.510295" level="INFO">Waited for Element with selector //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')] at state visible</msg>
 <arg>${SearchedProductText}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-21T21:33:25.870499" elapsed="0.843789"/>
+<status status="PASS" start="2024-10-22T21:18:27.285125" elapsed="0.225679"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-10-21T21:33:26.751849" level="INFO">Text: 'Nhẫn cặp dễ thương dành cho cặp đôi'</msg>
+<msg time="2024-10-22T21:18:27.537679" level="INFO">Text: 'Nhẫn cặp dễ thương dành cho cặp đôi'</msg>
 <arg>${SearchedProductText}</arg>
 <arg>==</arg>
 <arg>${productName}</arg>
@@ -104,14 +104,241 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-21T21:33:26.714669" elapsed="0.037788"/>
+<status status="PASS" start="2024-10-22T21:18:27.511049" elapsed="0.027755"/>
 </kw>
-<status status="PASS" start="2024-10-21T21:33:25.869151" elapsed="0.883569"/>
+<status status="PASS" start="2024-10-22T21:18:27.284514" elapsed="0.254616"/>
 </kw>
-<status status="PASS" start="2024-10-21T21:33:17.044645" elapsed="9.709295"/>
+<kw name="When The user hovers and clicks &quot;Quick View&quot; button on the product &quot;${productName}&quot;" source_name="The user hovers and clicks &quot;Quick View&quot; button on the product &quot;${productName}&quot;">
+<kw name="Hover" owner="Browser">
+<arg>${ProductDivItem}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:27.540730" elapsed="0.030068"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-22T21:18:27.581021" level="INFO">Waited for Element with selector //div[@class='product__item__view'] at state visible</msg>
+<arg>${QuickViewButtonWhenHover}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-22T21:18:27.571246" elapsed="0.010581"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-22T21:18:27.584074" level="INFO">Clicks the element '//div[@class='product__item__view']'.</msg>
+<arg>${QuickViewButtonWhenHover}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:27.582558" elapsed="0.181373"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:27.539825" elapsed="0.224740"/>
+</kw>
+<kw name="Then The user should be able to see &quot;${ProductQuickView}&quot; in quick view" source_name="The user should be able to see &quot;${ProductQuickView}&quot; in quick view">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-22T21:18:27.789392" level="INFO">Waited for Element with selector //div[@class='quick__view__body modal-body'] at state visible</msg>
+<arg>${ProductQuickView}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-22T21:18:27.766134" elapsed="0.024294"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-22T21:18:30.791961" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-22T21:18:27.790916" elapsed="3.001509"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:27.765240" elapsed="3.027363"/>
+</kw>
+<kw name="When The user clicks on &quot;${ViewDetailButton}&quot; view detail button" source_name="The user clicks on &quot;${ViewDetailButton}&quot; view detail button">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-22T21:18:30.794359" level="INFO">Clicks the element '//button[@class='button__detail__view']//span[1]'.</msg>
+<arg>${ViewDetailButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:30.793696" elapsed="0.138931"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:30.792993" elapsed="0.139919"/>
+</kw>
+<kw name="Then The user should be able to see &quot;${ProductDetail}&quot; in the product detail page" source_name="The user should be able to see &quot;${ProductDetail}&quot; in the product detail page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-22T21:18:30.943538" level="INFO">Waited for Element with selector //div[@class='productDetail'] at state visible</msg>
+<arg>${ProductDetail}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-22T21:18:30.934193" elapsed="0.009844"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-22T21:18:30.976302" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-22T21:18:30.976831" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-22T21:18:31.001452" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-22T21:18:31.001828" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-22T21:18:31.010967" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-22T21:18:30.944365" elapsed="0.067197"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:30.933398" elapsed="0.078483"/>
+</kw>
+<kw name="When The user clicks on &quot;${AddCartButton}&quot; add cart button" source_name="The user clicks on &quot;${AddCartButton}&quot; add cart button">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-22T21:18:31.016097" level="INFO">Clicks the element '//button[contains(text(),'Thêm vào giỏ hàng')]'.</msg>
+<arg>${AddCartButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:31.014693" elapsed="1.382016"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:31.013345" elapsed="1.383798"/>
+</kw>
+<kw name="Then The product should be able to add to cart successfully">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-22T21:18:32.409324" level="INFO">Waited for Element with selector //div[@class='modal-noti-add-cart-success-body modal-body'] at state visible</msg>
+<arg>${AddCartSuccessfullyText}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-22T21:18:32.398796" elapsed="0.011130"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:32.397976" elapsed="0.012294"/>
+</kw>
+<kw name="When The user navigates to see cart page">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-22T21:18:32.413638" level="INFO">Clicks the element '//a[@class='cart_link']//*[name()='svg']'.</msg>
+<arg>${CartIcon}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:32.412362" elapsed="3.229430"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:32.411087" elapsed="3.230930"/>
+</kw>
+<kw name="And The user edits the quantity of cart item">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-22T21:18:35.644752" level="INFO">Clicks the element '//td[@class='item__checkbox']//*[name()='svg']'.</msg>
+<arg>${TickAllCheckBox}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:35.643416" elapsed="0.259095"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-22T21:18:35.912233" level="INFO">Waited for Element with selector //div[@class='money__total__value'] at state visible</msg>
+<arg>${MoneyTotal}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-22T21:18:35.902875" elapsed="0.009817"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-22T21:18:35.931097" level="INFO">Text: '145.000 đ'</msg>
+<arg>${MoneyTotal}</arg>
+<arg>==</arg>
+<arg>145.000 đ</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:35.913020" elapsed="0.018412"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-22T21:18:35.932520" level="INFO">Clicks the element '//div[@class='item__number__increase']'.</msg>
+<arg>${PlusQuantityProduct}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:35.931683" elapsed="0.041180"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-22T21:18:35.980394" level="INFO">Waited for Element with selector //div[@class='money__total__value'] at state visible</msg>
+<arg>${MoneyTotal}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-22T21:18:35.973181" elapsed="0.008270"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-22T21:18:36.001354" level="INFO">Text: '295.000 đ'</msg>
+<arg>${MoneyTotal}</arg>
+<arg>==</arg>
+<arg>295.000 đ</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:35.981744" elapsed="0.020093"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-22T21:18:36.003390" level="INFO">Clicks the element '//div[@class='item__number__decrease']'.</msg>
+<arg>${MinusQuantityProduct}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:36.002129" elapsed="0.041067"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-22T21:18:36.054323" level="INFO">Waited for Element with selector //div[@class='money__total__value'] at state visible</msg>
+<arg>${MoneyTotal}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-22T21:18:36.043500" elapsed="0.011387"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-22T21:18:36.077285" level="INFO">Text: '145.000 đ'</msg>
+<arg>${MoneyTotal}</arg>
+<arg>==</arg>
+<arg>145.000 đ</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:36.055271" elapsed="0.022602"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:35.642532" elapsed="0.435642"/>
+</kw>
+<kw name="And The user clicks on &quot;${ProceedOrderButton}&quot; proceed order button" source_name="The user clicks on &quot;${ProceedOrderButton}&quot; proceed order button">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-22T21:18:36.080259" level="INFO">Clicks the element '//div[@class='cart__content__bill col-xl-3 col-lg-3 col-md-12']//span[1]'.</msg>
+<arg>${ProceedOrderButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-22T21:18:36.079615" elapsed="0.090310"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:36.078746" elapsed="0.091750"/>
+</kw>
+<kw name="Then The user should be able to go to order page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-22T21:18:36.181084" level="INFO">Waited for Element with selector //div[@class='content_rootLayout'] at state visible</msg>
+<arg>${ContentOrderPage}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-22T21:18:36.172533" elapsed="0.009023"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:36.171461" elapsed="0.010283"/>
+</kw>
+<status status="PASS" start="2024-10-22T21:18:18.919272" elapsed="17.262852"/>
 </test>
 <doc>This Feature verifies the solution E2E scenario of website for user</doc>
-<status status="PASS" start="2024-10-21T21:33:16.673703" elapsed="10.221325"/>
+<status status="PASS" start="2024-10-22T21:18:18.625784" elapsed="17.738809"/>
 </suite>
 <statistics>
 <total>
