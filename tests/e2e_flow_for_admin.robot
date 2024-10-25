@@ -64,3 +64,7 @@ Test case E2E for admin
     Then The admin should be able to see rows with close, standard, wide on the news page
     When The admin exports the news data to CSV
     Then The news file should be available on the local system
+
+*** Keywords ***
+The user goes to TAA's admin page
+    New Browser    chromium    

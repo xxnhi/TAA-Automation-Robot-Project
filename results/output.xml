@@ -1,60 +1,525 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-22T21:18:18.616937" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-26T00:18:30.435053" rpa="false" schemaversion="5">
 <suite id="s1" name="E2E Flow For User" source="D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\e2e_flow_for_user.robot">
-<test id="s1-t1" name="Test case E2E for user" line="85">
-<kw name="Then The user should be able to login into web with &quot;${emailaccount9}&quot; email and &quot;${passwordaccount9}&quot; password" source_name="The user should be able to login into web with &quot;${username}&quot; email and &quot;${password}&quot; password">
+<kw name="Sleep For 2 Seconds" type="SETUP">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:32.740113" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:30.738668" elapsed="2.001929"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:30.736535" elapsed="2.004396"/>
+</kw>
+<test id="s1-t1" name="Test case E2E for user" line="110">
+<kw name="When The unauthenticated user goes to website">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-10-22T21:18:18.923540" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\158ee948-1d14-4251-98e0-56ffab7a2d25"}</msg>
-<msg time="2024-10-22T21:18:18.966131" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 52288</msg>
-<msg time="2024-10-22T21:18:18.966739" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '52288']</msg>
-<msg time="2024-10-22T21:18:20.399832" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\158ee948-1d14-4251-98e0-56ffab7a2d25"}</msg>
+<msg time="2024-10-26T00:18:32.745026" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\06eb7882-3dd6-479c-8f33-8eb6e45e096f"}</msg>
+<msg time="2024-10-26T00:18:32.790044" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 62605</msg>
+<msg time="2024-10-26T00:18:32.790557" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '62605']</msg>
+<msg time="2024-10-26T00:18:34.243654" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\06eb7882-3dd6-479c-8f33-8eb6e45e096f"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-10-22T21:18:18.922491" elapsed="1.478013"/>
+<status status="PASS" start="2024-10-26T00:18:32.743668" elapsed="1.500836"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-10-26T00:18:34.247245" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1500,
+    "height": 900
+  }
+}</msg>
+<msg time="2024-10-26T00:18:34.281880" level="INFO">Successfully created context. </msg>
+<msg time="2024-10-26T00:18:34.282463" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1500, 'height': 900}}</msg>
+<arg>viewport={"width": 1500, "height":900 }</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-10-26T00:18:34.245089" elapsed="0.038038"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-10-22T21:18:24.146009" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<msg time="2024-10-22T21:18:24.146444" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>url=http://localhost:3000/log_in</arg>
+<msg time="2024-10-26T00:18:37.654023" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<arg>url=${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-10-22T21:18:20.401080" elapsed="3.745797"/>
+<status status="PASS" start="2024-10-26T00:18:34.283682" elapsed="3.371144"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:39.660630" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:37.658328" elapsed="2.002918"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:37.655403" elapsed="2.006181"/>
+</kw>
+<doc>This keyword verifies that user can go to website</doc>
+<status status="PASS" start="2024-10-26T00:18:32.742727" elapsed="6.919056"/>
+</kw>
+<kw name="Then The unauthenticated user should be able to see home page">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-26T00:18:39.827846" level="INFO">Text: 'Sản phẩm nổi bật trong tuần'</msg>
+<arg>${TitleSectionHomePage}</arg>
+<arg>==</arg>
+<arg>${titleSecTionHomePageText}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:39.663833" elapsed="0.164521"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:18:39.843844" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:39.844205" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:39.856045" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:39.856313" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:39.863898" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:18:39.828708" elapsed="0.036292"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:41.868242" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:39.867000" elapsed="2.001732"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:39.865659" elapsed="2.003282"/>
+</kw>
+<arg>${titleSecTionHomePageText}</arg>
+<status status="PASS" start="2024-10-26T00:18:39.662403" elapsed="2.206717"/>
+</kw>
+<kw name="When The unauthenticated user navigates to product page">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:18:41.871551" level="INFO">Clicks the element '//a[contains(text(),'Sản phẩm')]'.</msg>
+<arg>${ProductTab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:41.870541" elapsed="0.124042"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:43.996272" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:41.995572" elapsed="2.001004"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:41.994878" elapsed="2.001868"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:41.869734" elapsed="2.127108"/>
+</kw>
+<kw name="Then The unauthenticated user should be able to see product page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-26T00:18:44.008689" level="INFO">Waited for Element with selector //div[@class='product__category col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4'] at state visible</msg>
+<arg>${ProductCategory}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-26T00:18:43.997835" elapsed="0.011145"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:18:44.019590" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:44.019967" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:44.030153" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:44.030398" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:44.036736" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=top</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:18:44.009223" elapsed="0.028220"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:18:44.049634" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:44.050000" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:44.060987" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:44.061348" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:44.067702" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:18:44.037758" elapsed="0.030354"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:46.069618" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:44.068916" elapsed="2.001063"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:44.068379" elapsed="2.001874"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:43.997161" elapsed="2.073263"/>
+</kw>
+<kw name="When The unauthenticated user navigates to see news page">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:18:46.072015" level="INFO">Clicks the element '//a[@class='nav-link'][contains(text(),'Tin tức')]'.</msg>
+<arg>${NewsTab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:46.071406" elapsed="0.096372"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:48.170377" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:46.169088" elapsed="2.001626"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:46.168246" elapsed="2.002648"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:46.070850" elapsed="2.100163"/>
+</kw>
+<kw name="Then The unauthenticated user should be able to see news page">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-26T00:18:48.193867" level="INFO">Text: 'TUẦN VỪA QUA'</msg>
+<arg>${TitleSectionNewsPage}</arg>
+<arg>==</arg>
+<arg>${titleSecTionNewsPageText}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:48.172476" elapsed="0.021956"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:18:48.205412" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:48.205886" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:48.219855" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:48.220301" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:48.227228" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=top</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:18:48.194797" elapsed="0.033077"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:18:48.243901" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:48.244345" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:48.257201" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:48.257607" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:48.264803" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:18:48.228259" elapsed="0.037224"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:50.267509" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:48.266794" elapsed="2.001045"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:48.265962" elapsed="2.002049"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:48.171614" elapsed="2.096496"/>
+</kw>
+<kw name="When The unauthenticated user navigates to see about us page">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:18:50.269746" level="INFO">Clicks the element '//a[@class='nav-link'][contains(text(),'Về chúng tôi')]'.</msg>
+<arg>${AboutUsTab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:50.269065" elapsed="0.097487"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:52.369531" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:50.368144" elapsed="2.001839"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:50.367127" elapsed="2.003147"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:50.268548" elapsed="2.101896"/>
+</kw>
+<kw name="Then The unauthenticated user should be able to see about us page">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-26T00:18:52.392205" level="INFO">Text: 'VỀ CHÚNG TÔI'</msg>
+<arg>${TitleSectionAboutUsPage}</arg>
+<arg>==</arg>
+<arg>${titleSectionAboutUsText}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:52.371808" elapsed="0.020717"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:18:52.403463" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:52.403848" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:52.414433" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:52.414647" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:52.419248" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=top</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:18:52.392863" elapsed="0.026806"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:18:52.437713" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:52.438412" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:52.465311" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:52.465865" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:52.474379" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:18:52.419976" elapsed="0.055022"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:54.478339" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:52.476343" elapsed="2.002480"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:52.475447" elapsed="2.004128"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:52.370978" elapsed="2.108807"/>
+</kw>
+<kw name="When The unauthenticated user navigates to see purchase instruction page">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:18:54.482481" level="INFO">Clicks the element '//a[@role='button'][contains(text(),'Hướng dẫn')]'.</msg>
+<arg>${GuilineTab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:54.481314" elapsed="0.067116"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-26T00:18:54.563795" level="INFO">Waited for Element with selector //a[@role='button']//a[contains(text(),'Hướng dẫn mua hàng')] at state visible</msg>
+<arg>${PurchaseInstructionSubTab}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-26T00:18:54.548950" elapsed="0.016743"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:18:54.567535" level="INFO">Clicks the element '//a[@role='button']//a[contains(text(),'Hướng dẫn mua hàng')]'.</msg>
+<arg>${PurchaseInstructionSubTab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:54.566251" elapsed="0.103932"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:56.674110" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:54.673252" elapsed="2.001244"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:54.672063" elapsed="2.002622"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:54.480375" elapsed="2.194410"/>
+</kw>
+<kw name="Then The unauthenticated user should be able to see purchase instruction page">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-26T00:18:56.693562" level="INFO">Text: 'HƯỚNG DẪN MUA HÀNG TRÊN WEBSITE'</msg>
+<arg>${TitleSectionPurchaseInstructionPage}</arg>
+<arg>==</arg>
+<arg>${titleSectionPInstructionText}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:56.676263" elapsed="0.017877"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:18:56.706444" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:56.706849" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:56.721408" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:56.721956" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:56.732660" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:18:56.694440" elapsed="0.038928"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:18:56.745420" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:56.745870" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:56.757795" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:56.758113" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:18:56.763863" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=top</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:18:56.733670" elapsed="0.030708"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:18:58.766005" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:56.765195" elapsed="2.001203"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:56.764659" elapsed="2.001920"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:56.675519" elapsed="2.091161"/>
+</kw>
+<kw name="When The unauthenticated user navigates to see policy page">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:18:58.768555" level="INFO">Clicks the element '//a[@role='button'][contains(text(),'Hướng dẫn')]'.</msg>
+<arg>${GuilineTab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:58.767855" elapsed="0.037020"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-26T00:18:58.812896" level="INFO">Waited for Element with selector //a[@role='button']//a[normalize-space()='Chính sách'] at state visible</msg>
+<arg>${PolicySubTab}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-26T00:18:58.805218" elapsed="0.008060"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:18:58.816630" level="INFO">Clicks the element '//a[@role='button']//a[normalize-space()='Chính sách']'.</msg>
+<arg>${PolicySubTab}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:18:58.813669" elapsed="0.086126"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:00.904924" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:18:58.903352" elapsed="2.001884"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:58.900448" elapsed="2.004982"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:58.767210" elapsed="2.138318"/>
+</kw>
+<kw name="Then The unauthenticated user should be able to see policy page">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-26T00:19:00.923601" level="INFO">Text: 'CHÍNH SÁCH BẢO HÀNH'</msg>
+<arg>${TitleSectionPolicyPage}</arg>
+<arg>==</arg>
+<arg>${titleSectionPolicyText}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:00.906671" elapsed="0.017273"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:19:00.933314" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:00.933622" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:00.944013" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:00.944678" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:00.950336" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:19:00.924181" elapsed="0.026450"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:19:00.969105" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:00.969734" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:00.998583" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:00.998915" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:01.013784" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=top</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:19:00.950940" elapsed="0.064940"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:03.018705" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:01.017739" elapsed="2.001327"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:01.016647" elapsed="2.002667"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:00.905931" elapsed="2.113526"/>
+</kw>
+<kw name="Then The user should be able to login into web with &quot;${emailaccount9}&quot; email and &quot;${passwordaccount9}&quot; password" source_name="The user should be able to login into web with &quot;${username}&quot; email and &quot;${password}&quot; password">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:03.021456" level="INFO">Clicks the element '//a[contains(text(),'Đăng nhập')]'.</msg>
+<arg>${SignInButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:03.020674" elapsed="0.090737"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-10-22T21:18:24.150062" level="INFO">Fills the text 'xxnhi2712@gmail.com' in the given field.</msg>
+<msg time="2024-10-26T00:19:03.114000" level="INFO">Fills the text 'xxnhi2712@gmail.com' in the given field.</msg>
 <arg>${EmailFieldLogIn}</arg>
 <arg>${emailaccount9}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:24.147304" elapsed="0.351522"/>
+<status status="PASS" start="2024-10-26T00:19:03.112025" elapsed="0.041492"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-10-22T21:18:24.500479" level="INFO">Fills the text 'Xuannhi03!' in the given field.</msg>
+<msg time="2024-10-26T00:19:03.154765" level="INFO">Fills the text 'Xuannhi03!' in the given field.</msg>
 <arg>${PasswordFieldLogIn}</arg>
 <arg>${passwordaccount9}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:24.499422" elapsed="0.038614"/>
+<status status="PASS" start="2024-10-26T00:19:03.153807" elapsed="0.036186"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:24.539946" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
+<msg time="2024-10-26T00:19:03.191629" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
 <arg>${LoginButtonLogIn}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:24.538538" elapsed="0.102393"/>
+<status status="PASS" start="2024-10-26T00:19:03.190452" elapsed="0.064829"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:18.920986" elapsed="5.720441"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:05.257016" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:03.256239" elapsed="2.001424"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:03.255580" elapsed="2.002492"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:03.019986" elapsed="2.238221"/>
 </kw>
 <kw name="And The user should be able to see their &quot;${username}&quot; username in home page" source_name="The user should be able to see their &quot;${username}&quot; username in home page">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-10-22T21:18:26.854257" level="INFO">Text: 'xxnhi2712'</msg>
+<msg time="2024-10-26T00:19:05.428087" level="INFO">Text: 'xxnhi2712'</msg>
 <arg>${UsernameHomePage}</arg>
 <arg>==</arg>
 <arg>${username}</arg>
@@ -62,41 +527,59 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:24.644222" elapsed="2.211773"/>
+<status status="PASS" start="2024-10-26T00:19:05.259661" elapsed="0.168793"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:24.642191" elapsed="2.215082"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:07.430548" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:05.429566" elapsed="2.001401"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:05.428863" elapsed="2.002396"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:05.258792" elapsed="2.172645"/>
 </kw>
 <kw name="When The user searches for the product &quot;${productName}&quot;" source_name="The user searches for the product &quot;${productName}&quot;">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-10-22T21:18:26.863100" level="INFO">Fills the text 'Nhẫn cặp dễ thương dành cho cặp đôi' in the given field.</msg>
+<msg time="2024-10-26T00:19:07.434013" level="INFO">Fills the text 'Nhẫn cặp dễ thương dành cho cặp đôi' in the given field.</msg>
 <arg>${SearchFieldHomPages}</arg>
 <arg>${productName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:26.860906" elapsed="0.042584"/>
+<status status="PASS" start="2024-10-26T00:19:07.432954" elapsed="0.031086"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:26.906038" level="INFO">Clicks the element '//div[@class='search-bar']//*[name()='svg']'.</msg>
+<msg time="2024-10-26T00:19:07.465680" level="INFO">Clicks the element '//div[@class='search-bar']//*[name()='svg']'.</msg>
 <arg>${SearchButton}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:26.904041" elapsed="0.379412"/>
+<status status="PASS" start="2024-10-26T00:19:07.464481" elapsed="0.149371"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:26.859011" elapsed="0.424916"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:09.616479" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:07.615272" elapsed="2.001609"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:07.614424" elapsed="2.002640"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:07.432026" elapsed="2.185137"/>
 </kw>
 <kw name="Then The user should be able to see product &quot;${productName}&quot; in product page" source_name="The user should be able to see product &quot;${productName}&quot; in product page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-22T21:18:27.510295" level="INFO">Waited for Element with selector //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')] at state visible</msg>
+<msg time="2024-10-26T00:19:09.624547" level="INFO">Waited for Element with selector //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')] at state visible</msg>
 <arg>${SearchedProductText}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-22T21:18:27.285125" elapsed="0.225679"/>
+<status status="PASS" start="2024-10-26T00:19:09.618103" elapsed="0.006768"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-10-22T21:18:27.537679" level="INFO">Text: 'Nhẫn cặp dễ thương dành cho cặp đôi'</msg>
+<msg time="2024-10-26T00:19:09.640011" level="INFO">Text: 'Nhẫn cặp dễ thương dành cho cặp đôi'</msg>
 <arg>${SearchedProductText}</arg>
 <arg>==</arg>
 <arg>${productName}</arg>
@@ -104,9 +587,18 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:27.511049" elapsed="0.027755"/>
+<status status="PASS" start="2024-10-26T00:19:09.625115" elapsed="0.015264"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:27.284514" elapsed="0.254616"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:11.641936" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:09.641132" elapsed="2.001183"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:09.640632" elapsed="2.001945"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:09.617515" elapsed="2.025224"/>
 </kw>
 <kw name="When The user hovers and clicks &quot;Quick View&quot; button on the product &quot;${productName}&quot;" source_name="The user hovers and clicks &quot;Quick View&quot; button on the product &quot;${productName}&quot;">
 <kw name="Hover" owner="Browser">
@@ -114,137 +606,194 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:27.540730" elapsed="0.030068"/>
+<status status="PASS" start="2024-10-26T00:19:11.643854" elapsed="0.025507"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-22T21:18:27.581021" level="INFO">Waited for Element with selector //div[@class='product__item__view'] at state visible</msg>
+<msg time="2024-10-26T00:19:11.681295" level="INFO">Waited for Element with selector //div[@class='product__item__view'] at state visible</msg>
 <arg>${QuickViewButtonWhenHover}</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-22T21:18:27.571246" elapsed="0.010581"/>
+<status status="PASS" start="2024-10-26T00:19:11.669646" elapsed="0.012486"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:27.584074" level="INFO">Clicks the element '//div[@class='product__item__view']'.</msg>
+<msg time="2024-10-26T00:19:11.684538" level="INFO">Clicks the element '//div[@class='product__item__view']'.</msg>
 <arg>${QuickViewButtonWhenHover}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:27.582558" elapsed="0.181373"/>
+<status status="PASS" start="2024-10-26T00:19:11.683051" elapsed="0.090434"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:27.539825" elapsed="0.224740"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:13.776799" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:11.776158" elapsed="2.000984"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:11.774846" elapsed="2.002561"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:11.643300" elapsed="2.134217"/>
 </kw>
 <kw name="Then The user should be able to see &quot;${ProductQuickView}&quot; in quick view" source_name="The user should be able to see &quot;${ProductQuickView}&quot; in quick view">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-22T21:18:27.789392" level="INFO">Waited for Element with selector //div[@class='quick__view__body modal-body'] at state visible</msg>
+<msg time="2024-10-26T00:19:13.785838" level="INFO">Waited for Element with selector //div[@class='quick__view__body modal-body'] at state visible</msg>
 <arg>${ProductQuickView}</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-22T21:18:27.766134" elapsed="0.024294"/>
+<status status="PASS" start="2024-10-26T00:19:13.778912" elapsed="0.007330"/>
 </kw>
+<kw name="Sleep For 2 Seconds">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-22T21:18:30.791961" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
+<msg time="2024-10-26T00:19:15.788034" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-22T21:18:27.790916" elapsed="3.001509"/>
+<status status="PASS" start="2024-10-26T00:19:13.787322" elapsed="2.001338"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:27.765240" elapsed="3.027363"/>
+<status status="PASS" start="2024-10-26T00:19:13.786617" elapsed="2.002409"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:13.778274" elapsed="2.010969"/>
 </kw>
 <kw name="When The user clicks on &quot;${ViewDetailButton}&quot; view detail button" source_name="The user clicks on &quot;${ViewDetailButton}&quot; view detail button">
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:30.794359" level="INFO">Clicks the element '//button[@class='button__detail__view']//span[1]'.</msg>
+<msg time="2024-10-26T00:19:15.792508" level="INFO">Clicks the element '//button[@class='button__detail__view']//span[1]'.</msg>
 <arg>${ViewDetailButton}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:30.793696" elapsed="0.138931"/>
+<status status="PASS" start="2024-10-26T00:19:15.791129" elapsed="0.177054"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:30.792993" elapsed="0.139919"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:17.970932" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:15.969739" elapsed="2.001533"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:15.968804" elapsed="2.002754"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:15.789986" elapsed="2.181746"/>
 </kw>
 <kw name="Then The user should be able to see &quot;${ProductDetail}&quot; in the product detail page" source_name="The user should be able to see &quot;${ProductDetail}&quot; in the product detail page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-22T21:18:30.943538" level="INFO">Waited for Element with selector //div[@class='productDetail'] at state visible</msg>
+<msg time="2024-10-26T00:19:18.013940" level="INFO">Waited for Element with selector //div[@class='productDetail'] at state visible</msg>
 <arg>${ProductDetail}</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-22T21:18:30.934193" elapsed="0.009844"/>
+<status status="PASS" start="2024-10-26T00:19:17.972907" elapsed="0.041909"/>
 </kw>
 <kw name="Scroll To" owner="Browser">
-<msg time="2024-10-22T21:18:30.976302" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-10-22T21:18:30.976831" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-10-22T21:18:31.001452" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-10-22T21:18:31.001828" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2024-10-22T21:18:31.010967" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:18.028347" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:18.028593" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:18.039457" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:18.039826" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:18.044584" level="INFO">JavaScript executed successfully.</msg>
 <arg>vertical=bottom</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
-<status status="PASS" start="2024-10-22T21:18:30.944365" elapsed="0.067197"/>
+<status status="PASS" start="2024-10-26T00:19:18.015341" elapsed="0.029644"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:30.933398" elapsed="0.078483"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:20.047039" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:18.046131" elapsed="2.002340"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:18.045338" elapsed="2.003842"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:17.972288" elapsed="2.077327"/>
 </kw>
 <kw name="When The user clicks on &quot;${AddCartButton}&quot; add cart button" source_name="The user clicks on &quot;${AddCartButton}&quot; add cart button">
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:31.016097" level="INFO">Clicks the element '//button[contains(text(),'Thêm vào giỏ hàng')]'.</msg>
+<msg time="2024-10-26T00:19:20.052319" level="INFO">Clicks the element '//button[contains(text(),'Thêm vào giỏ hàng')]'.</msg>
 <arg>${AddCartButton}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:31.014693" elapsed="1.382016"/>
+<status status="PASS" start="2024-10-26T00:19:20.051611" elapsed="0.269350"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:31.013345" elapsed="1.383798"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:22.323396" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:20.322512" elapsed="2.001422"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:20.321438" elapsed="2.002686"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:20.050894" elapsed="2.273333"/>
 </kw>
 <kw name="Then The product should be able to add to cart successfully">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-22T21:18:32.409324" level="INFO">Waited for Element with selector //div[@class='modal-noti-add-cart-success-body modal-body'] at state visible</msg>
+<msg time="2024-10-26T00:19:22.333534" level="INFO">Waited for Element with selector //div[@class='modal-noti-add-cart-success-body modal-body'] at state visible</msg>
 <arg>${AddCartSuccessfullyText}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-22T21:18:32.398796" elapsed="0.011130"/>
+<status status="PASS" start="2024-10-26T00:19:22.325098" elapsed="0.008747"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:32.397976" elapsed="0.012294"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:24.335351" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:22.334607" elapsed="2.001284"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:22.334112" elapsed="2.002157"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:22.324588" elapsed="2.011908"/>
 </kw>
 <kw name="When The user navigates to see cart page">
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:32.413638" level="INFO">Clicks the element '//a[@class='cart_link']//*[name()='svg']'.</msg>
+<msg time="2024-10-26T00:19:24.339566" level="INFO">Clicks the element '//a[@class='cart_link']//*[name()='svg']'.</msg>
 <arg>${CartIcon}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:32.412362" elapsed="3.229430"/>
+<status status="PASS" start="2024-10-26T00:19:24.338203" elapsed="0.153191"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:32.411087" elapsed="3.230930"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:26.494135" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:24.493107" elapsed="2.001396"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:24.492048" elapsed="2.002662"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:24.337166" elapsed="2.157658"/>
 </kw>
 <kw name="And The user edits the quantity of cart item">
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:35.644752" level="INFO">Clicks the element '//td[@class='item__checkbox']//*[name()='svg']'.</msg>
+<msg time="2024-10-26T00:19:26.496958" level="INFO">Clicks the element '//td[@class='item__checkbox']//*[name()='svg']'.</msg>
 <arg>${TickAllCheckBox}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:35.643416" elapsed="0.259095"/>
+<status status="PASS" start="2024-10-26T00:19:26.496090" elapsed="0.055064"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-22T21:18:35.912233" level="INFO">Waited for Element with selector //div[@class='money__total__value'] at state visible</msg>
+<msg time="2024-10-26T00:19:26.566000" level="INFO">Waited for Element with selector //div[@class='money__total__value'] at state visible</msg>
 <arg>${MoneyTotal}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-22T21:18:35.902875" elapsed="0.009817"/>
+<status status="PASS" start="2024-10-26T00:19:26.551781" elapsed="0.015921"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-10-22T21:18:35.931097" level="INFO">Text: '145.000 đ'</msg>
+<msg time="2024-10-26T00:19:26.591431" level="INFO">Text: '145.000 đ'</msg>
 <arg>${MoneyTotal}</arg>
 <arg>==</arg>
 <arg>145.000 đ</arg>
@@ -252,27 +801,36 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:35.913020" elapsed="0.018412"/>
+<status status="PASS" start="2024-10-26T00:19:26.568449" elapsed="0.023548"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:28.593512" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:26.593004" elapsed="2.000854"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:26.592379" elapsed="2.001648"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:35.932520" level="INFO">Clicks the element '//div[@class='item__number__increase']'.</msg>
+<msg time="2024-10-26T00:19:28.595009" level="INFO">Clicks the element '//div[@class='item__number__increase']'.</msg>
 <arg>${PlusQuantityProduct}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:35.931683" elapsed="0.041180"/>
+<status status="PASS" start="2024-10-26T00:19:28.594175" elapsed="0.041853"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-22T21:18:35.980394" level="INFO">Waited for Element with selector //div[@class='money__total__value'] at state visible</msg>
+<msg time="2024-10-26T00:19:28.644638" level="INFO">Waited for Element with selector //div[@class='money__total__value'] at state visible</msg>
 <arg>${MoneyTotal}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-22T21:18:35.973181" elapsed="0.008270"/>
+<status status="PASS" start="2024-10-26T00:19:28.636482" elapsed="0.008604"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-10-22T21:18:36.001354" level="INFO">Text: '295.000 đ'</msg>
+<msg time="2024-10-26T00:19:28.670563" level="INFO">Text: '295.000 đ'</msg>
 <arg>${MoneyTotal}</arg>
 <arg>==</arg>
 <arg>295.000 đ</arg>
@@ -280,27 +838,36 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:35.981744" elapsed="0.020093"/>
+<status status="PASS" start="2024-10-26T00:19:28.645426" elapsed="0.025725"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:30.673209" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:28.672331" elapsed="2.001206"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:28.671597" elapsed="2.002131"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:36.003390" level="INFO">Clicks the element '//div[@class='item__number__decrease']'.</msg>
+<msg time="2024-10-26T00:19:30.674554" level="INFO">Clicks the element '//div[@class='item__number__decrease']'.</msg>
 <arg>${MinusQuantityProduct}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:36.002129" elapsed="0.041067"/>
+<status status="PASS" start="2024-10-26T00:19:30.673884" elapsed="0.031880"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-22T21:18:36.054323" level="INFO">Waited for Element with selector //div[@class='money__total__value'] at state visible</msg>
+<msg time="2024-10-26T00:19:30.712422" level="INFO">Waited for Element with selector //div[@class='money__total__value'] at state visible</msg>
 <arg>${MoneyTotal}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-22T21:18:36.043500" elapsed="0.011387"/>
+<status status="PASS" start="2024-10-26T00:19:30.706132" elapsed="0.006922"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-10-22T21:18:36.077285" level="INFO">Text: '145.000 đ'</msg>
+<msg time="2024-10-26T00:19:30.729554" level="INFO">Text: '145.000 đ'</msg>
 <arg>${MoneyTotal}</arg>
 <arg>==</arg>
 <arg>145.000 đ</arg>
@@ -308,37 +875,375 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:36.055271" elapsed="0.022602"/>
+<status status="PASS" start="2024-10-26T00:19:30.713610" elapsed="0.016279"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:35.642532" elapsed="0.435642"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:32.731869" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:30.730817" elapsed="2.001457"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:30.730166" elapsed="2.002357"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:26.495327" elapsed="6.237318"/>
 </kw>
 <kw name="And The user clicks on &quot;${ProceedOrderButton}&quot; proceed order button" source_name="The user clicks on &quot;${ProceedOrderButton}&quot; proceed order button">
 <kw name="Click" owner="Browser">
-<msg time="2024-10-22T21:18:36.080259" level="INFO">Clicks the element '//div[@class='cart__content__bill col-xl-3 col-lg-3 col-md-12']//span[1]'.</msg>
+<msg time="2024-10-26T00:19:32.734382" level="INFO">Clicks the element '//div[@class='cart__content__bill col-xl-3 col-lg-3 col-md-12']//span[1]'.</msg>
 <arg>${ProceedOrderButton}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-10-22T21:18:36.079615" elapsed="0.090310"/>
+<status status="PASS" start="2024-10-26T00:19:32.733646" elapsed="0.077413"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:36.078746" elapsed="0.091750"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:34.813921" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:32.812716" elapsed="2.001651"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:32.811610" elapsed="2.003007"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:32.733079" elapsed="2.081703"/>
 </kw>
 <kw name="Then The user should be able to go to order page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-10-22T21:18:36.181084" level="INFO">Waited for Element with selector //div[@class='content_rootLayout'] at state visible</msg>
+<msg time="2024-10-26T00:19:34.824288" level="INFO">Waited for Element with selector //div[@class='content_rootLayout'] at state visible</msg>
 <arg>${ContentOrderPage}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-10-22T21:18:36.172533" elapsed="0.009023"/>
+<status status="PASS" start="2024-10-26T00:19:34.816634" elapsed="0.008398"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:36.171461" elapsed="0.010283"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:36.826665" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:34.825972" elapsed="2.001004"/>
 </kw>
-<status status="PASS" start="2024-10-22T21:18:18.919272" elapsed="17.262852"/>
+<status status="PASS" start="2024-10-26T00:19:34.825370" elapsed="2.001779"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:34.815807" elapsed="2.011470"/>
+</kw>
+<kw name="When The user fills shipping address, shipping method, payment method">
+<kw name="There is no address then the user add a new address">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:36.829697" level="INFO">Clicks the element '//div[@class='location__button']//button[@type='submit']'.</msg>
+<arg>${AddAddressButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:36.829127" elapsed="0.039339"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-26T00:19:36.870287" level="INFO">Fills the text 'xxnhi2712' in the given field.</msg>
+<arg>${RecipientNameAddAddress}</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:36.868985" elapsed="0.040352"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-26T00:19:36.912397" level="INFO">Fills the text '0934863321' in the given field.</msg>
+<arg>${PhoneNumberAddAddress}</arg>
+<arg>${phoneNumber}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:36.910182" elapsed="0.042148"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-26T00:19:36.955478" level="INFO">Fills the text 'Thủ Đức, Hồ Chí Minh, and' in the given field.</msg>
+<arg>${GeneralAddressAddAddress}</arg>
+<arg>${generalAddress}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:36.953600" elapsed="0.039257"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-26T00:19:36.996354" level="INFO">Fills the text 'KTX Khu A. Linh Trung' in the given field.</msg>
+<arg>${DetailAddressAddAddress}</arg>
+<arg>${detailAddress}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:36.994105" elapsed="0.043091"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:37.039459" level="INFO">Clicks the element '//div[@class='btn__wrapper']//button[@type='submit']'.</msg>
+<arg>${AcceptButtonAddAddress}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:37.038228" elapsed="0.368671"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:39.410527" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:37.409556" elapsed="2.001295"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:37.407540" elapsed="2.003492"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:36.828674" elapsed="2.582459"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:39.412113" level="INFO">Clicks the element '//span[contains(text(),'Giao hàng nhanh trong 2 giờ (Trễ tặng 100k)')]'.</msg>
+<arg>${Option1ShippingMethod}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:39.411296" elapsed="0.034213"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:39.446491" level="INFO">Clicks the element '//span[contains(text(),'Thanh toán tiền khi nhận hàng (COD)')]'.</msg>
+<arg>${Option1PaymentMethod}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:39.445782" elapsed="0.058035"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:41.506124" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:39.504977" elapsed="2.001575"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:39.504207" elapsed="2.002605"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:36.827974" elapsed="4.678966"/>
+</kw>
+<kw name="And The user clicks on &quot;${OrderButton}&quot; button" source_name="The user clicks on &quot;${OrderButton}&quot; button">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:41.509240" level="INFO">Clicks the element '//div[@class='order__content__bill col-lg-4 col-md-12']//span[1]'.</msg>
+<arg>${OrderButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:41.508288" elapsed="0.028483"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:43.539303" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:41.538114" elapsed="2.001822"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:41.537294" elapsed="2.003000"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:41.507425" elapsed="2.033054"/>
+</kw>
+<kw name="Then The users should be able to see the order successfully placed notification">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-26T00:19:43.559494" level="INFO">Text: 'Đặt hàng thành công!'</msg>
+<arg>${OrderSuccesfullyText}</arg>
+<arg>==</arg>
+<arg>Đặt hàng thành công!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:43.541747" elapsed="0.018098"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:45.561450" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:43.560671" elapsed="2.001157"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:43.560111" elapsed="2.001896"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:43.541080" elapsed="2.021024"/>
+</kw>
+<kw name="When The user navigates to order page by click on ${ViewOrdersButton}" source_name="The user navigates to order page by click on ${ViewOrdersButton}">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:45.564091" level="INFO">Clicks the element '(//button[@type='button'])[3]'.</msg>
+<arg>${ViewOrdersButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:45.563442" elapsed="0.070401"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:47.635754" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:45.634928" elapsed="2.001102"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:45.634329" elapsed="2.001874"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:45.562630" elapsed="2.073667"/>
+</kw>
+<kw name="Then The user should be able to see ${OrderPlaced}" source_name="The user should be able to see ${OrderPlaced}">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-26T00:19:47.653871" level="INFO">Text: 'Trang cung cấp thông tin về các đơn hàng theo danh mục'</msg>
+<arg>${OrderPlaced}</arg>
+<arg>==</arg>
+<arg>Trang cung cấp thông tin về các đơn hàng theo danh mục</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:47.637500" elapsed="0.016954"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:19:47.664406" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:47.664702" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:47.674236" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:47.674552" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:47.681929" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:19:47.654725" elapsed="0.027700"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-10-26T00:19:47.693482" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:47.693722" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:47.702471" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:47.702946" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-10-26T00:19:47.708578" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=top</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-10-26T00:19:47.682791" elapsed="0.026242"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:49.711456" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:47.710298" elapsed="2.001488"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:47.709393" elapsed="2.002554"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:47.636707" elapsed="2.075332"/>
+</kw>
+<kw name="When The user clicks on ${LogOutButton} in the menu" source_name="The user clicks on ${LogOutButton} in the menu">
+<kw name="The user go to Favorite page">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:49.714284" level="INFO">Clicks the element '//button[@id='drop_down_btn']'.</msg>
+<arg>${Avatar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:49.713554" elapsed="0.046399"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:49.762290" level="INFO">Clicks the element '//div[@class='header__top']//a[3]'.</msg>
+<arg>${FavoritesButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:49.760616" elapsed="0.092323"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:49.713140" elapsed="0.140265"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:49.855522" level="INFO">Clicks the element '//button[@id='drop_down_btn']'.</msg>
+<arg>${Avatar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:49.853765" elapsed="0.641414"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:50.497635" level="INFO">Clicks the element '//div[@class='log_out_btn']'.</msg>
+<arg>${LogOutButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:50.495916" elapsed="0.108273"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:52.606576" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:50.605667" elapsed="2.001255"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:50.604779" elapsed="2.002323"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:49.712501" elapsed="2.894697"/>
+</kw>
+<kw name="And The user clicks on ${LogOutButtonPopup} in the log out popup" source_name="The user clicks on ${LogOutButtonPopup} in the log out popup">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-26T00:19:52.614344" level="INFO">Waited for Element with selector //div[@class='btn__wrapper_logout']//button[@type='submit'] at state visible</msg>
+<arg>${LogOutButtonPopup}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-26T00:19:52.608335" elapsed="0.006325"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-26T00:19:52.615692" level="INFO">Clicks the element '//div[@class='btn__wrapper_logout']//button[@type='submit']'.</msg>
+<arg>${LogOutButtonPopup}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-26T00:19:52.614898" elapsed="0.064656"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:54.683879" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:52.682680" elapsed="2.001462"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:52.680283" elapsed="2.004028"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:52.607599" elapsed="2.076805"/>
+</kw>
+<kw name="Then The user logs out of the website successfully">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-26T00:19:54.701216" level="INFO">Waited for Element with selector //a[contains(text(),'Đăng nhập')] at state visible</msg>
+<arg>${SignInButton}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-26T00:19:54.685858" elapsed="0.015766"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-26T00:19:54.711112" level="INFO">Waited for Element with selector //a[contains(text(),'Đăng ký')] at state visible</msg>
+<arg>${SignUpButton}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-26T00:19:54.702073" elapsed="0.009422"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-26T00:19:56.713930" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-26T00:19:54.712737" elapsed="2.001481"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:54.711823" elapsed="2.002566"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:19:54.685202" elapsed="2.029279"/>
+</kw>
+<status status="PASS" start="2024-10-26T00:18:32.741139" elapsed="83.973794"/>
 </test>
 <doc>This Feature verifies the solution E2E scenario of website for user</doc>
-<status status="PASS" start="2024-10-22T21:18:18.625784" elapsed="17.738809"/>
+<status status="PASS" start="2024-10-26T00:18:30.441597" elapsed="86.401311"/>
 </suite>
 <statistics>
 <total>
