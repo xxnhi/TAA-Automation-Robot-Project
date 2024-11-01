@@ -89,3 +89,21 @@ ${EmailButtonForgotPassword}    button[class='email_button btn btn-primary']
 ${PhoneNumberButtonForgotPassword}    button[class='phone_button btn btn-primary']
 ${InputEmailFieldForgotPassword}    //input[@id='formBasicCheckbox']
 ${GetCodeButton}    //button[contains(text(),'Lấy mã')]
+
+# Admin's account management page
+${FilterButtonAdminAccountManagementPage}    //button[@id=':ra:']
+${ColumnFilterAdminAccount}    //div[@id=':r5a:']
+${IDColumnFilterAdminAccount}    //li[normalize-space()='ID']
+${NameAccountColumnFilterAdminAccount}    //li[contains(text(),'Tên tài khoản')]
+${PhoneNumberColumnFilterAdminAccount}    //li[normalize-space()='Số điện thoại']
+${EmailColumnFilterAdminAccount}    //li[normalize-space()='Email']
+${CCCDColumnFilterAdminAccount}    //li[normalize-space()='CCCD']
+${OperatorFilterAdminAccount}    //div[@id=':r5c:']
+${ContainOperatorFilterAdminAccount}    //li[contains(text(),'chứa')]
+${EqualOperatorFilterAdminAccount}    //li[contains(text(),'bằng')]
+${StartWithOperatorFilterAdminAccount}    //li[contains(text(),'bắt đầu với')]
+${EndWithOperatorFilterAdminAccount}    //li[contains(text(),'kết thức với')]
+${EmptyOperatorFilterAdminAccount}    //li[contains(text(),'trống')]
+
+
+

@@ -56,6 +56,54 @@ Unit test for forgot password function
     Forgot password on phone number function    abcd
     The user should be able to see error message    //p[@class='not_found']    Không tìm thấy số điện thoại
 
+Unit test for filter function for Admin's account management page function
+    [Documentation]    Include:
+    ...    Verify the admin can filter successfully with column "ID" and operator "chứa" with random input value
+    ...    Verify the admin can filter unsuccessfully with column "ID" and operator "chứa" with invalid input value
+    ...    Verify the admin can filter successfully with column "ID" and operator "chứa" with specific input value
+    ...    Verify the admin can filter successfully with column "ID" and operator "chứa" with the ID name
+    ...    Verify the admin can filter successfully with column "ID" and operator "bằng" with vid input value
+    ...    Verify the admin can filter unsuccessfully with column "ID" and operator "bằng" with invalid input value
+    ...    Verify the admin can filter unsuccessfully with column "ID" and operator "bằng" with specific input value
+    ...    Verify the admin can filter successfully with column "ID" and operator "bắt đầu với" with random input value
+    ...    Verify the admin can filter unsuccessfully with column "ID" and operator "bắt đầu với" with invalid input value
+    ...    Verify the admin can filter successfully with column "ID" and operator "bắt đầu với" with specific input value
+    ...    Verify the admin can filter successfully with column "ID" and operator "bắt đầu với" with the ID name
+    ...    Verify the admin can filter successfully with column "ID" and operator "kết thúc với" with random input value
+    ...    Verify the admin can filter unsuccessfully with column "ID" and operator "kết thúc với" with invalid input value
+    ...    Verify the admin can filter successfully with column "ID" and operator "kết thúc với" with specific input value
+    ...    Verify the admin can filter successfully with column "ID" and operator "kết thúc với" with the ID name
+    ...    Verify the admin can filter successfully with column "ID" and operator "trống"
+    ...    Verify the admin can filter successfully with column "ID" and operator "không trống"
+    ...    Verify the admin can filter successfully with column "ID" and operator "bất kỳ trong số" with the random values
+    ...    Verify the admin can filter successfully with column "Tên tài khoản" and operator "chứa" with random input value
+    ...    Verify the admin can filter successfully with column "Tên tài khoản" and operator "chứa" with specific input value
+    ...    Verify the admin can filter successfully with column "Tên tài khoản" and operator "bằng" with the valid name
+    ...    Verify the admin can filter unsuccessfully with column "Tên tài khoản" and operator "bằng" with the invalid name
+    ...    Verify the admin can filter successfully with column ""Tên tài khoản"" and operator ""bắt đầu với"" with valid input value
+    ...    Verify the admin can filter successfully with column ""Tên tài khoản"" and operator ""kết thúc với"" with the valid input value
+    ...    Verify the admin can filter successfully with column ""Tên tài khoản"" and operator ""trống"" 
+    ...    Verify the admin can filter successfully with column ""Tên tài khoản"" and operator ""không trống"" 
+    ...    Verify the admin can filter successfully with column ""Tên tài khoản"" and operator ""bất kỳ trong số"" with the random values
+    ...    Verify the admin can filter successfully with column ""Số điện thoại"" and operator ""chứa"" with random input value
+    ...    Verify the admin can filter unsuccessfully with column ""Số điện thoại"" and operator ""chứa"" with specific input value
+    ...    Verify the admin can filter successfully with column "Số điện thoại" and operator "bằng" with the valid name
+    ...    Verify the admin can filter unsuccessfully with column "Số điện thoại" and operator "bằng" with the invalid name
+    ...    Verify the admin can filter successfully with column "Số điện thoại" and operator "bắt đầu với" with valid input value
+    ...    Verify the admin can filter successfully with column "Số điện thoại" and operator "kết thúc với" with the valid input value
+    ...    Verify the admin can filter successfully with column "Số điện thoại" and operator "trống"
+    ...    Verify the admin can filter successfully with column "Số điện thoại" and operator "không trống"
+    ...    Verify the admin can filter successfully with column "Số điện thoại" and operator "bất kỳ trong số" with the random values
+    ...    Verify the admin can filter successfully with column ""CCCD"" and operator ""chứa"" with random input value
+    ...    Verify the admin can filter unsuccessfully with column "CCCD" and operator "chứa" with specific input value
+    ...    Verify the admin can filter successfully with column "CCCD" and operator "bằng" with the valid name
+    ...    Verify the admin can filter successfully with column ""unsuccessfully with column "CCCD" and operator "bằng" with the invalid name
+    ...    Verify the admin can filter successfully with column "CCCD" and operator "bắt đầu với" with valid input value
+    ...    Verify the admin can filter successfully with column "CCCD" and operator "kết thúc với" with the valid input value
+    ...    Verify the admin can filter successfully with column "CCCD" and operator "trống"
+    ...    Verify the admin can filter successfully with column "CCCD" and operator "không trống"
+    ...    Verify the admin can filter successfully with column "CCCD" and operator "bất kỳ trong số" with the valid values
+
 *** Keywords ***
 
 Login function
@@ -126,5 +174,18 @@ Filter function for Admin's account management page function
     [Tags]    Unit test
     [Arguments]
     New Browser    browser=chromium    headless=False
-    New Page    url=http://localhost:4000/accounts
-    
+    New Page    url=http://localhost:4000
+    Login admin function    AdminTAA01    AdminTAA01
+    Click    ${FilterButtonAdminAccountManagementPage}
+    Click    div[id=':r4e:']
+    Click    //li[normalize-space()='ID']
+    Click    div[id=':r4g:']
+    Click    //li[contains(text(),'chứa')]
+    Fill Text    input[id=':r51:']    ba
+
+Login admin function
+    [Arguments]    ${emailTextField}    ${passwordTextField}
+    Fill Text    //input[@id='formBasicEmail']    ${emailTextField}
+    Fill Text    //input[@id='formBasicPassword']    ${passwordTextField}
+    Click    //button[contains(text(),'Đăng nhập')]
+
