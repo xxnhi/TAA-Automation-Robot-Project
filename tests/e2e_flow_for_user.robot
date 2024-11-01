@@ -2,7 +2,6 @@
 Documentation    This Feature verifies the solution E2E scenario of website for user
 Library    Browser
 Library    Collections
-# Library    SeleniumLibrary
 Suite Setup   Sleep For 2 Seconds 
 Resource    ../resources/Locators.robot
 *** Variables ***
@@ -10,7 +9,7 @@ Resource    ../resources/Locators.robot
 ${emailaccount9}    xxnhi2712@gmail.com
 ${passwordaccount9}    Xuannhi03!
 ${username}    xxnhi2712
-${email}    abcdxyz@gmail.com
+${email}    abcdxyz12@gmail.com
 ${password}    Xuannhi03!1
 ${phoneNumber}    0934863321
 ${repassword}    Xuannhi03!1
@@ -135,8 +134,6 @@ The unauthenticated user registers an account
     [Documentation]    This keyword verifies the unauthenticated user can register website by enter valid informations: 
     ...    username is ${username}, phone number is ${phoneNumber}, email is ${email}, password is ${password}, re-password is ${repassword}
     ...    Output: User can register account successfully
-    New Browser    browser=chromium    headless=False
-    New Page    url=${URL}
     Click    ${RegisterButton}
     Fill Text    ${UsernameField}    ${username}
     Fill Text    ${PhoneNumberField}    ${phoneNumber}
@@ -149,7 +146,7 @@ The unauthenticated user registers an account
     Sleep For 2 Seconds
 
 The user should be able to login into web with "${username}" email and "${password}" password
-    Click    ${SignInButton}
+    New Page    url=http://localhost:3000/log_in
     Fill Text    ${EmailFieldLogIn}    ${emailaccount9}
     Fill Text    ${PasswordFieldLogIn}    ${passwordaccount9}
     Sleep For 2 Seconds
