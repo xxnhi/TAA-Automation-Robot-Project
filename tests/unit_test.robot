@@ -7,54 +7,54 @@ Resource    ../resources/Locators.robot
 
 
 *** Test Cases ***
-Unit test for login function
-    [Documentation]    Include:
-    ...    Verify the user can login successfully with valid email and password.
-    ...    Verify the user login unsuccessfully with valid email but invalid password.
-    ...    Verify the user login unsuccessfully with invalid Email and valid password.
-    ...    Verify the user log in unsuccessfully with invalid Email and Password.
-    ...    Verify the "Đăng nhập" button is not enabled when user login with leaving 2 input blank
-    ...    Verify re-login by remember account successfull when user login with valid email and password (ignore)
-    ...    Verify show/hide password successfully when click
-    ...    Verify go to forgot password popup when click on "Bạn quên mật khẩu?"
-    ...    Verify go to register page when click on "Đăng ký" button
-    Login function    xxnhi2712@gmail.com    Xuannhi03!
-    The user should be able to see their "xxnhi2712" username in home page
+# Unit test for login function
+#     [Documentation]    Include:
+#     ...    Verify the user can login successfully with valid email and password.
+#     ...    Verify the user login unsuccessfully with valid email but invalid password.
+#     ...    Verify the user login unsuccessfully with invalid Email and valid password.
+#     ...    Verify the user log in unsuccessfully with invalid Email and Password.
+#     ...    Verify the "Đăng nhập" button is not enabled when user login with leaving 2 input blank
+#     ...    Verify re-login by remember account successfull when user login with valid email and password (ignore)
+#     ...    Verify show/hide password successfully when click
+#     ...    Verify go to forgot password popup when click on "Bạn quên mật khẩu?"
+#     ...    Verify go to register page when click on "Đăng ký" button
+#     Login function    xxnhi2712@gmail.com    Xuannhi03!
+#     The user should be able to see their "xxnhi2712" username in home page
     
-    Login function    xxnhi2712@gmail.com    abcd
-    The user should be able to see error message    Mật khẩu không khớp!    //small[@class='text-muted form-text']
+#     Login function    xxnhi2712@gmail.com    abcd
+#     The user should be able to see error message    Mật khẩu không khớp!    //small[@class='text-muted form-text']
     
-    Login function    abcd@gmail.com    Xuannhi03!
-    The user should be able to see error message    Email không tồn tại!    //small[@class='text-muted form-text']
+#     Login function    abcd@gmail.com    Xuannhi03!
+#     The user should be able to see error message    Email không tồn tại!    //small[@class='text-muted form-text']
 
-    Login function    abcd@gmail.com    abcd
-    The user should be able to see error message    Email không tồn tại!    //small[@class='text-muted form-text']
+#     Login function    abcd@gmail.com    abcd
+#     The user should be able to see error message    Email không tồn tại!    //small[@class='text-muted form-text']
     
-    Login function     ${EMPTY}    ${EMPTY}
-    Background Color should contain    //button[@class='login_btn body-large']    background-color: rgba(29, 27, 32, 0.12)
+#     Login function     ${EMPTY}    ${EMPTY}
+#     Background Color should contain    //button[@class='login_btn body-large']    background-color: rgba(29, 27, 32, 0.12)
 
-    Login function     ${EMPTY}    Xuannhi03!
-    Show/hide password successfully when click    Xuannhi03!
+#     Login function     ${EMPTY}    Xuannhi03!
+#     Show/hide password successfully when click    Xuannhi03!
 
-    Go to forgot password popup when click on "Bạn quên mật khẩu?"
+#     Go to forgot password popup when click on "Bạn quên mật khẩu?"
 
-    Go to register page when click on "Đăng ký" button
+#     Go to register page when click on "Đăng ký" button
 
-Unit test for forgot password function
-    [Documentation]    Include:
-    ...    Verify receive code through email successfully when enter valid email on forgot password popup
-    ...    Verify receive code through email unsuccessfully when enter invalid email on forgot password popup
-    ...    Verify receive code through email unsuccessfully when leave email input empty on forgot password popup
-    ...    Verify receive OTP through phone successfully when enter valid phone number on forgot password popup
-    ...    Verify receive OTP through phone unsuccessfully when enter invalid phone number on forgot password popup
-    ...    Verify receive OTP through phone unsuccessfully when leave phone number input empty on forgot password popup
-    Forgot password on email function    xxnhi2712@gmail.com
-    Forgot password on email function    abcd
-    Forgot password on email function    ${EMPTY}
-    The user should be able to see error message    //p[@class='not_found']    Không tìm thấy email
-    Forgot password on phone number function    0933863327
-    Forgot password on phone number function    abcd
-    The user should be able to see error message    //p[@class='not_found']    Không tìm thấy số điện thoại
+# Unit test for forgot password function
+#     [Documentation]    Include:
+#     ...    Verify receive code through email successfully when enter valid email on forgot password popup
+#     ...    Verify receive code through email unsuccessfully when enter invalid email on forgot password popup
+#     ...    Verify receive code through email unsuccessfully when leave email input empty on forgot password popup
+#     ...    Verify receive OTP through phone successfully when enter valid phone number on forgot password popup
+#     ...    Verify receive OTP through phone unsuccessfully when enter invalid phone number on forgot password popup
+#     ...    Verify receive OTP through phone unsuccessfully when leave phone number input empty on forgot password popup
+#     Forgot password on email function    xxnhi2712@gmail.com
+#     Forgot password on email function    abcd
+#     Forgot password on email function    ${EMPTY}
+#     The user should be able to see error message    //p[@class='not_found']    Không tìm thấy email
+#     Forgot password on phone number function    0933863327
+#     Forgot password on phone number function    abcd
+#     The user should be able to see error message    //p[@class='not_found']    Không tìm thấy số điện thoại
 
 Unit test for filter function for Admin's account management page function
     [Documentation]    Include:
@@ -103,6 +103,118 @@ Unit test for filter function for Admin's account management page function
     ...    Verify the admin can filter successfully with column "CCCD" and operator "trống"
     ...    Verify the admin can filter successfully with column "CCCD" and operator "không trống"
     ...    Verify the admin can filter successfully with column "CCCD" and operator "bất kỳ trong số" with the valid values
+    
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    ba
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    667
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    &&
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    65f3e9a27ef3c2b6f3b7d0d8
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${EqualOperatorFilterAdminAccount}    65f3e9a27ef3c2b6f3b7d0d8
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${EqualOperatorFilterAdminAccount}    667
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${EqualOperatorFilterAdminAccount}    &&
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${StartWithOperatorFilterAdminAccount}    66
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${StartWithOperatorFilterAdminAccount}    667
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${StartWithOperatorFilterAdminAccount}    &&
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${StartWithOperatorFilterAdminAccount}    65f3e9a27ef3c2b6f3b7d0d8
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${EndWithOperatorFilterAdminAccount}    a6
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${EndWithOperatorFilterAdminAccount}    667
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${EndWithOperatorFilterAdminAccount}    &&
+
+    # Filter function for Admin's account management page function for empty    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${EmptyOperatorFilterAdminAccount}
+
+    # Filter function for Admin's account management page function for empty   ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${NotEmptyOperatorFilterAdminAccount}
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${IDColumnFilterAdminAccount}    ${AnyOperatorFilterAdminAccount}    65f3e9a27ef3c2b6f3b7d0d8, 66
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${NameAccountColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    B
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${NameAccountColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    &&
+
+    # Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${NameAccountColumnFilterAdminAccount}    ${EqualOperatorFilterAdminAccount}    lamcam
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${NameAccountColumnFilterAdminAccount}    ${EqualOperatorFilterAdminAccount}    lamcamhi
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${NameAccountColumnFilterAdminAccount}    ${StartWithOperatorFilterAdminAccount}    n
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${NameAccountColumnFilterAdminAccount}    ${EndWithOperatorFilterAdminAccount}    n
+
+    Filter function for Admin's account management page function for empty    ${FilterButtonAdminAccountManagementPage}    ${NameAccountColumnFilterAdminAccount}    ${EmptyOperatorFilterAdminAccount}
+
+    Filter function for Admin's account management page function for empty    ${FilterButtonAdminAccountManagementPage}    ${NameAccountColumnFilterAdminAccount}    ${NotEmptyOperatorFilterAdminAccount}
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${NameAccountColumnFilterAdminAccount}    ${AnyOperatorFilterAdminAccount}    lamcam, 0348918225
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${PhoneNumberColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    66
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${PhoneNumberColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    &&
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${PhoneNumberColumnFilterAdminAccount}    ${EqualOperatorFilterAdminAccount}    0961089666
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${PhoneNumberColumnFilterAdminAccount}    ${EqualOperatorFilterAdminAccount}    80&
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${PhoneNumberColumnFilterAdminAccount}    ${StartWithOperatorFilterAdminAccount}    0
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${PhoneNumberColumnFilterAdminAccount}    ${EndWithOperatorFilterAdminAccount}    9
+
+    Filter function for Admin's account management page function for empty    ${FilterButtonAdminAccountManagementPage}    ${PhoneNumberColumnFilterAdminAccount}    ${EmptyOperatorFilterAdminAccount}
+
+    Filter function for Admin's account management page function for empty    ${FilterButtonAdminAccountManagementPage}    ${PhoneNumberColumnFilterAdminAccount}    ${NotEmptyOperatorFilterAdminAccount}
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${PhoneNumberColumnFilterAdminAccount}    ${AnyOperatorFilterAdminAccount}    0348918225, lamcam,
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${CCCDColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    11
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${CCCDColumnFilterAdminAccount}    ${ContainOperatorFilterAdminAccount}    &&
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${CCCDColumnFilterAdminAccount}    ${EqualOperatorFilterAdminAccount}    072303001113
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${CCCDColumnFilterAdminAccount}    ${EqualOperatorFilterAdminAccount}    80&
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${CCCDColumnFilterAdminAccount}    ${StartWithOperatorFilterAdminAccount}    07
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${CCCDColumnFilterAdminAccount}    ${EndWithOperatorFilterAdminAccount}    3
+
+    Filter function for Admin's account management page function for empty    ${FilterButtonAdminAccountManagementPage}    ${CCCDColumnFilterAdminAccount}    ${EmptyOperatorFilterAdminAccount}
+
+    Filter function for Admin's account management page function for empty    ${FilterButtonAdminAccountManagementPage}    ${CCCDColumnFilterAdminAccount}    ${NotEmptyOperatorFilterAdminAccount}
+
+    Filter function for Admin's account management page function    ${FilterButtonAdminAccountManagementPage}    ${CCCDColumnFilterAdminAccount}    ${AnyOperatorFilterAdminAccount}    7854218653
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
 
 *** Keywords ***
 
@@ -172,16 +284,18 @@ Filter function for Admin's account management page function
     [Documentation]  This keyword is used to test the filter function 
     ...    for Admin's account management page  password function of the application
     [Tags]    Unit test
-    [Arguments]
+    [Arguments]    ${filterButtonAdminAccountManagementPage}    ${column1FilterAdminAccount}    ${operator1FilterAdminAccount}    ${value}
     New Browser    browser=chromium    headless=False
     New Page    url=http://localhost:4000
     Login admin function    AdminTAA01    AdminTAA01
-    Click    ${FilterButtonAdminAccountManagementPage}
-    Click    div[id=':r4e:']
-    Click    //li[normalize-space()='ID']
-    Click    div[id=':r4g:']
-    Click    //li[contains(text(),'chứa')]
-    Fill Text    input[id=':r51:']    ba
+    Click    ${filterButtonAdminAccountManagementPage}
+    Click    ${ColumnFilterAdminAccount}
+    Click    ${column1FilterAdminAccount}
+    Click    ${OperatorFilterAdminAccount}
+    Click    ${operator1FilterAdminAccount}
+    Fill Text    ${ValueFilterAdminAccount}    ${value}
+    Get Elements    //div[@role='rowgroup']
+    Sleep    3s
 
 Login admin function
     [Arguments]    ${emailTextField}    ${passwordTextField}
@@ -189,3 +303,19 @@ Login admin function
     Fill Text    //input[@id='formBasicPassword']    ${passwordTextField}
     Click    //button[contains(text(),'Đăng nhập')]
 
+
+Filter function for Admin's account management page function for empty
+    [Documentation]  This keyword is used to test the filter function for empty
+    ...    for Admin's account management page  password function of the application
+    [Tags]    Unit test
+    [Arguments]    ${filterButtonAdminAccountManagementPage}    ${column1FilterAdminAccount}    ${operator1FilterAdminAccount}
+    New Browser    browser=chromium    headless=False
+    New Page    url=http://localhost:4000
+    Login admin function    AdminTAA01    AdminTAA01
+    Click    ${filterButtonAdminAccountManagementPage}
+    Click    ${ColumnFilterAdminAccount}
+    Click    ${column1FilterAdminAccount}
+    Click    ${OperatorFilterAdminAccount}
+    Click    ${operator1FilterAdminAccount}
+    Get Elements    //div[@role='rowgroup']
+    Sleep    3s

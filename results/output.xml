@@ -1,542 +1,709 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-11-02T00:30:19.675505" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-11-02T14:42:36.485270" rpa="false" schemaversion="5">
 <suite id="s1" name="Unit Test" source="D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\tests\unit_test.robot">
-<test id="s1-t1" name="Unit test for login function" line="10">
-<kw name="Login function">
+<test id="s1-t1" name="Unit test for filter function for Admin's account management page function" line="59">
+<kw name="Filter function for Admin's account management page function">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-11-02T00:30:20.057210" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\ba62c138-7514-426e-ad14-fe7b1a47f967"}</msg>
-<msg time="2024-11-02T00:30:20.107398" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 60746</msg>
-<msg time="2024-11-02T00:30:20.107845" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '60746']</msg>
-<msg time="2024-11-02T00:30:21.563287" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\ba62c138-7514-426e-ad14-fe7b1a47f967"}</msg>
+<msg time="2024-11-02T14:42:36.791705" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\83f752cc-5d57-41bf-916b-85a14a01c45b"}</msg>
+<msg time="2024-11-02T14:42:36.828144" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 55933</msg>
+<msg time="2024-11-02T14:42:36.829225" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '55933']</msg>
+<msg time="2024-11-02T14:42:38.356659" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\83f752cc-5d57-41bf-916b-85a14a01c45b"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-02T00:30:20.055318" elapsed="1.508852"/>
+<status status="PASS" start="2024-11-02T14:42:36.790700" elapsed="1.566800"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-11-02T00:30:25.242433" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<msg time="2024-11-02T00:30:25.243058" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>url=http://localhost:3000/log_in</arg>
+<msg time="2024-11-02T14:42:41.029425" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000</msg>
+<msg time="2024-11-02T14:42:41.029664" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=http://localhost:4000</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-02T00:30:21.564685" elapsed="3.679250"/>
+<status status="PASS" start="2024-11-02T14:42:38.358153" elapsed="2.671831"/>
 </kw>
+<kw name="Login admin function">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:25.246233" level="INFO">Fills the text 'xxnhi2712@gmail.com' in the given field.</msg>
-<arg>${EmailFieldLogIn}</arg>
-<arg>${emailUser}</arg>
+<msg time="2024-11-02T14:42:41.032515" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicEmail']</arg>
+<arg>${emailTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:25.244495" elapsed="0.375391"/>
+<status status="PASS" start="2024-11-02T14:42:41.031344" elapsed="0.147148"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:25.621741" level="INFO">Fills the text 'Xuannhi03!' in the given field.</msg>
-<arg>${PasswordFieldLogIn}</arg>
-<arg>${passwordUser}</arg>
+<msg time="2024-11-02T14:42:41.180989" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicPassword']</arg>
+<arg>${passwordTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:25.620379" elapsed="0.049665"/>
+<status status="PASS" start="2024-11-02T14:42:41.179176" elapsed="0.041244"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-02T00:30:25.673710" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
-<arg>${LoginButtonLogIn}</arg>
+<msg time="2024-11-02T14:42:41.222271" level="INFO">Clicks the element '//button[contains(text(),'Đăng nhập')]'.</msg>
+<arg>//button[contains(text(),'Đăng nhập')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:25.670630" elapsed="0.169945"/>
+<status status="PASS" start="2024-11-02T14:42:41.220949" elapsed="0.075552"/>
 </kw>
-<arg>xxnhi2712@gmail.com</arg>
-<arg>Xuannhi03!</arg>
+<arg>AdminTAA01</arg>
+<arg>AdminTAA01</arg>
+<status status="PASS" start="2024-11-02T14:42:41.030530" elapsed="0.266329"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:41.298566" level="INFO">Clicks the element '//button[@id=':ra:']'.</msg>
+<arg>${filterButtonAdminAccountManagementPage}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:41.297198" elapsed="2.796762"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:44.095683" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]'.</msg>
+<arg>${ColumnFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:44.094437" elapsed="0.377914"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:44.474354" level="INFO">Clicks the element '//li[contains(text(),'Tên tài khoản')]'.</msg>
+<arg>${column1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:44.472981" elapsed="0.437760"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:44.911690" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]'.</msg>
+<arg>${OperatorFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:44.911004" elapsed="0.320870"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:45.233766" level="INFO">Clicks the element '//li[contains(text(),'bằng')]'.</msg>
+<arg>${operator1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:45.232493" elapsed="0.425021"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-02T14:42:45.660114" level="INFO">Fills the text 'lamcamhi' in the given field.</msg>
+<arg>${ValueFilterAdminAccount}</arg>
+<arg>${value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:45.658207" elapsed="0.255610"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-11-02T14:42:45.937247" level="INFO">Found locator('//div[@role=\'rowgroup\']').first() Locators successfully.</msg>
+<arg>//div[@role='rowgroup']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:45.914283" elapsed="0.023690"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-02T14:42:48.939591" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-02T14:42:45.938422" elapsed="3.001481"/>
+</kw>
+<arg>${FilterButtonAdminAccountManagementPage}</arg>
+<arg>${NameAccountColumnFilterAdminAccount}</arg>
+<arg>${EqualOperatorFilterAdminAccount}</arg>
+<arg>lamcamhi</arg>
 <tag>Unit test</tag>
-<doc>This keyword is used to test the login function of the application</doc>
-<status status="PASS" start="2024-11-02T00:30:20.053379" elapsed="5.787542"/>
+<doc>This keyword is used to test the filter function
+for Admin's account management page  password function of the application</doc>
+<status status="PASS" start="2024-11-02T14:42:36.789132" elapsed="12.151018"/>
 </kw>
-<kw name="The user should be able to see their &quot;xxnhi2712&quot; username in home page" source_name="The user should be able to see their &quot;${username}&quot; username in home page">
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-02T00:30:28.532053" level="INFO">Text: 'xxnhi2712'</msg>
-<arg>${UsernameHomePage}</arg>
-<arg>==</arg>
-<arg>${username}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:25.842446" elapsed="2.690895"/>
-</kw>
-<status status="PASS" start="2024-11-02T00:30:25.841518" elapsed="2.692552"/>
-</kw>
-<kw name="Login function">
+<kw name="Filter function for Admin's account management page function">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-11-02T00:30:28.538105" level="INFO">Switching browser to browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:28.544443" level="INFO">Successfully changed active browser: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:28.544942" level="INFO">Reusing existing browser with id: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
+<msg time="2024-11-02T14:42:48.942811" level="INFO">Switching browser to browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:42:48.949212" level="INFO">Successfully changed active browser: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:42:48.949626" level="INFO">Reusing existing browser with id: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-02T00:30:28.536506" elapsed="0.008732"/>
+<status status="PASS" start="2024-11-02T14:42:48.941756" elapsed="0.008090"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-11-02T00:30:32.158647" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<arg>url=http://localhost:3000/log_in</arg>
+<msg time="2024-11-02T14:42:50.626199" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000</msg>
+<arg>url=http://localhost:4000</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-02T00:30:28.545609" elapsed="3.613907"/>
+<status status="PASS" start="2024-11-02T14:42:48.950183" elapsed="1.676498"/>
 </kw>
+<kw name="Login admin function">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:32.161731" level="INFO">Fills the text 'xxnhi2712@gmail.com' in the given field.</msg>
-<arg>${EmailFieldLogIn}</arg>
-<arg>${emailUser}</arg>
+<msg time="2024-11-02T14:42:50.629001" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicEmail']</arg>
+<arg>${emailTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:32.160048" elapsed="0.453655"/>
+<status status="PASS" start="2024-11-02T14:42:50.627931" elapsed="0.147367"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:32.617600" level="INFO">Fills the text 'abcd' in the given field.</msg>
-<arg>${PasswordFieldLogIn}</arg>
-<arg>${passwordUser}</arg>
+<msg time="2024-11-02T14:42:50.777338" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicPassword']</arg>
+<arg>${passwordTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:32.614270" elapsed="0.055305"/>
+<status status="PASS" start="2024-11-02T14:42:50.775968" elapsed="0.040603"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-02T00:30:32.671668" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
-<arg>${LoginButtonLogIn}</arg>
+<msg time="2024-11-02T14:42:50.818236" level="INFO">Clicks the element '//button[contains(text(),'Đăng nhập')]'.</msg>
+<arg>//button[contains(text(),'Đăng nhập')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:32.670110" elapsed="0.074619"/>
+<status status="PASS" start="2024-11-02T14:42:50.816953" elapsed="0.056492"/>
 </kw>
-<arg>xxnhi2712@gmail.com</arg>
-<arg>abcd</arg>
+<arg>AdminTAA01</arg>
+<arg>AdminTAA01</arg>
+<status status="PASS" start="2024-11-02T14:42:50.626986" elapsed="0.246694"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:50.874824" level="INFO">Clicks the element '//button[@id=':ra:']'.</msg>
+<arg>${filterButtonAdminAccountManagementPage}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:50.873865" elapsed="2.460280"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:53.335624" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]'.</msg>
+<arg>${ColumnFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:53.334457" elapsed="0.116532"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:53.452824" level="INFO">Clicks the element '//li[contains(text(),'Tên tài khoản')]'.</msg>
+<arg>${column1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:53.451391" elapsed="0.414134"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:53.866662" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]'.</msg>
+<arg>${OperatorFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:53.865796" elapsed="0.308767"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:54.175588" level="INFO">Clicks the element '//li[contains(text(),'bắt đầu với')]'.</msg>
+<arg>${operator1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:54.174813" elapsed="0.432843"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-02T14:42:54.608913" level="INFO">Fills the text 'n' in the given field.</msg>
+<arg>${ValueFilterAdminAccount}</arg>
+<arg>${value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:54.608080" elapsed="0.201571"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-11-02T14:42:54.824536" level="INFO">Found locator('//div[@role=\'rowgroup\']').first() Locators successfully.</msg>
+<arg>//div[@role='rowgroup']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:54.810204" elapsed="0.014680"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-02T14:42:57.825973" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-02T14:42:54.825115" elapsed="3.001105"/>
+</kw>
+<arg>${FilterButtonAdminAccountManagementPage}</arg>
+<arg>${NameAccountColumnFilterAdminAccount}</arg>
+<arg>${StartWithOperatorFilterAdminAccount}</arg>
+<arg>n</arg>
 <tag>Unit test</tag>
-<doc>This keyword is used to test the login function of the application</doc>
-<status status="PASS" start="2024-11-02T00:30:28.535379" elapsed="4.209785"/>
+<doc>This keyword is used to test the filter function
+for Admin's account management page  password function of the application</doc>
+<status status="PASS" start="2024-11-02T14:42:48.940631" elapsed="8.885748"/>
 </kw>
-<kw name="The user should be able to see error message">
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-02T00:30:33.027340" level="INFO">Text: 'Mật khẩu không khớp!'</msg>
-<arg>${textLocator}</arg>
-<arg>==</arg>
-<arg>${text}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:32.747056" elapsed="0.281008"/>
-</kw>
-<arg>Mật khẩu không khớp!</arg>
-<arg>//small[@class='text-muted form-text']</arg>
-<status status="PASS" start="2024-11-02T00:30:32.745857" elapsed="0.282650"/>
-</kw>
-<kw name="Login function">
+<kw name="Filter function for Admin's account management page function">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-11-02T00:30:33.031443" level="INFO">Switching browser to browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:33.037997" level="INFO">Successfully changed active browser: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:33.038635" level="INFO">Reusing existing browser with id: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
+<msg time="2024-11-02T14:42:57.828054" level="INFO">Switching browser to browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:42:57.830810" level="INFO">Successfully changed active browser: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:42:57.831079" level="INFO">Reusing existing browser with id: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-02T00:30:33.030138" elapsed="0.008817"/>
+<status status="PASS" start="2024-11-02T14:42:57.827455" elapsed="0.003982"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-11-02T00:30:36.642295" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<arg>url=http://localhost:3000/log_in</arg>
+<msg time="2024-11-02T14:42:59.224622" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000</msg>
+<arg>url=http://localhost:4000</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-02T00:30:33.039254" elapsed="3.603806"/>
+<status status="PASS" start="2024-11-02T14:42:57.831753" elapsed="1.393624"/>
 </kw>
+<kw name="Login admin function">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:36.645856" level="INFO">Fills the text 'abcd@gmail.com' in the given field.</msg>
-<arg>${EmailFieldLogIn}</arg>
-<arg>${emailUser}</arg>
+<msg time="2024-11-02T14:42:59.228110" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicEmail']</arg>
+<arg>${emailTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:36.643943" elapsed="0.398503"/>
+<status status="PASS" start="2024-11-02T14:42:59.226938" elapsed="0.135605"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:37.043977" level="INFO">Fills the text 'Xuannhi03!' in the given field.</msg>
-<arg>${PasswordFieldLogIn}</arg>
-<arg>${passwordUser}</arg>
+<msg time="2024-11-02T14:42:59.364958" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicPassword']</arg>
+<arg>${passwordTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:37.042901" elapsed="0.042362"/>
+<status status="PASS" start="2024-11-02T14:42:59.363571" elapsed="0.035069"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-02T00:30:37.087396" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
-<arg>${LoginButtonLogIn}</arg>
+<msg time="2024-11-02T14:42:59.400210" level="INFO">Clicks the element '//button[contains(text(),'Đăng nhập')]'.</msg>
+<arg>//button[contains(text(),'Đăng nhập')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:37.085902" elapsed="0.071484"/>
+<status status="PASS" start="2024-11-02T14:42:59.399017" elapsed="0.057498"/>
 </kw>
-<arg>abcd@gmail.com</arg>
-<arg>Xuannhi03!</arg>
+<arg>AdminTAA01</arg>
+<arg>AdminTAA01</arg>
+<status status="PASS" start="2024-11-02T14:42:59.225879" elapsed="0.231000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:42:59.458366" level="INFO">Clicks the element '//button[@id=':ra:']'.</msg>
+<arg>${filterButtonAdminAccountManagementPage}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:42:59.457066" elapsed="2.364211"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:01.823622" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]'.</msg>
+<arg>${ColumnFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:01.822362" elapsed="0.121684"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:01.945473" level="INFO">Clicks the element '//li[contains(text(),'Tên tài khoản')]'.</msg>
+<arg>${column1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:01.944493" elapsed="0.384940"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:02.330724" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]'.</msg>
+<arg>${OperatorFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:02.329799" elapsed="0.318855"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:02.650755" level="INFO">Clicks the element '//li[contains(text(),'kết thúc với')]'.</msg>
+<arg>${operator1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:02.649165" elapsed="0.353632"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-02T14:43:03.004081" level="INFO">Fills the text 'n' in the given field.</msg>
+<arg>${ValueFilterAdminAccount}</arg>
+<arg>${value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:03.003187" elapsed="0.216414"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-11-02T14:43:03.234878" level="INFO">Found locator('//div[@role=\'rowgroup\']').first() Locators successfully.</msg>
+<arg>//div[@role='rowgroup']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:03.219907" elapsed="0.015439"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-02T14:43:06.236326" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-02T14:43:03.235624" elapsed="3.001046"/>
+</kw>
+<arg>${FilterButtonAdminAccountManagementPage}</arg>
+<arg>${NameAccountColumnFilterAdminAccount}</arg>
+<arg>${EndWithOperatorFilterAdminAccount}</arg>
+<arg>n</arg>
 <tag>Unit test</tag>
-<doc>This keyword is used to test the login function of the application</doc>
-<status status="PASS" start="2024-11-02T00:30:33.029222" elapsed="4.128452"/>
+<doc>This keyword is used to test the filter function
+for Admin's account management page  password function of the application</doc>
+<status status="PASS" start="2024-11-02T14:42:57.826760" elapsed="8.410076"/>
 </kw>
-<kw name="The user should be able to see error message">
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-02T00:30:37.253275" level="INFO">Text: 'Email không tồn tại!'</msg>
-<arg>${textLocator}</arg>
-<arg>==</arg>
-<arg>${text}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:37.159203" elapsed="0.094535"/>
-</kw>
-<arg>Email không tồn tại!</arg>
-<arg>//small[@class='text-muted form-text']</arg>
-<status status="PASS" start="2024-11-02T00:30:37.158196" elapsed="0.095866"/>
-</kw>
-<kw name="Login function">
+<kw name="Filter function for Admin's account management page function for empty">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-11-02T00:30:37.257068" level="INFO">Switching browser to browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:37.262036" level="INFO">Successfully changed active browser: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:37.262502" level="INFO">Reusing existing browser with id: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
+<msg time="2024-11-02T14:43:06.238646" level="INFO">Switching browser to browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:43:06.241852" level="INFO">Successfully changed active browser: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:43:06.242159" level="INFO">Reusing existing browser with id: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-02T00:30:37.255811" elapsed="0.006962"/>
+<status status="PASS" start="2024-11-02T14:43:06.237994" elapsed="0.004363"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-11-02T00:30:40.210804" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<arg>url=http://localhost:3000/log_in</arg>
+<msg time="2024-11-02T14:43:07.733837" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000</msg>
+<arg>url=http://localhost:4000</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-02T00:30:37.263137" elapsed="2.948727"/>
+<status status="PASS" start="2024-11-02T14:43:06.242564" elapsed="1.492246"/>
 </kw>
+<kw name="Login admin function">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:40.215892" level="INFO">Fills the text 'abcd@gmail.com' in the given field.</msg>
-<arg>${EmailFieldLogIn}</arg>
-<arg>${emailUser}</arg>
+<msg time="2024-11-02T14:43:07.737491" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicEmail']</arg>
+<arg>${emailTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:40.212921" elapsed="0.384454"/>
+<status status="PASS" start="2024-11-02T14:43:07.736237" elapsed="0.130091"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:40.598906" level="INFO">Fills the text 'abcd' in the given field.</msg>
-<arg>${PasswordFieldLogIn}</arg>
-<arg>${passwordUser}</arg>
+<msg time="2024-11-02T14:43:07.868350" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicPassword']</arg>
+<arg>${passwordTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:40.597715" elapsed="0.035788"/>
+<status status="PASS" start="2024-11-02T14:43:07.866843" elapsed="0.031127"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-02T00:30:40.635181" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
-<arg>${LoginButtonLogIn}</arg>
+<msg time="2024-11-02T14:43:07.900574" level="INFO">Clicks the element '//button[contains(text(),'Đăng nhập')]'.</msg>
+<arg>//button[contains(text(),'Đăng nhập')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:40.633899" elapsed="0.064209"/>
+<status status="PASS" start="2024-11-02T14:43:07.898505" elapsed="0.054445"/>
 </kw>
-<arg>abcd@gmail.com</arg>
-<arg>abcd</arg>
+<arg>AdminTAA01</arg>
+<arg>AdminTAA01</arg>
+<status status="PASS" start="2024-11-02T14:43:07.735370" elapsed="0.217798"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:07.954340" level="INFO">Clicks the element '//button[@id=':ra:']'.</msg>
+<arg>${filterButtonAdminAccountManagementPage}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:07.953344" elapsed="2.399845"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:10.354949" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]'.</msg>
+<arg>${ColumnFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:10.353600" elapsed="0.119232"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:10.475420" level="INFO">Clicks the element '//li[contains(text(),'Tên tài khoản')]'.</msg>
+<arg>${column1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:10.474051" elapsed="0.403474"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:10.879114" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]'.</msg>
+<arg>${OperatorFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:10.877963" elapsed="0.324069"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:11.203709" level="INFO">Clicks the element '//li[normalize-space()='trống']'.</msg>
+<arg>${operator1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:11.202572" elapsed="0.597582"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-11-02T14:43:11.880773" level="INFO">Found locator('//div[@role=\'rowgroup\']').first() Locators successfully.</msg>
+<arg>//div[@role='rowgroup']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:11.800586" elapsed="0.081033"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-02T14:43:14.883934" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-02T14:43:11.882630" elapsed="3.001708"/>
+</kw>
+<arg>${FilterButtonAdminAccountManagementPage}</arg>
+<arg>${NameAccountColumnFilterAdminAccount}</arg>
+<arg>${EmptyOperatorFilterAdminAccount}</arg>
 <tag>Unit test</tag>
-<doc>This keyword is used to test the login function of the application</doc>
-<status status="PASS" start="2024-11-02T00:30:37.254692" elapsed="3.443735"/>
+<doc>This keyword is used to test the filter function for empty
+for Admin's account management page  password function of the application</doc>
+<status status="PASS" start="2024-11-02T14:43:06.237276" elapsed="8.647335"/>
 </kw>
-<kw name="The user should be able to see error message">
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-02T00:30:40.782690" level="INFO">Text: 'Email không tồn tại!'</msg>
-<arg>${textLocator}</arg>
-<arg>==</arg>
-<arg>${text}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:40.699849" elapsed="0.084913"/>
-</kw>
-<arg>Email không tồn tại!</arg>
-<arg>//small[@class='text-muted form-text']</arg>
-<status status="PASS" start="2024-11-02T00:30:40.698960" elapsed="0.086280"/>
-</kw>
-<kw name="Login function">
+<kw name="Filter function for Admin's account management page function for empty">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-11-02T00:30:40.789385" level="INFO">Switching browser to browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:40.794452" level="INFO">Successfully changed active browser: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:40.794915" level="INFO">Reusing existing browser with id: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
+<msg time="2024-11-02T14:43:14.887311" level="INFO">Switching browser to browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:43:14.892118" level="INFO">Successfully changed active browser: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:43:14.892686" level="INFO">Reusing existing browser with id: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-02T00:30:40.788554" elapsed="0.006884"/>
+<status status="PASS" start="2024-11-02T14:43:14.886193" elapsed="0.006779"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-11-02T00:30:44.226526" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<arg>url=http://localhost:3000/log_in</arg>
+<msg time="2024-11-02T14:43:16.340634" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000</msg>
+<arg>url=http://localhost:4000</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-02T00:30:40.795767" elapsed="3.432127"/>
+<status status="PASS" start="2024-11-02T14:43:14.893334" elapsed="1.448018"/>
 </kw>
+<kw name="Login admin function">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:44.229784" level="INFO">Fills the text '' in the given field.</msg>
-<arg>${EmailFieldLogIn}</arg>
-<arg>${emailUser}</arg>
+<msg time="2024-11-02T14:43:16.343350" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicEmail']</arg>
+<arg>${emailTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:44.228319" elapsed="0.389309"/>
+<status status="PASS" start="2024-11-02T14:43:16.342605" elapsed="0.131125"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:44.619792" level="INFO">Fills the text '' in the given field.</msg>
-<arg>${PasswordFieldLogIn}</arg>
-<arg>${passwordUser}</arg>
+<msg time="2024-11-02T14:43:16.476196" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicPassword']</arg>
+<arg>${passwordTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:44.618329" elapsed="0.025233"/>
+<status status="PASS" start="2024-11-02T14:43:16.474367" elapsed="0.041863"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-02T00:30:44.645900" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
-<arg>${LoginButtonLogIn}</arg>
+<msg time="2024-11-02T14:43:16.517954" level="INFO">Clicks the element '//button[contains(text(),'Đăng nhập')]'.</msg>
+<arg>//button[contains(text(),'Đăng nhập')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:44.644434" elapsed="0.046701"/>
+<status status="PASS" start="2024-11-02T14:43:16.516764" elapsed="0.069324"/>
 </kw>
-<arg>${EMPTY}</arg>
-<arg>${EMPTY}</arg>
+<arg>AdminTAA01</arg>
+<arg>AdminTAA01</arg>
+<status status="PASS" start="2024-11-02T14:43:16.341821" elapsed="0.244749"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:16.588405" level="INFO">Clicks the element '//button[@id=':ra:']'.</msg>
+<arg>${filterButtonAdminAccountManagementPage}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:16.586990" elapsed="2.370309"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:18.958921" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]'.</msg>
+<arg>${ColumnFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:18.957757" elapsed="0.140210"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:19.099504" level="INFO">Clicks the element '//li[contains(text(),'Tên tài khoản')]'.</msg>
+<arg>${column1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:19.098410" elapsed="0.393978"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:19.494496" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]'.</msg>
+<arg>${OperatorFilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:19.492944" elapsed="0.323906"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:19.817916" level="INFO">Clicks the element '//li[normalize-space()='không trống']'.</msg>
+<arg>${operator1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:19.817193" elapsed="0.469158"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-11-02T14:43:20.464078" level="INFO">Found locator('//div[@role=\'rowgroup\']').first() Locators successfully.</msg>
+<arg>//div[@role='rowgroup']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:20.286707" elapsed="0.178278"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-02T14:43:23.466254" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-02T14:43:20.465381" elapsed="3.001133"/>
+</kw>
+<arg>${FilterButtonAdminAccountManagementPage}</arg>
+<arg>${NameAccountColumnFilterAdminAccount}</arg>
+<arg>${NotEmptyOperatorFilterAdminAccount}</arg>
 <tag>Unit test</tag>
-<doc>This keyword is used to test the login function of the application</doc>
-<status status="PASS" start="2024-11-02T00:30:40.786243" elapsed="3.905438"/>
+<doc>This keyword is used to test the filter function for empty
+for Admin's account management page  password function of the application</doc>
+<status status="PASS" start="2024-11-02T14:43:14.885155" elapsed="8.581525"/>
 </kw>
-<kw name="Background Color should contain">
-<kw name="Get Element" owner="Browser">
-<msg time="2024-11-02T00:30:44.709925" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-02T00:30:44.711033" level="INFO">${element} = //button[@class='login_btn body-large']</msg>
-<var>${element}</var>
-<arg>//button[@class='login_btn body-large']</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-02T00:30:44.694784" elapsed="0.016823"/>
-</kw>
-<kw name="Get Attribute" owner="Browser">
-<msg time="2024-11-02T00:30:44.754476" level="INFO">Attribute is: 'min-width: 8rem; border-radius: 8px; padding: 0px; background-color: rgba(29, 27, 32, 0.12); font-family: Roboto; font-size: 16px; border: none; display: flex; justify-content: center; align-items: center; white-space: nowrap;'</msg>
-<msg time="2024-11-02T00:30:44.755201" level="INFO">${color} = min-width: 8rem; border-radius: 8px; padding: 0px; background-color: rgba(29, 27, 32, 0.12); font-family: Roboto; font-size: 16px; border: none; display: flex; justify-content: center; align-items: ce...</msg>
-<var>${color}</var>
-<arg>${element}</arg>
-<arg>style</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:44.712120" elapsed="0.044059"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${color}</arg>
-<arg>${EXPECTED_COLOR}</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2024-11-02T00:30:44.756722" elapsed="0.001279"/>
-</kw>
-<arg>//button[@class='login_btn body-large']</arg>
-<arg>background-color: rgba(29, 27, 32, 0.12)</arg>
-<status status="PASS" start="2024-11-02T00:30:44.693339" elapsed="0.065063"/>
-</kw>
-<kw name="Login function">
+<kw name="Filter function for Admin's account management page function">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-11-02T00:30:44.763533" level="INFO">Switching browser to browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:44.770576" level="INFO">Successfully changed active browser: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:44.771288" level="INFO">Reusing existing browser with id: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
+<msg time="2024-11-02T14:43:23.468830" level="INFO">Switching browser to browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:43:23.472293" level="INFO">Successfully changed active browser: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
+<msg time="2024-11-02T14:43:23.472604" level="INFO">Reusing existing browser with id: browser=71a78afb-bae3-4af5-b233-e54471dfcd15</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-02T00:30:44.762367" elapsed="0.009350"/>
+<status status="PASS" start="2024-11-02T14:43:23.468065" elapsed="0.004788"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-11-02T00:30:47.734445" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<arg>url=http://localhost:3000/log_in</arg>
+<msg time="2024-11-02T14:43:24.997380" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000</msg>
+<arg>url=http://localhost:4000</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-02T00:30:44.772120" elapsed="2.962682"/>
+<status status="PASS" start="2024-11-02T14:43:23.473171" elapsed="1.525212"/>
 </kw>
+<kw name="Login admin function">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:47.736080" level="INFO">Fills the text '' in the given field.</msg>
-<arg>${EmailFieldLogIn}</arg>
-<arg>${emailUser}</arg>
+<msg time="2024-11-02T14:43:25.001215" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicEmail']</arg>
+<arg>${emailTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:47.735062" elapsed="0.397655"/>
+<status status="PASS" start="2024-11-02T14:43:25.000019" elapsed="0.111380"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-02T00:30:48.134768" level="INFO">Fills the text 'Xuannhi03!' in the given field.</msg>
-<arg>${PasswordFieldLogIn}</arg>
-<arg>${passwordUser}</arg>
+<msg time="2024-11-02T14:43:25.112818" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicPassword']</arg>
+<arg>${passwordTextField}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:48.133192" elapsed="0.040809"/>
+<status status="PASS" start="2024-11-02T14:43:25.111844" elapsed="0.027154"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-02T00:30:48.175720" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
-<arg>${LoginButtonLogIn}</arg>
+<msg time="2024-11-02T14:43:25.140159" level="INFO">Clicks the element '//button[contains(text(),'Đăng nhập')]'.</msg>
+<arg>//button[contains(text(),'Đăng nhập')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:48.174487" elapsed="0.050858"/>
+<status status="PASS" start="2024-11-02T14:43:25.139434" elapsed="0.051981"/>
 </kw>
-<arg>${EMPTY}</arg>
-<arg>Xuannhi03!</arg>
-<tag>Unit test</tag>
-<doc>This keyword is used to test the login function of the application</doc>
-<status status="PASS" start="2024-11-02T00:30:44.759910" elapsed="3.465873"/>
+<arg>AdminTAA01</arg>
+<arg>AdminTAA01</arg>
+<status status="PASS" start="2024-11-02T14:43:24.999008" elapsed="0.192729"/>
 </kw>
-<kw name="Show/hide password successfully when click">
 <kw name="Click" owner="Browser">
-<msg time="2024-11-02T00:30:48.227705" level="INFO">Clicks the element '//button[@class='show-pass']//*[name()='svg']'.</msg>
-<arg>${HideEyeIcon}</arg>
+<msg time="2024-11-02T14:43:25.193693" level="INFO">Clicks the element '//button[@id=':ra:']'.</msg>
+<arg>${filterButtonAdminAccountManagementPage}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:48.227075" elapsed="0.052825"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-02T00:30:48.318172" level="INFO">Text: 'Xuannhi03!'</msg>
-<arg>${PasswordFieldLogIn}</arg>
-<arg>==</arg>
-<arg>${passwordText}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:48.280226" elapsed="0.038374"/>
-</kw>
-<arg>Xuannhi03!</arg>
-<status status="PASS" start="2024-11-02T00:30:48.226341" elapsed="0.092548"/>
-</kw>
-<kw name="Go to forgot password popup when click on &quot;Bạn quên mật khẩu?&quot;">
-<kw name="New Browser" owner="Browser">
-<msg time="2024-11-02T00:30:48.321130" level="INFO">Switching browser to browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:48.325410" level="INFO">Successfully changed active browser: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:48.325747" level="INFO">Reusing existing browser with id: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<arg>browser=chromium</arg>
-<arg>headless=False</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-02T00:30:48.320182" elapsed="0.005840"/>
-</kw>
-<kw name="New Page" owner="Browser">
-<msg time="2024-11-02T00:30:51.515180" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<arg>url=http://localhost:3000/log_in</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-02T00:30:48.326264" elapsed="3.189517"/>
+<status status="PASS" start="2024-11-02T14:43:25.192020" elapsed="2.426514"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-02T00:30:51.517625" level="INFO">Clicks the element '//p[@class='forgotPass body-large']'.</msg>
-<arg>${ForgotPasswordText}</arg>
+<msg time="2024-11-02T14:43:27.621122" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]'.</msg>
+<arg>${ColumnFilterAdminAccount}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:51.516485" elapsed="0.462237"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-02T00:30:51.992171" level="INFO">Waited for Element with selector //div[@class='modal-content'] at state visible</msg>
-<arg>//div[@class='modal-content']</arg>
-<arg>visible</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-02T00:30:51.979174" elapsed="0.013808"/>
-</kw>
-<status status="PASS" start="2024-11-02T00:30:48.319324" elapsed="3.674035"/>
-</kw>
-<kw name="Go to register page when click on &quot;Đăng ký&quot; button">
-<kw name="New Browser" owner="Browser">
-<msg time="2024-11-02T00:30:51.996534" level="INFO">Switching browser to browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:52.002464" level="INFO">Successfully changed active browser: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<msg time="2024-11-02T00:30:52.003233" level="INFO">Reusing existing browser with id: browser=0e138f81-644b-4cc8-948b-bceaa1802a2f</msg>
-<arg>browser=chromium</arg>
-<arg>headless=False</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-02T00:30:51.995250" elapsed="0.008692"/>
-</kw>
-<kw name="New Page" owner="Browser">
-<msg time="2024-11-02T00:30:55.204116" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<arg>url=http://localhost:3000/log_in</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-02T00:30:52.004784" elapsed="3.200454"/>
+<status status="PASS" start="2024-11-02T14:43:27.619082" elapsed="0.133522"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-02T00:30:55.207976" level="INFO">Clicks the element '//button[@class='body-large register_btn']'.</msg>
-<arg>${SignupButtonInLoginpage}</arg>
+<msg time="2024-11-02T14:43:27.754674" level="INFO">Clicks the element '//li[contains(text(),'Tên tài khoản')]'.</msg>
+<arg>${column1FilterAdminAccount}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-02T00:30:55.206297" elapsed="0.429185"/>
+<status status="PASS" start="2024-11-02T14:43:27.753310" elapsed="0.380839"/>
 </kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-02T00:30:55.645714" level="INFO">Waited for Element with selector //div[@class='register_form col-8 col'] at state visible</msg>
-<arg>//div[@class='register_form col-8 col']</arg>
-<arg>visible</arg>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:28.135948" level="INFO">Clicks the element '//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]'.</msg>
+<arg>${OperatorFilterAdminAccount}</arg>
 <tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-02T00:30:55.636009" elapsed="0.010105"/>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:28.134748" elapsed="0.278188"/>
 </kw>
-<status status="PASS" start="2024-11-02T00:30:51.994263" elapsed="3.652066"/>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-02T14:43:28.414050" level="INFO">Clicks the element '//li[contains(text(),'bất kỳ trong số')]'.</msg>
+<arg>${operator1FilterAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-02T14:43:28.413243" elapsed="0.486372"/>
 </kw>
-<doc>Include:
-Verify the user can login successfully with valid email and password.
-Verify the user login unsuccessfully with valid email but invalid password.
-Verify the user login unsuccessfully with invalid Email and valid password.
-Verify the user log in unsuccessfully with invalid Email and Password.
-Verify the "Đăng nhập" button is not enabled when user login with leaving 2 input blank
-Verify re-login by remember account successfull when user login with valid email and password (ignore)
-Verify show/hide password successfully when click
-Verify go to forgot password popup when click on "Bạn quên mật khẩu?"
-Verify go to register page when click on "Đăng ký" button</doc>
-<status status="PASS" start="2024-11-02T00:30:20.048543" elapsed="35.598143"/>
-</test>
-<doc>This Feature verifies the unit test for lab3 of SE113</doc>
-<status status="PASS" start="2024-11-02T00:30:19.685530" elapsed="36.263733"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Unit Test">Unit Test</stat>
-</suite>
-</statistics>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-02T14:43:28.901392" level="INFO">Fills the text 'lamcam, 0348918225' in the given field.</msg>
+<msg time="2024-11-02T14:43:39.103090" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-02T14:43:39.103765" level="INFO">See also file:///D:/Nam4/%5BSE113%5D%20Ki%E1%BB%83m%20ch%E1%BB%A9ng%20ph%E1%BA%A7n%20m%E1%BB%81m-20240914T045954Z-001/TAA%20Automation%20Robot%20Project/TAA-Automation-Robot-Project/results/playwright-log.txt for additional details.</msg>
+<msg time="2024-11-02T14:43:39.104511" level="FAIL">TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/input[1]')
+</msg>
 <errors>
+<msg time="2024-11-02T14:44:28.248648" level="ERROR">Execution stopped by user.</msg>
 </errors>
 </robot>

@@ -92,18 +92,22 @@ ${GetCodeButton}    //button[contains(text(),'Lấy mã')]
 
 # Admin's account management page
 ${FilterButtonAdminAccountManagementPage}    //button[@id=':ra:']
-${ColumnFilterAdminAccount}    //div[@id=':r5a:']
+${ColumnFilterAdminAccount}    //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]
 ${IDColumnFilterAdminAccount}    //li[normalize-space()='ID']
 ${NameAccountColumnFilterAdminAccount}    //li[contains(text(),'Tên tài khoản')]
 ${PhoneNumberColumnFilterAdminAccount}    //li[normalize-space()='Số điện thoại']
 ${EmailColumnFilterAdminAccount}    //li[normalize-space()='Email']
 ${CCCDColumnFilterAdminAccount}    //li[normalize-space()='CCCD']
-${OperatorFilterAdminAccount}    //div[@id=':r5c:']
+${OperatorFilterAdminAccount}    //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]
 ${ContainOperatorFilterAdminAccount}    //li[contains(text(),'chứa')]
 ${EqualOperatorFilterAdminAccount}    //li[contains(text(),'bằng')]
 ${StartWithOperatorFilterAdminAccount}    //li[contains(text(),'bắt đầu với')]
-${EndWithOperatorFilterAdminAccount}    //li[contains(text(),'kết thức với')]
-${EmptyOperatorFilterAdminAccount}    //li[contains(text(),'trống')]
+${EndWithOperatorFilterAdminAccount}    //li[contains(text(),'kết thúc với')]
+${EmptyOperatorFilterAdminAccount}    //li[normalize-space()='trống']
+${NotEmptyOperatorFilterAdminAccount}    //li[normalize-space()='không trống']
+${AnyOperatorFilterAdminAccount}    //li[contains(text(),'bất kỳ trong số')]
 
+
+${ValueFilterAdminAccount}    //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/input[1]
 
 
