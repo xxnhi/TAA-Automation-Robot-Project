@@ -1,94 +1,370 @@
-{"level":30,"time":"2024-11-02T13:44:07.040Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Listening on 62960"}
-(node:25280) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-11-02T18:56:46.012Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Listening on 61544"}
+(node:25652) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-================= Original suppressed error =================
-Error: Browser has been closed.
-    at PlaywrightState.getActiveBrowser (C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:10982:15)
-    at PlaywrightServer.getActiveBrowser (C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:11598:59)
-    at PlaywrightServer.setTimeout (C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:11837:57)
-    at Object.onReceiveHalfClose (C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
-    at BaseServerInterceptingCall.handleEndEvent (C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
-    at ServerHttp2Stream.<anonymous> (C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
-    at ServerHttp2Stream.emit (node:events:531:35)
-    at endReadableNT (node:internal/streams/readable:1696:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
-=============================================================
-{"level":30,"time":"2024-11-02T13:44:07.591Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:07.591Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:07.600Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:07.600Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:07.609Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2024-11-02T13:44:07.891Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
-{"level":30,"time":"2024-11-02T13:44:07.892Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method newBrowser"}
-{"level":30,"time":"2024-11-02T13:44:07.892Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2024-11-02T13:44:07.900Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
-{"level":30,"time":"2024-11-02T13:44:07.901Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-11-02T13:44:07.921Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changed active context"}
-{"level":30,"time":"2024-11-02T13:44:08.208Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
-{"level":30,"time":"2024-11-02T13:44:08.208Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
-{"level":30,"time":"2024-11-02T13:44:11.067Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
-{"level":30,"time":"2024-11-02T13:44:11.077Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:11.078Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
-{"level":30,"time":"2024-11-02T13:44:11.361Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:11.366Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:11.367Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
-{"level":30,"time":"2024-11-02T13:44:11.389Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:11.397Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
-{"level":30,"time":"2024-11-02T13:44:11.397Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[@class='login_btn body-large'] in page."}
-{"level":30,"time":"2024-11-02T13:44:11.493Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
-{"level":30,"time":"2024-11-02T13:44:11.503Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
-{"level":30,"time":"2024-11-02T13:44:11.503Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[@id='drop_down_btn'] in page."}
-{"level":30,"time":"2024-11-02T13:44:13.647Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
-{"level":30,"time":"2024-11-02T13:44:13.654Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
-{"level":30,"time":"2024-11-02T13:44:13.654Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[normalize-space()='Thông tin cá nhân'] in page."}
-{"level":30,"time":"2024-11-02T13:44:13.939Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
-{"level":30,"time":"2024-11-02T13:44:13.953Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
-{"level":30,"time":"2024-11-02T13:44:13.953Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //span[contains(text(),'Đổi mật khẩu')] in page."}
-{"level":30,"time":"2024-11-02T13:44:14.618Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
-{"level":30,"time":"2024-11-02T13:44:14.624Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:14.625Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='old_password'] in page."}
-{"level":30,"time":"2024-11-02T13:44:14.658Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:14.665Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:14.665Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='new_password'] in page."}
-{"level":30,"time":"2024-11-02T13:44:14.691Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:14.697Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:14.697Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='confirm_password'] in page."}
-{"level":30,"time":"2024-11-02T13:44:14.712Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
-{"level":30,"time":"2024-11-02T13:44:14.718Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
-{"level":30,"time":"2024-11-02T13:44:14.718Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[@class='save-btn body-large'] in page."}
-{"level":30,"time":"2024-11-02T13:44:14.762Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
-{"level":30,"time":"2024-11-02T13:44:14.775Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method getElement"}
-{"level":30,"time":"2024-11-02T13:44:14.776Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[@class='save-btn body-large'] in page."}
-{"level":30,"time":"2024-11-02T13:44:14.786Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method getElement"}
-{"level":30,"time":"2024-11-02T13:44:14.798Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method getElementAttribute"}
-{"level":30,"time":"2024-11-02T13:44:14.798Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[@class='save-btn body-large'] in page."}
-{"level":30,"time":"2024-11-02T13:44:14.821Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Retrieved attribute for element //button[@class='save-btn body-large'] containing min-width: 8rem; border-radius: 8px; padding: 0px; background-color: rgba(29, 27, 32, 0.12); font-family: Roboto; font-size: 14px; border: none; display: flex; justify-content: center; align-items: center; white-space: nowrap;"}
-{"level":30,"time":"2024-11-02T13:44:14.821Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method getElementAttribute"}
-{"level":30,"time":"2024-11-02T13:44:14.833Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:14.837Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:14.840Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:14.842Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:14.845Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changed active context"}
-{"level":30,"time":"2024-11-02T13:44:14.845Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changing current active page: page=65cc9989-54bf-4f2c-827c-3646e19d459b"}
-{"level":30,"time":"2024-11-02T13:44:14.845Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
-{"level":30,"time":"2024-11-02T13:44:14.850Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:14.853Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:14.857Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2024-11-02T13:44:14.857Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2024-11-02T13:44:14.860Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2024-11-02T13:44:14.861Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2024-11-02T13:44:14.865Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changing current active page: page=65cc9989-54bf-4f2c-827c-3646e19d459b"}
-{"level":30,"time":"2024-11-02T13:44:14.865Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
-{"level":30,"time":"2024-11-02T13:44:14.870Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:14.873Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:14.877Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changed active context"}
-{"level":30,"time":"2024-11-02T13:44:14.877Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changing current active page: page=65cc9989-54bf-4f2c-827c-3646e19d459b"}
-{"level":30,"time":"2024-11-02T13:44:14.877Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
-{"level":30,"time":"2024-11-02T13:44:14.881Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method closeContext"}
-{"level":30,"time":"2024-11-02T13:44:14.894Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Removed page=30c49645-c123-404c-935c-6e8866decd80 from context=b35152db-ea59-4e68-99f0-65edf6e31bae page stack"}
-{"level":30,"time":"2024-11-02T13:44:14.948Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method closeContext"}
-{"level":30,"time":"2024-11-02T13:44:14.968Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:14.969Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-11-02T13:44:15.111Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-11-02T13:44:15.450Z","pid":25280,"hostname":"NoahBui-DellG3","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-11-02T18:56:46.448Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-11-02T18:56:47.500Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-11-02T18:56:47.501Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-11-02T18:56:47.501Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-11-02T18:56:47.510Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-02T18:56:47.510Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-02T18:56:47.530Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active context"}
+{"level":30,"time":"2024-11-02T18:56:47.802Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-02T18:56:47.802Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:56:50.363Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-02T18:56:50.368Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:56:50.368Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
+{"level":30,"time":"2024-11-02T18:56:50.488Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:56:50.501Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:56:50.501Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
+{"level":30,"time":"2024-11-02T18:56:50.527Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:56:50.534Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:56:50.534Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[contains(text(),'Đăng nhập')] in page."}
+{"level":30,"time":"2024-11-02T18:56:50.581Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:56:50.586Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:56:50.586Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[@href='/products'] in page."}
+{"level":30,"time":"2024-11-02T18:56:52.871Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:56:52.879Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:56:52.880Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2] in page."}
+{"level":30,"time":"2024-11-02T18:56:53.138Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:56:53.143Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:56:53.144Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:56:53.433Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:56:53.438Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:56:53.438Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'Tên sản phẩm')] in page."}
+{"level":30,"time":"2024-11-02T18:56:54.064Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:56:54.072Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:56:54.072Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:56:54.563Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:56:54.567Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:56:54.567Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'chứa')] in page."}
+{"level":30,"time":"2024-11-02T18:56:54.849Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:56:54.856Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:56:54.856Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/input[1] in page."}
+{"level":30,"time":"2024-11-02T18:56:54.890Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:56:54.894Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-02T18:56:54.895Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is disabled, return Locator: //div[@role='rowgroup'] in page."}
+{"level":30,"time":"2024-11-02T18:56:54.895Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-02T18:56:54.901Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Found 1 elements."}
+{"level":30,"time":"2024-11-02T18:56:54.901Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-02T18:56:57.942Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:56:57.944Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:56:57.954Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-02T18:56:57.954Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-02T18:56:58.039Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-02T18:56:58.039Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:00.495Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:00.502Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:00.502Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
+{"level":30,"time":"2024-11-02T18:57:00.691Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:00.696Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:00.696Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
+{"level":30,"time":"2024-11-02T18:57:00.714Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:00.719Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:00.719Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[contains(text(),'Đăng nhập')] in page."}
+{"level":30,"time":"2024-11-02T18:57:00.751Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:00.755Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:00.755Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[@href='/products'] in page."}
+{"level":30,"time":"2024-11-02T18:57:02.973Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:02.980Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:02.981Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2] in page."}
+{"level":30,"time":"2024-11-02T18:57:03.660Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:03.668Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:03.668Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:03.773Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:03.780Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:03.781Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'Tên sản phẩm')] in page."}
+{"level":30,"time":"2024-11-02T18:57:04.063Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:04.073Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:04.074Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:04.437Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:04.441Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:04.442Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'chứa')] in page."}
+{"level":30,"time":"2024-11-02T18:57:04.719Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:04.725Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:04.725Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/input[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:04.768Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:04.773Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:04.773Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is disabled, return Locator: //div[@role='rowgroup'] in page."}
+{"level":30,"time":"2024-11-02T18:57:04.773Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-02T18:57:05.027Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Found 1 elements."}
+{"level":30,"time":"2024-11-02T18:57:05.027Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:08.033Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:08.033Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:08.037Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:08.037Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-02T18:57:08.250Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-02T18:57:08.250Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:09.224Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:09.228Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:09.228Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
+{"level":30,"time":"2024-11-02T18:57:09.319Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:09.345Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:09.345Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
+{"level":30,"time":"2024-11-02T18:57:09.362Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:09.366Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:09.367Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[contains(text(),'Đăng nhập')] in page."}
+{"level":30,"time":"2024-11-02T18:57:09.397Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:09.402Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:09.402Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[@href='/products'] in page."}
+{"level":30,"time":"2024-11-02T18:57:11.506Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:11.510Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:11.510Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2] in page."}
+{"level":30,"time":"2024-11-02T18:57:11.799Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:11.802Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:11.803Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:12.242Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:12.245Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:12.245Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'Tên sản phẩm')] in page."}
+{"level":30,"time":"2024-11-02T18:57:12.487Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:12.494Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:12.494Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:12.900Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:12.903Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:12.903Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'bắt đầu với')] in page."}
+{"level":30,"time":"2024-11-02T18:57:13.260Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:13.263Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:13.263Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/input[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:13.292Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:13.296Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:13.296Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is disabled, return Locator: //div[@role='rowgroup'] in page."}
+{"level":30,"time":"2024-11-02T18:57:13.296Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-02T18:57:13.510Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Found 1 elements."}
+{"level":30,"time":"2024-11-02T18:57:13.510Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:16.525Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:16.526Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:16.536Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:16.536Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-02T18:57:16.585Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-02T18:57:16.585Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:17.650Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:17.655Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:17.655Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
+{"level":30,"time":"2024-11-02T18:57:17.744Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:17.753Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:17.753Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
+{"level":30,"time":"2024-11-02T18:57:17.771Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:17.775Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:17.775Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[contains(text(),'Đăng nhập')] in page."}
+{"level":30,"time":"2024-11-02T18:57:17.811Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:17.818Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:17.818Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[@href='/products'] in page."}
+{"level":30,"time":"2024-11-02T18:57:19.931Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:19.935Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:19.936Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2] in page."}
+{"level":30,"time":"2024-11-02T18:57:20.246Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:20.250Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:20.250Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:20.716Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:20.719Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:20.719Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'Tên sản phẩm')] in page."}
+{"level":30,"time":"2024-11-02T18:57:20.984Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:20.989Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:20.989Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:21.385Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:21.391Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:21.391Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'kết thúc với')] in page."}
+{"level":30,"time":"2024-11-02T18:57:21.715Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:21.719Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:21.719Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/input[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:21.750Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:21.755Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:21.755Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is disabled, return Locator: //div[@role='rowgroup'] in page."}
+{"level":30,"time":"2024-11-02T18:57:21.755Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-02T18:57:22.032Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Found 1 elements."}
+{"level":30,"time":"2024-11-02T18:57:22.032Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:25.037Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:25.038Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:25.041Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:25.041Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-02T18:57:25.083Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-02T18:57:25.083Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:26.472Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:26.482Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:26.482Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
+{"level":30,"time":"2024-11-02T18:57:26.589Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:26.597Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:26.597Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
+{"level":30,"time":"2024-11-02T18:57:26.619Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:26.623Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:26.624Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[contains(text(),'Đăng nhập')] in page."}
+{"level":30,"time":"2024-11-02T18:57:26.667Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:26.673Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:26.673Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[@href='/products'] in page."}
+{"level":30,"time":"2024-11-02T18:57:28.823Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:28.828Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:28.828Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2] in page."}
+{"level":30,"time":"2024-11-02T18:57:29.390Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:29.395Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:29.395Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:29.479Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:29.483Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:29.483Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[normalize-space()='Giá'] in page."}
+{"level":30,"time":"2024-11-02T18:57:29.848Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:29.854Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:29.854Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:30.283Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:30.290Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:30.291Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'bằng')] in page."}
+{"level":30,"time":"2024-11-02T18:57:30.610Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:30.613Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:30.613Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/input[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:30.802Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:30.808Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:30.808Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is disabled, return Locator: //div[@role='rowgroup'] in page."}
+{"level":30,"time":"2024-11-02T18:57:30.808Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-02T18:57:30.821Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Found 1 elements."}
+{"level":30,"time":"2024-11-02T18:57:30.821Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:33.828Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:33.828Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:33.831Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:33.831Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-02T18:57:33.876Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-02T18:57:33.876Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:34.926Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:34.930Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:34.930Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
+{"level":30,"time":"2024-11-02T18:57:35.036Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:35.040Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:35.040Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
+{"level":30,"time":"2024-11-02T18:57:35.058Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:35.063Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:35.063Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[contains(text(),'Đăng nhập')] in page."}
+{"level":30,"time":"2024-11-02T18:57:35.102Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:35.106Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:35.106Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[@href='/products'] in page."}
+{"level":30,"time":"2024-11-02T18:57:37.239Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:37.243Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:37.243Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2] in page."}
+{"level":30,"time":"2024-11-02T18:57:37.768Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:37.770Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:37.770Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:37.859Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:37.862Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:37.862Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'Giảm giá(%)')] in page."}
+{"level":30,"time":"2024-11-02T18:57:38.213Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:38.217Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:38.217Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:38.626Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:38.629Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:38.629Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'chứa')] in page."}
+{"level":30,"time":"2024-11-02T18:57:38.880Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:38.886Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:38.886Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/input[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:38.920Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:38.924Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:38.924Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is disabled, return Locator: //div[@role='rowgroup'] in page."}
+{"level":30,"time":"2024-11-02T18:57:38.924Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-02T18:57:38.931Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Found 1 elements."}
+{"level":30,"time":"2024-11-02T18:57:38.931Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:41.940Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:41.940Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:41.945Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:41.945Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-02T18:57:41.990Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-02T18:57:41.990Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:43.073Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:43.077Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:43.077Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
+{"level":30,"time":"2024-11-02T18:57:43.153Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:43.156Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:43.156Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
+{"level":30,"time":"2024-11-02T18:57:43.171Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:43.175Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:43.175Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[contains(text(),'Đăng nhập')] in page."}
+{"level":30,"time":"2024-11-02T18:57:43.213Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:43.218Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:43.218Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[@href='/products'] in page."}
+{"level":30,"time":"2024-11-02T18:57:45.325Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:45.329Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:45.329Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2] in page."}
+{"level":30,"time":"2024-11-02T18:57:45.615Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:45.619Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:45.619Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:46.075Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:46.078Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:46.079Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'Số lượng đã bán')] in page."}
+{"level":30,"time":"2024-11-02T18:57:46.398Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:46.400Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:46.400Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:46.808Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:46.811Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:46.812Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[normalize-space()='không trống'] in page."}
+{"level":30,"time":"2024-11-02T18:57:47.116Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:47.118Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:47.118Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is disabled, return Locator: //div[@role='rowgroup'] in page."}
+{"level":30,"time":"2024-11-02T18:57:47.118Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-02T18:57:47.123Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Found 1 elements."}
+{"level":30,"time":"2024-11-02T18:57:47.123Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:50.128Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:50.129Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:50.133Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:50.133Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-02T18:57:50.173Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-02T18:57:50.173Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:51.217Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-02T18:57:51.224Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:51.225Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicEmail'] in page."}
+{"level":30,"time":"2024-11-02T18:57:51.334Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:51.338Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:51.338Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //input[@id='formBasicPassword'] in page."}
+{"level":30,"time":"2024-11-02T18:57:51.352Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-02T18:57:51.355Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:51.356Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //button[contains(text(),'Đăng nhập')] in page."}
+{"level":30,"time":"2024-11-02T18:57:51.392Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:51.395Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:51.395Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //a[@href='/products'] in page."}
+{"level":30,"time":"2024-11-02T18:57:53.830Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:53.837Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:53.837Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2] in page."}
+{"level":30,"time":"2024-11-02T18:57:54.418Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:54.422Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:54.422Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:54.515Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:54.519Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:54.519Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[contains(text(),'Số lượng còn lại')] in page."}
+{"level":30,"time":"2024-11-02T18:57:54.870Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:54.873Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:54.873Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1] in page."}
+{"level":30,"time":"2024-11-02T18:57:55.283Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:55.288Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-02T18:57:55.289Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is enabled, find Locator with //li[normalize-space()='không trống'] in page."}
+{"level":30,"time":"2024-11-02T18:57:55.620Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method click"}
+{"level":30,"time":"2024-11-02T18:57:55.622Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:55.622Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Strict mode is disabled, return Locator: //div[@role='rowgroup'] in page."}
+{"level":30,"time":"2024-11-02T18:57:55.622Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-02T18:57:55.628Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Found 1 elements."}
+{"level":30,"time":"2024-11-02T18:57:55.628Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-02T18:57:58.646Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:58.664Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:58.666Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:58.672Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:58.674Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active context"}
+{"level":30,"time":"2024-11-02T18:57:58.674Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changing current active page: page=8be34165-03fe-47c7-93b8-2ead8b01a139"}
+{"level":30,"time":"2024-11-02T18:57:58.674Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:58.678Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:58.684Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:58.686Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:58.686Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:58.688Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:58.688Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-11-02T18:57:58.690Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changing current active page: page=8be34165-03fe-47c7-93b8-2ead8b01a139"}
+{"level":30,"time":"2024-11-02T18:57:58.690Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:58.695Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:58.700Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:58.702Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active context"}
+{"level":30,"time":"2024-11-02T18:57:58.702Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changing current active page: page=8be34165-03fe-47c7-93b8-2ead8b01a139"}
+{"level":30,"time":"2024-11-02T18:57:58.702Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Changed active page"}
+{"level":30,"time":"2024-11-02T18:57:58.704Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-11-02T18:57:58.718Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Removed page=6f840356-9500-4f5a-8662-f1d9814c1fce from context=afece26c-a2e0-495b-a41e-de630a9aef0f page stack"}
+{"level":30,"time":"2024-11-02T18:57:58.721Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Removed page=cc9056a8-8a38-4c30-8223-16ec5b460dda from context=afece26c-a2e0-495b-a41e-de630a9aef0f page stack"}
+{"level":30,"time":"2024-11-02T18:57:58.725Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Removed page=342331af-5419-42f9-bfcc-efdb6b9e455a from context=afece26c-a2e0-495b-a41e-de630a9aef0f page stack"}
+{"level":30,"time":"2024-11-02T18:57:58.729Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Removed page=34386bf0-18e2-4a03-8cbc-e40abaa42ea1 from context=afece26c-a2e0-495b-a41e-de630a9aef0f page stack"}
+{"level":30,"time":"2024-11-02T18:57:58.733Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Removed page=78aabe17-d067-4eb2-be25-d6e6694b7cae from context=afece26c-a2e0-495b-a41e-de630a9aef0f page stack"}
+{"level":30,"time":"2024-11-02T18:57:58.737Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Removed page=c1aac2e9-db3e-4b66-9d82-e5a979b157ea from context=afece26c-a2e0-495b-a41e-de630a9aef0f page stack"}
+{"level":30,"time":"2024-11-02T18:57:58.743Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Removed page=ff1b9c38-c90a-4185-baad-6c5f4ec4dc7d from context=afece26c-a2e0-495b-a41e-de630a9aef0f page stack"}
+{"level":30,"time":"2024-11-02T18:57:58.748Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Removed page=4c1958fe-40b7-4bb2-83aa-5b5ef9b614eb from context=afece26c-a2e0-495b-a41e-de630a9aef0f page stack"}
+{"level":30,"time":"2024-11-02T18:57:58.871Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-11-02T18:57:58.886Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:58.886Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-02T18:57:59.034Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-11-02T18:57:59.334Z","pid":25652,"hostname":"NoahBui-DellG3","msg":"End of node method closeAllBrowsers"}

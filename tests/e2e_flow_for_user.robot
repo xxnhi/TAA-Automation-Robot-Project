@@ -38,7 +38,7 @@ Test case E2E for user
     When The unauthenticated user registers an account
     Then The user should be able to login into web with "${emailaccount9}" email and "${passwordaccount9}" password
     And The user should be able to see their "${username}" username in home page
-    When The user searches for the product "${productName}" 
+    When The user searches for the product "${productName}"
     Then The user should be able to see product "${productName}" in product page
     When The user hovers and clicks "Quick View" button on the product "${productName}"
     Then The user should be able to see "${ProductQuickView}" in quick view
@@ -157,7 +157,7 @@ The user should be able to see their "${username}" username in home page
     Get Text    ${UsernameHomePage}    ==    ${username}
     Sleep For 2 Seconds
 
-The user searches for the product "${productName}" 
+The user searches for the product "${productName}"
     Fill Text    ${SearchFieldHomPages}    ${productName}
     Click    ${SearchButton}     
     Sleep For 2 Seconds
