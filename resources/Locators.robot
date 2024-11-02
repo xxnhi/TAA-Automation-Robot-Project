@@ -15,6 +15,7 @@ ${LogOutButtonPopup}    //div[@class='btn__wrapper_logout']//button[@type='submi
 ${SignInButton}    //a[contains(text(),'Đăng nhập')]
 ${SignUpButton}    //a[contains(text(),'Đăng ký')]
 ${FavoritesButton}    //div[@class='header__top']//a[3]
+${PersonalInfoUnderAvatar}    //a[normalize-space()='Thông tin cá nhân']
 # Home Page
 ${TitleSectionHomePage}    //h1[contains(text(),'Sản phẩm nổi bật trong tuần')]
 ${UsernameHomePage}    //div[@class='user_name col']
@@ -110,4 +111,12 @@ ${AnyOperatorFilterAdminAccount}    //li[contains(text(),'bất kỳ trong số'
 
 ${ValueFilterAdminAccount}    //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/input[1]
 
+${AnyValueFilterAdminAccount}    //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/input[1]
+
+# Personal Page
+${ChangePasswordSubMenu}    //span[contains(text(),'Đổi mật khẩu')]
+${CurrentPasswordInput}    //input[@id='old_password']
+${NewPasswordInput}    //input[@id='new_password']
+${ConfirmPasswordInput}    //input[@id='confirm_password']
+${ConfirmButton}    //button[@class='save-btn body-large']
 
