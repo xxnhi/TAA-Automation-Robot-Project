@@ -305,7 +305,43 @@ Unit test for filter function for Admin's product management page function
     Filter function for Admin's product management page function for empty    ${FilterButtonAdminAccountManagementPage}    ${SoldQuantityColumnFilterAdminProduct}    ${NotEmptyOperatorFilterAdminAccount}
     Filter function for Admin's product management page function for empty    ${FilterButtonAdminAccountManagementPage}    ${RemainQuantityColumnFilterAdminProduct}    ${NotEmptyOperatorFilterAdminAccount}
 
+Unit test for order function
+    [Documentation]    Include:
+    ...    -- Ignored the wrong cases from the beginning tested by manual and user has never added a shipping address before --
+    ...    Verify add shipping address in the order page successfully when user fills valid values in all the fields
+    ...    Verify add shipping address in the order page unsuccessfully when user enter only ""Tên người nhận"" field  
+    ...    Verify add shipping address in the order page unsuccessfully when user enter only ""Số điện thoại"" field  
+    ...    Verify add shipping address in the order page unsuccessfully when user enter only ""Địa chỉ tổng quan"" field  
+    ...    Verify add shipping address in the order page unsuccessfully when user enter only "Địa chỉ chi tiết" field
+    ...    Verify add shipping address in the order page unsuccessfully when user enter all flieds but leave "Tên người nhận" field empty
+    ...    Verify add shipping address in the order page unsuccessfully when user enter all flieds but leave ""Số điện thoại"" field empty
+    ...    Verify add shipping address in the order page unsuccessfully when user enter all flieds but leave ""Địa chỉ tổng quan"" field empty
+    ...    Verify add shipping address in the order page successfully when user enter all flieds but leave ""Địa chỉ chi tiết"" field empty
+    ...    Verify add shipping address unsuccessfully when enter invalid value in ""Số điện thoại"" field
+    ...    Verify add shipping address unsuccessfully when enter special character in ""Số điện thoại"" field
+    ...    Verify order successfully when user choose 1st option in "Phương thức vận chuyển" and "Phương thức thanh toán"
+    ...    Verify order successfully when user choose 2nd option in "Phương thức vận chuyển" and 1st option in "Phương thức thanh toán"
+    ...    Verify order successfully when user choose 1st option in "Phương thức vận chuyển" and 2nd option in "Phương thức thanh toán" and "VNPay" option in "Thanh toán trực tuyến"
+    ...    Verify order successfully when user choose 2nd option in "Phương thức vận chuyển" and 2nd option in "Phương thức thanh toán" and "VNPay" option in "Thanh toán trực tuyến"
+    ...    -- Run each data --
+    Order function when add shipping address    Xuân Nhi    0933863327    khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh     KTX khu A   
+    Order function when add shipping address    Xuân Nhi    ${EMPTY}    ${EMPTY}     ${EMPTY}
+    Order function when add shipping address    ${EMPTY}    0933863327    ${EMPTY}     ${EMPTY}
+    Order function when add shipping address    ${EMPTY}    ${EMPTY}    khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh     ${EMPTY}   
+    Order function when add shipping address    ${EMPTY}    ${EMPTY}    ${EMPTY}     KTX khu A
+    Order function when add shipping address    Xuân Nhi    0933863327    ${EMPTY}     KTX khu A   
+    Order function when add shipping address    ${EMPTY}    0933863327    khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh     KTX khu A   
+    Order function when add shipping address    Xuân Nhi    ${EMPTY}    khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh     KTX khu A   
+    Order function when add shipping address    Xuân Nhi    0933863327    ${EMPTY}     KTX khu A   
+    Order function when add shipping address    Bùi Xuân Nhi    0933863329    Thủ Đức, Hồ Chí Minh     ${EMPTY}   
+    Order function when add shipping address    Xuân Nhi    112233    khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh     KTX khu A   
+    Order function when add shipping address    Xuân Nhi    !@#$%^&    khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh     KTX khu A   
+    Order function    ${2HoursShippingMethod}    ${CODPaymentMethod}
+    Order function    ${72HoursShippingMethod}    ${CODPaymentMethod}
+    Order function online    ${2HoursShippingMethod}    ${OnlinePaymentMethod}
+    Order function online    ${72HoursShippingMethod}    ${OnlinePaymentMethod}
 
+    
 *** Keywords ***
 
 Login function
@@ -494,6 +530,11 @@ The user hovers and clicks "Quick View" button on the product "${productName}"
     Hover    ${ProductDivItem}
     Wait For Elements State    ${QuickViewButtonWhenHover}    visible    timeout=10s
     Click    ${QuickViewButtonWhenHover}
+
+The user hovers and clicks "Buy Now" button on the product "${productName}"
+    Hover    ${ProductDivItem}
+    Wait For Elements State    ${QuickViewButtonWhenHover}    visible    timeout=10s
+    Click    ${BuyNowButtonWhenHover}
 
 The user should be able to see "${ProductQuickView}" in quick view
     Wait For Elements State    ${ProductQuickView}    visible    timeout=10s
@@ -688,3 +729,37 @@ Filter function for Admin's product management page function for empty
     Click    ${operator1FilterAdminAccount}
     Get Elements    //div[@role='rowgroup']
     Sleep    3s
+
+Order function when add shipping address
+    [Documentation]  This keyword is used to test the order function when add shipping address
+    [Tags]    Unit test
+    [Arguments]    ${usernameOrder}    ${phoneNumberOrder}    ${generalAddressOrder}    ${detailAddressOrder}
+    Login function    testaccount27@gmail.com    TestAccount27@
+    The user should be able to see their "${username}" username in home page
+    The user searches for the product "${productName}"
+    The user hovers and clicks "Buy Now" button on the product "${productName}"
+    Click    ${AddAddressButton}
+    Fill Text    ${RecipientNameAddAddress}    ${usernameOrder}
+    Fill Text    ${PhoneNumberAddAddress}    ${phoneNumberOrder}
+    Fill Text    ${GeneralAddressAddAddress}    ${generalAddressOrder}
+    Fill Text    ${DetailAddressAddAddress}    ${detailAddressOrder}
+    Click    ${AcceptButtonAddAddress}
+
+Order function
+    [Documentation]  This keyword is used to test the order function when add shipping address, shipping method, payment method
+    [Tags]    Unit test
+    [Arguments]    ${shippingMethod}    ${paymentMethod}
+    Order function when add shipping address    Xuân Nhi    0933863327    khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh     KTX khu A
+    Click    ${shippingMethod}
+    Click    ${paymentMethod}
+    Click    ${OrderButtonOrder}
+
+Order function online
+    [Documentation]  This keyword is used to test the order function when add shipping address, shipping method, payment method online
+    [Tags]    Unit test
+    [Arguments]    ${shippingMethod}    ${paymentMethod}
+    Order function when add shipping address    Xuân Nhi    0933863327    khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh     KTX khu A
+    Click    ${shippingMethod}
+    Click    ${paymentMethod}
+    Click    ${VNPAYMethod}    
+    Click    ${OrderButtonOrder}

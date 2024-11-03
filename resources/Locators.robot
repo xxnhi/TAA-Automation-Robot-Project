@@ -35,7 +35,7 @@ ${AddCartButton}    //button[contains(text(),'Thêm vào giỏ hàng')]
 ${AddCartSuccessfullyText}    //div[@class='modal-noti-add-cart-success-body modal-body']
 ${AddCartButtonQuickView}    //button[@class='button__add__cart body-large']//span[1]
 ${InputAddCartButtonQuickView}    //input[@id='number__product__select']
-
+${BuyNowButtonWhenHover}    (//div[contains(text(),'Mua ngay')])[1]
 # News Page
 ${TitleSectionNewsPage}    //h1[contains(text(),'TUẦN VỪA QUA')]
 
@@ -174,4 +174,9 @@ ${PriceColumnFilterAdminProduct}    //li[normalize-space()='Giá']
 ${DiscountColumnFilterAdminProduct}    //li[contains(text(),'Giảm giá(%)')]
 ${SoldQuantityColumnFilterAdminProduct}    //li[contains(text(),'Số lượng đã bán')]
 ${RemainQuantityColumnFilterAdminProduct}    //li[contains(text(),'Số lượng còn lại')]
-
+${2HoursShippingMethod}    //span[contains(text(),'Giao hàng nhanh trong 2 giờ (Trễ tặng 100k)')]
+${72HoursShippingMethod}    //span[contains(text(),'Giao hàng trong 72 giờ')]
+${CODPaymentMethod}    //span[contains(text(),'Thanh toán tiền khi nhận hàng (COD)')]
+${OnlinePaymentMethod}    //span[contains(text(),'Thanh toán trực tuyến')]
+${OrderButtonOrder}    //div[@class='order__content__bill col-lg-4 col-md-12']//span[1]
+${VNPAYMethod}    (//div[@class='payment-method-select'])[1]
