@@ -1,251 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-11-03T14:58:12.946807" rpa="false" schemaversion="5">
-<suite id="s1" name="Unit Test" source="D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\tests\unit_test.robot">
-<test id="s1-t1" name="Unit test for order function" line="308">
-<kw name="Order function online">
-<kw name="Order function when add shipping address">
-<kw name="Login function">
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-11-10T20:30:58.197855" rpa="false" schemaversion="5">
+<suite id="s1" name="E2E Flow For Admin" source="D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\tests\e2e_flow_for_admin.robot">
+<test id="s1-t1" name="Test case E2E for admin" line="32">
+<kw name="When The admin goes to TAA's admin page">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-11-03T14:58:13.423110" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\2d1ba2b1-96a8-4bd6-bfe2-b78b75d4f230"}</msg>
-<msg time="2024-11-03T14:58:13.466753" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 50216</msg>
-<msg time="2024-11-03T14:58:13.467289" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '50216']</msg>
-<msg time="2024-11-03T14:58:15.480072" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\2d1ba2b1-96a8-4bd6-bfe2-b78b75d4f230"}</msg>
+<msg time="2024-11-10T20:30:58.459898" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\b67e90ef-6678-41a7-8036-210f84022f4e"}</msg>
+<msg time="2024-11-10T20:30:58.489274" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 57427</msg>
+<msg time="2024-11-10T20:30:58.490189" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '57427']</msg>
+<msg time="2024-11-10T20:30:59.985116" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\b67e90ef-6678-41a7-8036-210f84022f4e"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-03T14:58:13.421487" elapsed="2.059345"/>
+<status status="PASS" start="2024-11-10T20:30:58.459013" elapsed="1.527346"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-11-10T20:30:59.988848" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 900,
+    "width": 1500
+  }
+}</msg>
+<msg time="2024-11-10T20:31:00.018268" level="INFO">Successfully created context. </msg>
+<msg time="2024-11-10T20:31:00.018839" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 900, 'width': 1500}}</msg>
+<arg>viewport={"width": 1500, "height":900 }</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-11-10T20:30:59.987033" elapsed="0.032342"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-11-03T14:58:19.529032" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/log_in</msg>
-<msg time="2024-11-03T14:58:19.529781" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>url=http://localhost:3000/log_in</arg>
+<msg time="2024-11-10T20:31:02.577465" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000/</msg>
+<arg>url=${URL_ADMIN}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-03T14:58:15.481396" elapsed="4.049093"/>
+<status status="PASS" start="2024-11-10T20:31:00.020068" elapsed="2.558092"/>
 </kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-11-03T14:58:19.533708" level="INFO">Fills the text 'testaccount27@gmail.com' in the given field.</msg>
-<arg>${EmailFieldLogIn}</arg>
-<arg>${emailUser}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:19.531149" elapsed="0.355527"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-11-03T14:58:19.887989" level="INFO">Fills the text 'TestAccount27@' in the given field.</msg>
-<arg>${PasswordFieldLogIn}</arg>
-<arg>${passwordUser}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:19.887123" elapsed="0.036484"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2024-11-03T14:58:19.925574" level="INFO">Clicks the element '//button[@class='login_btn body-large']'.</msg>
-<arg>${LoginButtonLogIn}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:19.924164" elapsed="0.193473"/>
-</kw>
-<arg>testaccount27@gmail.com</arg>
-<arg>TestAccount27@</arg>
-<tag>Unit test</tag>
-<doc>This keyword is used to test the login function of the application</doc>
-<status status="PASS" start="2024-11-03T14:58:13.418963" elapsed="6.699193"/>
-</kw>
-<kw name="The user should be able to see their &quot;${username}&quot; username in home page" source_name="The user should be able to see their &quot;${username}&quot; username in home page">
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-03T14:58:21.419563" level="INFO">Text: 'testaccount27'</msg>
-<arg>${UsernameHomePage}</arg>
-<arg>==</arg>
-<arg>${username}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:20.119670" elapsed="1.300909"/>
-</kw>
-<status status="PASS" start="2024-11-03T14:58:20.118633" elapsed="1.302288"/>
-</kw>
-<kw name="The user searches for the product &quot;${productName}&quot;" source_name="The user searches for the product &quot;${productName}&quot;">
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-11-03T14:58:21.423822" level="INFO">Fills the text 'Nhẫn cặp dễ thương dành cho cặp đôi' in the given field.</msg>
-<arg>${SearchFieldHomPages}</arg>
-<arg>${productName}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:21.422402" elapsed="0.090926"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2024-11-03T14:58:21.516768" level="INFO">Clicks the element '//div[@class='search-bar']//*[name()='svg']'.</msg>
-<arg>${SearchButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:21.514771" elapsed="1.302516"/>
-</kw>
+<kw name="Sleep For 2 Seconds">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-03T14:58:25.819134" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
+<msg time="2024-11-10T20:31:04.580186" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-03T14:58:22.817825" elapsed="3.001834"/>
+<status status="PASS" start="2024-11-10T20:31:02.579145" elapsed="2.001468"/>
 </kw>
-<status status="PASS" start="2024-11-03T14:58:21.421309" elapsed="4.398678"/>
+<status status="PASS" start="2024-11-10T20:31:02.578473" elapsed="2.002359"/>
 </kw>
-<kw name="The user hovers and clicks &quot;Buy Now&quot; button on the product &quot;${productName}&quot;" source_name="The user hovers and clicks &quot;Buy Now&quot; button on the product &quot;${productName}&quot;">
-<kw name="Hover" owner="Browser">
-<arg>${ProductDivItem}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:25.821184" elapsed="0.031773"/>
+<doc>This keyword verifies that admin can go to admin page</doc>
+<status status="PASS" start="2024-11-10T20:30:58.457914" elapsed="6.123017"/>
 </kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-03T14:58:25.865993" level="INFO">Waited for Element with selector //div[@class='product__item__view'] at state visible</msg>
-<arg>${QuickViewButtonWhenHover}</arg>
-<arg>visible</arg>
-<arg>timeout=10s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-03T14:58:25.853222" elapsed="0.013372"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2024-11-03T14:58:25.868088" level="INFO">Clicks the element '(//div[contains(text(),'Mua ngay')])[1]'.</msg>
-<arg>${BuyNowButtonWhenHover}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:25.867021" elapsed="0.230029"/>
-</kw>
-<status status="PASS" start="2024-11-03T14:58:25.820330" elapsed="0.277274"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2024-11-03T14:58:26.099640" level="INFO">Clicks the element '//div[@class='location__button']//button[@type='submit']'.</msg>
-<arg>${AddAddressButton}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:26.098152" elapsed="0.096680"/>
-</kw>
+<kw name="And The admin should be able to login into admin page with admin ${emailAdmin} account and ${passwordAdmin} password" source_name="The admin should be able to login into admin page with admin ${emailAdmin} account and ${passwordAdmin} password">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-03T14:58:26.196490" level="INFO">Fills the text 'Xuân Nhi' in the given field.</msg>
-<arg>${RecipientNameAddAddress}</arg>
-<arg>${usernameOrder}</arg>
+<msg time="2024-11-10T20:31:04.582574" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>//input[@id='formBasicEmail']</arg>
+<arg>${emailAdmin}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:26.195264" elapsed="0.034914"/>
+<status status="PASS" start="2024-11-10T20:31:04.581974" elapsed="0.069128"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-03T14:58:26.232128" level="INFO">Fills the text '0933863327' in the given field.</msg>
-<arg>${PhoneNumberAddAddress}</arg>
-<arg>${phoneNumberOrder}</arg>
+<msg time="2024-11-10T20:31:04.653060" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<arg>${PasswordFieldLogIn}</arg>
+<arg>${passwordAdmin}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:26.230761" elapsed="0.052111"/>
+<status status="PASS" start="2024-11-10T20:31:04.651660" elapsed="0.031011"/>
 </kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-11-03T14:58:26.286208" level="INFO">Fills the text 'khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh' in the given field.</msg>
-<arg>${GeneralAddressAddAddress}</arg>
-<arg>${generalAddressOrder}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:26.284395" elapsed="0.035912"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-10T20:31:06.685269" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-10T20:31:04.683724" elapsed="2.001813"/>
 </kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-11-03T14:58:26.323364" level="INFO">Fills the text 'KTX khu A' in the given field.</msg>
-<arg>${DetailAddressAddAddress}</arg>
-<arg>${detailAddressOrder}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:26.321031" elapsed="0.032277"/>
+<status status="PASS" start="2024-11-10T20:31:04.682975" elapsed="2.002719"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-03T14:58:26.355954" level="INFO">Clicks the element '//div[@class='btn__wrapper']//button[@type='submit']'.</msg>
-<arg>${AcceptButtonAddAddress}</arg>
+<msg time="2024-11-10T20:31:06.686439" level="INFO">Clicks the element '//button[contains(text(),'Đăng nhập')]'.</msg>
+<arg>//button[contains(text(),'Đăng nhập')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:26.354077" elapsed="0.374024"/>
+<status status="PASS" start="2024-11-10T20:31:06.685828" elapsed="0.036635"/>
 </kw>
-<arg>Xuân Nhi</arg>
-<arg>0933863327</arg>
-<arg>khu phố 6, Linh Trung, Thủ Đức, Hồ Chí Minh</arg>
-<arg>KTX khu A</arg>
-<tag>Unit test</tag>
-<doc>This keyword is used to test the order function when add shipping address</doc>
-<status status="PASS" start="2024-11-03T14:58:13.416661" elapsed="13.311677"/>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-10T20:31:08.724199" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-10T20:31:06.723547" elapsed="2.001553"/>
 </kw>
-<kw name="Click" owner="Browser">
-<msg time="2024-11-03T14:58:26.729866" level="INFO">Clicks the element '//span[contains(text(),'Giao hàng trong 72 giờ')]'.</msg>
-<arg>${shippingMethod}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:26.728589" elapsed="0.249486"/>
+<status status="PASS" start="2024-11-10T20:31:06.722887" elapsed="2.002652"/>
 </kw>
-<kw name="Click" owner="Browser">
-<msg time="2024-11-03T14:58:26.980589" level="INFO">Clicks the element '//span[contains(text(),'Thanh toán trực tuyến')]'.</msg>
-<arg>${paymentMethod}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:26.978896" elapsed="0.396316"/>
+<status status="PASS" start="2024-11-10T20:31:04.581370" elapsed="4.144314"/>
 </kw>
-<kw name="Click" owner="Browser">
-<msg time="2024-11-03T14:58:27.377672" level="INFO">Clicks the element '(//div[@class='payment-method-select'])[1]'.</msg>
-<arg>${VNPAYMethod}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:27.376338" elapsed="0.101725"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2024-11-03T14:58:27.479478" level="INFO">Clicks the element '//div[@class='order__content__bill col-lg-4 col-md-12']//span[1]'.</msg>
-<arg>${OrderButtonOrder}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-03T14:58:27.478457" elapsed="0.872546"/>
-</kw>
-<arg>${72HoursShippingMethod}</arg>
-<arg>${OnlinePaymentMethod}</arg>
-<tag>Unit test</tag>
-<doc>This keyword is used to test the order function when add shipping address, shipping method, payment method online</doc>
-<status status="PASS" start="2024-11-03T14:58:13.414966" elapsed="14.936323"/>
-</kw>
-<doc>Include:
--- Ignored the wrong cases from the beginning tested by manual and user has never added a shipping address before --
-Verify add shipping address in the order page successfully when user fills valid values in all the fields
-Verify add shipping address in the order page unsuccessfully when user enter only ""Tên người nhận"" field
-Verify add shipping address in the order page unsuccessfully when user enter only ""Số điện thoại"" field
-Verify add shipping address in the order page unsuccessfully when user enter only ""Địa chỉ tổng quan"" field
-Verify add shipping address in the order page unsuccessfully when user enter only "Địa chỉ chi tiết" field
-Verify add shipping address in the order page unsuccessfully when user enter all flieds but leave "Tên người nhận" field empty
-Verify add shipping address in the order page unsuccessfully when user enter all flieds but leave ""Số điện thoại"" field empty
-Verify add shipping address in the order page unsuccessfully when user enter all flieds but leave ""Địa chỉ tổng quan"" field empty
-Verify add shipping address in the order page successfully when user enter all flieds but leave ""Địa chỉ chi tiết"" field empty
-Verify add shipping address unsuccessfully when enter invalid value in ""Số điện thoại"" field
-Verify add shipping address unsuccessfully when enter special character in ""Số điện thoại"" field
-Verify order successfully when user choose 1st option in "Phương thức vận chuyển" and "Phương thức thanh toán"
-Verify order successfully when user choose 2nd option in "Phương thức vận chuyển" and 1st option in "Phương thức thanh toán"
-Verify order successfully when user choose 1st option in "Phương thức vận chuyển" and 2nd option in "Phương thức thanh toán" and "VNPay" option in "Thanh toán trực tuyến"
-Verify order successfully when user choose 2nd option in "Phương thức vận chuyển" and 2nd option in "Phương thức thanh toán" and "VNPay" option in "Thanh toán trực tuyến"
--- Run each data --</doc>
-<status status="PASS" start="2024-11-03T14:58:13.402770" elapsed="14.948883"/>
+<status status="PASS" start="2024-11-10T20:30:58.456494" elapsed="10.269829"/>
 </test>
-<doc>This Feature verifies the unit test for lab3 of SE113</doc>
-<status status="PASS" start="2024-11-03T14:58:12.952895" elapsed="15.506626"/>
+<doc>This Feature verifies the solution E2E scenario of website for user</doc>
+<status status="PASS" start="2024-11-10T20:30:58.204112" elapsed="10.888598"/>
 </suite>
 <statistics>
 <total>
@@ -254,11 +117,9 @@ Verify order successfully when user choose 2nd option in "Phương thức vận 
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Unit Test">Unit Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="E2E Flow For Admin">E2E Flow For Admin</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-11-03T14:58:13.388770" level="ERROR">Error in file 'D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\tests\e2e_flow_for_user.robot' on line 5: Setting 'Suite Setup' is not allowed in resource file.</msg>
-<msg time="2024-11-03T14:58:13.390321" level="ERROR">Error in file 'D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\tests\unit_test.robot' on line 6: Error in file 'D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\tests\e2e_flow_for_user.robot' on line 24: Resource file with 'Test Cases' section is invalid.</msg>
 </errors>
 </robot>

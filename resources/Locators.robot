@@ -1,6 +1,7 @@
 *** Variables ***
 # Header
 ${URL}    http://localhost:3000/
+${URL_ADMIN}    http://localhost:4000/
 ${ProductTab}    //a[contains(text(),'Sản phẩm')]
 ${NewsTab}    //a[@class='nav-link'][contains(text(),'Tin tức')]
 ${AboutUsTab}    //a[@class='nav-link'][contains(text(),'Về chúng tôi')]
@@ -180,3 +181,6 @@ ${CODPaymentMethod}    //span[contains(text(),'Thanh toán tiền khi nhận hà
 ${OnlinePaymentMethod}    //span[contains(text(),'Thanh toán trực tuyến')]
 ${OrderButtonOrder}    //div[@class='order__content__bill col-lg-4 col-md-12']//span[1]
 ${VNPAYMethod}    (//div[@class='payment-method-select'])[1]
+
+
+#
