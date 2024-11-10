@@ -46,10 +46,10 @@ Unit test for forgot password function
     Forgot password on email function    xxnhi2712@gmail.com
     Forgot password on email function    abcd
     Forgot password on email function    ${EMPTY}
-    The user should be able to see message    //p[@class='not_found']    Không tìm thấy email
+    The user should be able to see message    Không tìm thấy email  //p[@class='not_found']    
     Forgot password on phone number function    0933863327
     Forgot password on phone number function    abcd
-    The user should be able to see message    //p[@class='not_found']    Không tìm thấy số điện thoại
+    The user should be able to see message    Không tìm thấy số điện thoại    //p[@class='not_found']
 
 Unit test for filter function for Admin's account management page function
     [Documentation]    Include:
