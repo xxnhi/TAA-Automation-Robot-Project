@@ -1,0 +1,42 @@
+{"level":30,"time":"2024-11-10T17:02:41.894Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Listening on 62541"}
+(node:23604) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-11-10T17:02:42.210Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-11-10T17:02:43.587Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-11-10T17:02:43.593Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-11-10T17:02:43.593Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-11-10T17:02:43.617Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-11-10T17:02:43.618Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-10T17:02:43.618Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Trace file: "}
+{"level":30,"time":"2024-11-10T17:02:43.756Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Changed active context"}
+{"level":30,"time":"2024-11-10T17:02:43.756Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"End of node method newContext"}
+{"level":30,"time":"2024-11-10T17:02:43.788Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-10T17:02:43.789Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-10T17:02:45.611Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-10T17:02:45.611Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Changed active page"}
+{"level":30,"time":"2024-11-10T17:02:55.637Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: Timeout 10000ms exceeded.
+Call log:
+  [2m- navigating to "http://localhost:4000/", waiting until "load"[22m
+
+    at newPage (C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:11281:18)
+    at async PlaywrightServer.newPage (C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:11611:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2024-11-10T17:02:55.822Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:9508:11)
+    at takeScreenshot (C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:9552:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:11611:34)
+    at Object.onReceiveHalfClose (C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-11-10T17:02:55.825Z","pid":23604,"hostname":"DESKTOP-V1A1OTC","msg":"Error of node method  takeScreenshot"}

@@ -1,6 +1,7 @@
 *** Variables ***
 # Header
 ${URL}    http://localhost:3000/
+${URL_ADMINACCOUNT}    http://localhost:4000/accounts
 ${URL_ADMIN}    http://localhost:4000/
 ${ProductTab}    //a[contains(text(),'Sản phẩm')]
 ${NewsTab}    //a[@class='nav-link'][contains(text(),'Tin tức')]
@@ -97,6 +98,7 @@ ${GetCodeButton}    //button[contains(text(),'Lấy mã')]
 
 # Admin's account management page
 ${FilterButtonAdminAccountManagementPage}    //button[@id=':ra:']
+${ColumnButtonAdminAccount}                  //*[@id=":r4:"] 
 ${ColumnFilterAdminAccount}    //html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]
 ${IDColumnFilterAdminAccount}    //li[normalize-space()='ID']
 ${NameAccountColumnFilterAdminAccount}    //li[contains(text(),'Tên tài khoản')]

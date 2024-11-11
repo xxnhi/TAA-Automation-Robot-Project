@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-11-10T20:30:58.197855" rpa="false" schemaversion="5">
-<suite id="s1" name="E2E Flow For Admin" source="D:\Nam4\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\TAA Automation Robot Project\TAA-Automation-Robot-Project\tests\e2e_flow_for_admin.robot">
-<test id="s1-t1" name="Test case E2E for admin" line="32">
+<robot generator="Robot 7.1.1 (Python 3.11.0 on win32)" generated="2024-11-11T17:46:58.278769" rpa="false" schemaversion="5">
+<suite id="s1" name="E2E Flow For Admin" source="D:\Study\TAA-Automation-Robot-Project\tests\e2e_flow_for_admin.robot">
+<test id="s1-t1" name="Test case E2E for admin" line="34">
 <kw name="When The admin goes to TAA's admin page">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-11-10T20:30:58.459898" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Nam4\\[SE113] Ki\u1ec3m ch\u1ee9ng ph\u1ea7n m\u1ec1m-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\b67e90ef-6678-41a7-8036-210f84022f4e"}</msg>
-<msg time="2024-11-10T20:30:58.489274" level="INFO">Starting Browser process C:\Users\DELL\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 57427</msg>
-<msg time="2024-11-10T20:30:58.490189" level="INFO">Node startup parameters: ['node', 'C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '57427']</msg>
-<msg time="2024-11-10T20:30:59.985116" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Nam4\\[SE113] Kiểm chứng phần mềm-20240914T045954Z-001\\TAA Automation Robot Project\\TAA-Automation-Robot-Project\\results\\browser\\traces\\b67e90ef-6678-41a7-8036-210f84022f4e"}</msg>
+<msg time="2024-11-11T17:46:58.532390" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Study\\TAA-Automation-Robot-Project\\results\\browser\\traces\\b1d45b16-9f3b-4a52-bdd6-d2dbcefaa0c3"}</msg>
+<msg time="2024-11-11T17:46:58.563474" level="INFO">Starting Browser process C:\Users\MY PC\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js using port 55296</msg>
+<msg time="2024-11-11T17:46:58.563474" level="INFO">Node startup parameters: ['node', 'C:\\Users\\MY PC\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\Browser\\wrapper\\index.js', '55296']</msg>
+<msg time="2024-11-11T17:47:00.330810" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Study\\TAA-Automation-Robot-Project\\results\\browser\\traces\\b1d45b16-9f3b-4a52-bdd6-d2dbcefaa0c3"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-10T20:30:58.459013" elapsed="1.527346"/>
+<status status="PASS" start="2024-11-11T17:46:58.532390" elapsed="1.799420"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2024-11-10T20:30:59.988848" level="INFO">{
+<msg time="2024-11-11T17:47:00.337363" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -26,89 +26,966 @@
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
   "viewport": {
-    "height": 900,
-    "width": 1500
+    "width": 1500,
+    "height": 900
   }
 }</msg>
-<msg time="2024-11-10T20:31:00.018268" level="INFO">Successfully created context. </msg>
-<msg time="2024-11-10T20:31:00.018839" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 900, 'width': 1500}}</msg>
+<msg time="2024-11-11T17:47:00.381499" level="INFO">Successfully created context. </msg>
+<msg time="2024-11-11T17:47:00.382851" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1500, 'height': 900}}</msg>
 <arg>viewport={"width": 1500, "height":900 }</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2024-11-10T20:30:59.987033" elapsed="0.032342"/>
+<status status="PASS" start="2024-11-11T17:47:00.333117" elapsed="0.050272"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-11-10T20:31:02.577465" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000/</msg>
+<msg time="2024-11-11T17:47:05.099961" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000/</msg>
 <arg>url=${URL_ADMIN}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-10T20:31:00.020068" elapsed="2.558092"/>
+<status status="PASS" start="2024-11-11T17:47:00.384009" elapsed="4.717949"/>
 </kw>
 <kw name="Sleep For 2 Seconds">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-10T20:31:04.580186" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-11-11T17:47:07.109169" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-10T20:31:02.579145" elapsed="2.001468"/>
+<status status="PASS" start="2024-11-11T17:47:05.105957" elapsed="2.004220"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:31:02.578473" elapsed="2.002359"/>
+<status status="PASS" start="2024-11-11T17:47:05.103962" elapsed="2.006215"/>
 </kw>
 <doc>This keyword verifies that admin can go to admin page</doc>
-<status status="PASS" start="2024-11-10T20:30:58.457914" elapsed="6.123017"/>
+<status status="PASS" start="2024-11-11T17:46:58.530320" elapsed="8.580856"/>
 </kw>
 <kw name="And The admin should be able to login into admin page with admin ${emailAdmin} account and ${passwordAdmin} password" source_name="The admin should be able to login into admin page with admin ${emailAdmin} account and ${passwordAdmin} password">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-10T20:31:04.582574" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<msg time="2024-11-11T17:47:07.117256" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
 <arg>//input[@id='formBasicEmail']</arg>
 <arg>${emailAdmin}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-10T20:31:04.581974" elapsed="0.069128"/>
+<status status="PASS" start="2024-11-11T17:47:07.115246" elapsed="0.117396"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-11-10T20:31:04.653060" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
+<msg time="2024-11-11T17:47:07.236367" level="INFO">Fills the text 'AdminTAA01' in the given field.</msg>
 <arg>${PasswordFieldLogIn}</arg>
 <arg>${passwordAdmin}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-11-10T20:31:04.651660" elapsed="0.031011"/>
+<status status="PASS" start="2024-11-11T17:47:07.234232" elapsed="0.029989"/>
 </kw>
 <kw name="Sleep For 2 Seconds">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-10T20:31:06.685269" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-11-11T17:47:09.268244" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-10T20:31:04.683724" elapsed="2.001813"/>
+<status status="PASS" start="2024-11-11T17:47:07.267216" elapsed="2.002034"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:31:04.682975" elapsed="2.002719"/>
+<status status="PASS" start="2024-11-11T17:47:07.265216" elapsed="2.004034"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-11-10T20:31:06.686439" level="INFO">Clicks the element '//button[contains(text(),'Đăng nhập')]'.</msg>
+<msg time="2024-11-11T17:47:09.272787" level="INFO">Clicks the element '//button[contains(text(),'Đăng nhập')]'.</msg>
 <arg>//button[contains(text(),'Đăng nhập')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-10T20:31:06.685828" elapsed="0.036635"/>
+<status status="PASS" start="2024-11-11T17:47:09.270250" elapsed="0.100712"/>
 </kw>
 <kw name="Sleep For 2 Seconds">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-10T20:31:08.724199" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-11-11T17:47:11.375678" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-10T20:31:06.723547" elapsed="2.001553"/>
+<status status="PASS" start="2024-11-11T17:47:09.373703" elapsed="2.002968"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:31:06.722887" elapsed="2.002652"/>
+<status status="PASS" start="2024-11-11T17:47:09.372659" elapsed="2.005011"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:31:04.581370" elapsed="4.144314"/>
+<status status="PASS" start="2024-11-11T17:47:07.113176" elapsed="4.265451"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:30:58.456494" elapsed="10.269829"/>
+<kw name="Then The admin should be able to see account page">
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-11T17:47:12.873446" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000/accounts</msg>
+<arg>url=${URL_ADMINACCOUNT}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-11T17:47:11.382380" elapsed="1.492079"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-11-11T17:47:13.420113" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:47:13.421752" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:47:13.505632" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:47:13.507881" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:47:13.593983" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-11-11T17:47:12.875448" elapsed="0.719534"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:11.380229" elapsed="2.214753"/>
+</kw>
+<kw name="When The admin manages columns on the account page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:13.601516" level="INFO">Clicks the element '//*[@id=":r4:"]'.</msg>
+<arg>${ColumnButtonAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:13.598982" elapsed="0.397541"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:15.999765" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:13.998517" elapsed="2.002256"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:13.997566" elapsed="2.004207"/>
+</kw>
+<doc>Toggles the visibility of columns on the account page.</doc>
+<status status="PASS" start="2024-11-11T17:47:13.596983" elapsed="2.404790"/>
+</kw>
+<kw name="Then The admin should be able to hide or show column on the account page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:16.007855" level="INFO">Clicks the element '//*[@id=":r5:"]/div/div[2]/div[3]'.</msg>
+<arg>//*[@id=":r5:"]/div/div[2]/div[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:16.005774" elapsed="0.204314"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:16.213092" level="INFO">Clicks the element '//*[@id=":r5:"]/div/div[2]/div[3]'.</msg>
+<arg>//*[@id=":r5:"]/div/div[2]/div[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:16.211088" elapsed="0.214948"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:16.429106" level="INFO">Clicks the element '//*[@id=":r4:"]'.</msg>
+<arg>${ColumnButtonAdminAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:16.427744" elapsed="0.141252"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:18.572897" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:16.570995" elapsed="2.002806"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:16.570074" elapsed="2.003727"/>
+</kw>
+<doc>Confirms column visibility changes on the account page.</doc>
+<status status="PASS" start="2024-11-11T17:47:16.003795" elapsed="2.570006"/>
+</kw>
+<kw name="When The admin applies filters on the account page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:18.578787" level="INFO">Clicks the element '//*[@id=":ra:"]'.</msg>
+<arg>//*[@id=":ra:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:18.576787" elapsed="0.258348"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:20.838412" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:18.837202" elapsed="2.002217"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:18.835135" elapsed="2.004284"/>
+</kw>
+<doc>Applies filters on the account page.</doc>
+<status status="PASS" start="2024-11-11T17:47:18.575790" elapsed="2.264628"/>
+</kw>
+<kw name="Then The admin should see filtered rows based on columns, operators, and values on the account page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-11T17:47:20.866141" level="INFO">Waited for Element with selector xpath=//*[@id=":rb:"]/div/div[2]/div/div at state visible</msg>
+<arg>xpath=//*[@id=":rb:"]/div/div[2]/div/div</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-11T17:47:20.843419" elapsed="0.023794"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:22.873933" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:20.871146" elapsed="2.002787"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:20.868224" elapsed="2.006811"/>
+</kw>
+<doc>Verifies filtered rows are displayed based on filters applied.</doc>
+<status status="PASS" start="2024-11-11T17:47:20.841420" elapsed="2.033615"/>
+</kw>
+<kw name="When The admin applies thickness settings on the account page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:22.880949" level="INFO">Clicks the element '//*[@id=":rg:"]'.</msg>
+<arg>//*[@id=":rg:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:22.877955" elapsed="0.142602"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:25.023676" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:23.022631" elapsed="2.001045"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:23.021633" elapsed="2.003265"/>
+</kw>
+<doc>Adjusts row thickness on the account page.</doc>
+<status status="PASS" start="2024-11-11T17:47:22.876956" elapsed="2.147942"/>
+</kw>
+<kw name="Then The admin should be able to adjusts thickness settings on the account page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:25.030913" level="INFO">Clicks the element '//*[@id=":rh:"]/li[1]'.</msg>
+<arg>//*[@id=":rh:"]/li[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:25.028906" elapsed="0.253407"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:27.285620" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:25.284313" elapsed="2.002315"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:25.283312" elapsed="2.003945"/>
+</kw>
+<doc>Verifies row thickness settings on the account page.</doc>
+<status status="PASS" start="2024-11-11T17:47:25.026907" elapsed="2.260350"/>
+</kw>
+<kw name="When The admin exports the account data to CSV">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:27.292494" level="INFO">Clicks the element '//*[@id=":rm:"]'.</msg>
+<arg>//*[@id=":rm:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:27.290422" elapsed="0.137931"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:27.430412" level="INFO">Clicks the element '//*[@id=":rn:"]/li[1]'.</msg>
+<arg>//*[@id=":rn:"]/li[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:27.429344" elapsed="0.376075"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:29.808756" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:27.807434" elapsed="2.002328"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:27.806430" elapsed="2.003332"/>
+</kw>
+<doc>Exports account data to a CSV file.</doc>
+<status status="PASS" start="2024-11-11T17:47:27.289420" elapsed="2.520342"/>
+</kw>
+<kw name="When The admin navigates to order page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:29.815846" level="INFO">Clicks the element '//*[@id="root"]/div/div/div/div[1]/div/div/div[2]/ul/li[2]/a'.</msg>
+<arg>//*[@id="root"]/div/div/div/div[1]/div/div/div[2]/ul/li[2]/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:29.813833" elapsed="0.354424"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:32.171989" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:30.170267" elapsed="2.002719"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:30.169268" elapsed="2.004718"/>
+</kw>
+<doc>Navigates to the order page.</doc>
+<status status="PASS" start="2024-11-11T17:47:29.811769" elapsed="2.362217"/>
+</kw>
+<kw name="Then The admin should be able to see order page">
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-11T17:47:33.970640" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000/order</msg>
+<arg>http://localhost:4000/order</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-11T17:47:32.176987" elapsed="1.794653"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-11-11T17:47:34.465954" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:47:34.467953" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:47:34.493756" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:47:34.494754" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:47:34.505849" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-11-11T17:47:33.972640" elapsed="0.533709"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:36.511058" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:34.509854" elapsed="2.002219"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:34.507853" elapsed="2.005220"/>
+</kw>
+<doc>Verifies the order page is displayed.</doc>
+<status status="PASS" start="2024-11-11T17:47:32.175989" elapsed="4.338081"/>
+</kw>
+<kw name="When The admin manages columns on the order page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:36.520451" level="INFO">Clicks the element '//*[@id=":r4:"]'.</msg>
+<arg>//*[@id=":r4:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:36.518200" elapsed="0.368100"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:38.890646" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:36.889301" elapsed="2.001345"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:36.887299" elapsed="2.004330"/>
+</kw>
+<doc>Toggles the visibility of columns on the order page.</doc>
+<status status="PASS" start="2024-11-11T17:47:36.516105" elapsed="2.375524"/>
+</kw>
+<kw name="Then The admin should be able to hide or show columns on the order page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:38.897575" level="INFO">Clicks the element '//*[@id=":r5:"]/div/div[2]/div[3]'.</msg>
+<arg>//*[@id=":r5:"]/div/div[2]/div[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:38.895574" elapsed="0.341156"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:39.238977" level="INFO">Clicks the element '//*[@id=":r5:"]/div/div[2]/div[3]'.</msg>
+<arg>//*[@id=":r5:"]/div/div[2]/div[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:39.237789" elapsed="0.412140"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:39.652989" level="INFO">Clicks the element '//*[@id=":r4:"]'.</msg>
+<arg>//*[@id=":r4:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:39.650994" elapsed="0.158703"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:41.813542" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:39.811694" elapsed="2.001848"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:39.810694" elapsed="2.003849"/>
+</kw>
+<doc>Confirms column visibility changes on the order page.</doc>
+<status status="PASS" start="2024-11-11T17:47:38.893575" elapsed="2.920968"/>
+</kw>
+<kw name="When The admin applies filters on the order page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:41.820953" level="INFO">Clicks the element '//*[@id=":ra:"]'.</msg>
+<arg>//*[@id=":ra:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:41.818543" elapsed="0.273505"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:44.095338" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:42.094048" elapsed="2.001290"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:42.093048" elapsed="2.003378"/>
+</kw>
+<doc>Applies filters on the order page.</doc>
+<status status="PASS" start="2024-11-11T17:47:41.816544" elapsed="2.279882"/>
+</kw>
+<kw name="Then The admin should see filtered rows based on columns, operators, and values on the order page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-11T17:47:44.120899" level="INFO">Waited for Element with selector xpath=//*[@id=":rb:"]/div/div[2]/div/div at state visible</msg>
+<arg>xpath=//*[@id=":rb:"]/div/div[2]/div/div</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-11T17:47:44.099426" elapsed="0.023173"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:46.126853" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:44.125644" elapsed="2.001209"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:44.123644" elapsed="2.004208"/>
+</kw>
+<doc>Verifies filtered rows are displayed based on filters applied.</doc>
+<status status="PASS" start="2024-11-11T17:47:44.097415" elapsed="2.030437"/>
+</kw>
+<kw name="When The admin applies thickness settings on the order page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:46.132853" level="INFO">Clicks the element '//*[@id=":rg:"]'.</msg>
+<arg>//*[@id=":rg:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:46.131853" elapsed="0.234557"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:48.369607" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:46.368410" elapsed="2.002198"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:46.366410" elapsed="2.004198"/>
+</kw>
+<doc>Adjusts row thickness on the order page.</doc>
+<status status="PASS" start="2024-11-11T17:47:46.129853" elapsed="2.241833"/>
+</kw>
+<kw name="Then The admin should be able to adjusts thickness settings on the order page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:48.376609" level="INFO">Clicks the element '//*[@id=":rh:"]/li[1]'.</msg>
+<arg>//*[@id=":rh:"]/li[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:48.374619" elapsed="0.322101"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:50.699409" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:48.698728" elapsed="2.001681"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:48.697728" elapsed="2.002681"/>
+</kw>
+<doc>Verifies row thickness settings on the order page.</doc>
+<status status="PASS" start="2024-11-11T17:47:48.372609" elapsed="2.327800"/>
+</kw>
+<kw name="When The admin exports the order data to CSV">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:50.706026" level="INFO">Clicks the element '//*[@id=":rm:"]'.</msg>
+<arg>//*[@id=":rm:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:50.704015" elapsed="0.160145"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:50.866160" level="INFO">Clicks the element '//*[@id=":rn:"]/li[1]'.</msg>
+<arg>//*[@id=":rn:"]/li[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:50.865160" elapsed="0.331656"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:53.201529" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:51.200033" elapsed="2.002578"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:51.197773" elapsed="2.005957"/>
+</kw>
+<doc>Exports account data to a CSV file.</doc>
+<status status="PASS" start="2024-11-11T17:47:50.702456" elapsed="2.501274"/>
+</kw>
+<kw name="When The admin navigates to product page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:47:53.209207" level="INFO">Clicks the element '//*[@id="root"]/div/div/div/div[1]/div/div/div[2]/ul/li[3]/a'.</msg>
+<arg>//*[@id="root"]/div/div/div/div[1]/div/div/div[2]/ul/li[3]/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:47:53.207513" elapsed="0.488040"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:47:55.699696" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:47:53.698552" elapsed="2.002227"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:47:53.696551" elapsed="2.004728"/>
+</kw>
+<doc>Navigates to the product page.</doc>
+<status status="PASS" start="2024-11-11T17:47:53.205405" elapsed="2.496546"/>
+</kw>
+<kw name="Then The admin should be able to see product page">
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-11T17:48:01.352874" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000/products</msg>
+<arg>http://localhost:4000/products</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-11T17:47:55.705514" elapsed="5.648360"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-11-11T17:48:02.038887" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:48:02.039593" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:48:02.267300" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:48:02.268194" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:48:02.295732" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-11-11T17:48:01.353874" elapsed="0.942985"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:04.301760" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:02.299859" elapsed="2.002909"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:02.297863" elapsed="2.004905"/>
+</kw>
+<doc>Verifies the product page is displayed.</doc>
+<status status="PASS" start="2024-11-11T17:47:55.703669" elapsed="8.600097"/>
+</kw>
+<kw name="When The admin manages columns on the product page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:04.307836" level="INFO">Clicks the element '//*[@id=":r4:"]'.</msg>
+<arg>//*[@id=":r4:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:04.306767" elapsed="0.294550"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:06.605515" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:04.603938" elapsed="2.002585"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:04.601807" elapsed="2.004716"/>
+</kw>
+<doc>Toggles the visibility of columns on the product page.</doc>
+<status status="PASS" start="2024-11-11T17:48:04.304767" elapsed="2.302756"/>
+</kw>
+<kw name="Then The admin should be able to hide or show column on the product page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:06.614532" level="INFO">Clicks the element '//*[@id=":r5:"]/div/div[2]/div[3]'.</msg>
+<arg>//*[@id=":r5:"]/div/div[2]/div[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:06.611534" elapsed="0.291304"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:06.905839" level="INFO">Clicks the element '//*[@id=":r5:"]/div/div[2]/div[3]'.</msg>
+<arg>//*[@id=":r5:"]/div/div[2]/div[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:06.903838" elapsed="0.462458"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:07.368662" level="INFO">Clicks the element '//*[@id=":r4:"]'.</msg>
+<arg>//*[@id=":r4:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:07.367663" elapsed="0.216820"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:09.589578" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:07.587661" elapsed="2.002912"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:07.586131" elapsed="2.004442"/>
+</kw>
+<doc>Confirms column visibility changes on the product page.</doc>
+<status status="PASS" start="2024-11-11T17:48:06.609523" elapsed="2.981050"/>
+</kw>
+<kw name="When The admin applies filters on the product page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:09.595001" level="INFO">Clicks the element '//*[@id=":ra:"]'.</msg>
+<arg>//*[@id=":ra:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:09.593990" elapsed="0.190876"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:11.788135" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:09.786878" elapsed="2.001257"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:09.785872" elapsed="2.004310"/>
+</kw>
+<doc>Applies filters on the product page.</doc>
+<status status="PASS" start="2024-11-11T17:48:09.592574" elapsed="2.197608"/>
+</kw>
+<kw name="Then The admin should see filtered rows based on columns, operators, and values on the product page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-11T17:48:11.811140" level="INFO">Waited for Element with selector xpath=//*[@id=":rb:"]/div/div[2]/div/div at state visible</msg>
+<arg>xpath=//*[@id=":rb:"]/div/div[2]/div/div</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-11T17:48:11.793145" elapsed="0.019003"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:13.818337" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:11.816142" elapsed="2.002195"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:11.814141" elapsed="2.005251"/>
+</kw>
+<doc>Verifies filtered rows are displayed based on filters applied.</doc>
+<status status="PASS" start="2024-11-11T17:48:11.792142" elapsed="2.027250"/>
+</kw>
+<kw name="When The admin applies thickness settings on the product page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:13.825349" level="INFO">Clicks the element '//*[@id=":rg:"]'.</msg>
+<arg>//*[@id=":rg:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:13.823352" elapsed="0.109289"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:15.937619" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:13.935565" elapsed="2.002054"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:13.934565" elapsed="2.004050"/>
+</kw>
+<doc>Adjusts row thickness on the product pagee.</doc>
+<status status="PASS" start="2024-11-11T17:48:13.821343" elapsed="2.117272"/>
+</kw>
+<kw name="Then The admin should be able to adjusts thickness settings on the product page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:15.944035" level="INFO">Clicks the element '//*[@id=":rh:"]/li[1]'.</msg>
+<arg>//*[@id=":rh:"]/li[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:15.942615" elapsed="0.209978"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:18.155645" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:16.154101" elapsed="2.001544"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:16.153093" elapsed="2.003544"/>
+</kw>
+<doc>Verifies row thickness settings on the product page.</doc>
+<status status="PASS" start="2024-11-11T17:48:15.940619" elapsed="2.216018"/>
+</kw>
+<kw name="When The admin exports the product data to CSV">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:18.161595" level="INFO">Clicks the element '//*[@id=":rm:"]'.</msg>
+<arg>//*[@id=":rm:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:18.159595" elapsed="0.100463"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:18.263057" level="INFO">Clicks the element '//*[@id=":rn:"]/li[1]'.</msg>
+<arg>//*[@id=":rn:"]/li[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:18.261061" elapsed="0.338306"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:20.602748" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:18.601370" elapsed="2.001378"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:18.600443" elapsed="2.003388"/>
+</kw>
+<doc>Exports product data to a CSV file.</doc>
+<status status="PASS" start="2024-11-11T17:48:18.157666" elapsed="2.446165"/>
+</kw>
+<kw name="When The admin navigates to news page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:20.609756" level="INFO">Clicks the element '//*[@id="root"]/div/div/div/div[1]/div/div/div[2]/ul/li[4]/a'.</msg>
+<arg>//*[@id="root"]/div/div/div/div[1]/div/div/div[2]/ul/li[4]/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:20.607756" elapsed="0.406143"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:23.018870" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:21.017140" elapsed="2.001730"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:21.014899" elapsed="2.004947"/>
+</kw>
+<doc>Navigates to the news page.</doc>
+<status status="PASS" start="2024-11-11T17:48:20.605756" elapsed="2.414090"/>
+</kw>
+<kw name="Then The admin should be able to see news page">
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-11T17:48:24.687752" level="INFO">Successfully initialized new page object and opened url: http://localhost:4000/news</msg>
+<arg>http://localhost:4000/news</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-11T17:48:23.023980" elapsed="1.663772"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2024-11-11T17:48:25.359517" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:48:25.360550" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:48:25.538137" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:48:25.538137" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-11-11T17:48:25.576146" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=bottom</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2024-11-11T17:48:24.688752" elapsed="0.888394"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:27.581476" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:25.579146" elapsed="2.002330"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:25.578146" elapsed="2.004381"/>
+</kw>
+<doc>Verifies the news page is displayed.</doc>
+<status status="PASS" start="2024-11-11T17:48:23.021607" elapsed="4.561875"/>
+</kw>
+<kw name="When The admin manages columns on the news page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:27.588384" level="INFO">Clicks the element '//*[@id=":r4:"]'.</msg>
+<arg>//*[@id=":r4:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:27.586382" elapsed="0.260457"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:29.850484" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:27.848840" elapsed="2.002643"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:27.846839" elapsed="2.006644"/>
+</kw>
+<doc>Toggles the visibility of columns on the news page.</doc>
+<status status="PASS" start="2024-11-11T17:48:27.583958" elapsed="2.270526"/>
+</kw>
+<kw name="Then The admin should be able to hide or show column on the news page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:29.858555" level="INFO">Clicks the element '//*[@id=":r5:"]/div/div[2]/div[3]'.</msg>
+<arg>//*[@id=":r5:"]/div/div[2]/div[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:29.857552" elapsed="0.199314"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:30.058864" level="INFO">Clicks the element '//*[@id=":r5:"]/div/div[2]/div[3]'.</msg>
+<arg>//*[@id=":r5:"]/div/div[2]/div[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:30.057864" elapsed="0.312084"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:30.373277" level="INFO">Clicks the element '//*[@id=":r4:"]'.</msg>
+<arg>//*[@id=":r4:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:30.371234" elapsed="0.150413"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:32.526930" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:30.524674" elapsed="2.003228"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:30.522570" elapsed="2.005332"/>
+</kw>
+<doc>Confirms column visibility changes on the news page.</doc>
+<status status="PASS" start="2024-11-11T17:48:29.855489" elapsed="2.673332"/>
+</kw>
+<kw name="When The admin applies filters on the news page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:32.533944" level="INFO">Clicks the element '//*[@id=":ra:"]'.</msg>
+<arg>//*[@id=":ra:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:32.531848" elapsed="0.272578"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:34.807241" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:32.805932" elapsed="2.002417"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:32.804926" elapsed="2.003423"/>
+</kw>
+<doc>Applies filters on the news page.</doc>
+<status status="PASS" start="2024-11-11T17:48:32.529812" elapsed="2.278537"/>
+</kw>
+<kw name="Then The admin should see filtered rows based on columns, operators, and values on the news page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-11T17:48:34.830293" level="INFO">Waited for Element with selector xpath=//*[@id=":rb:"]/div/div[2]/div/div at state visible</msg>
+<arg>xpath=//*[@id=":rb:"]/div/div[2]/div/div</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-11T17:48:34.812256" elapsed="0.019068"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:36.836710" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:34.834305" elapsed="2.003406"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:34.832323" elapsed="2.005388"/>
+</kw>
+<doc>Verifies filtered rows are displayed based on filters applied.</doc>
+<status status="PASS" start="2024-11-11T17:48:34.811247" elapsed="2.027464"/>
+</kw>
+<kw name="When The admin applies thickness settings on the news page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:36.844189" level="INFO">Clicks the element '//*[@id=":rg:"]'.</msg>
+<arg>//*[@id=":rg:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:36.842188" elapsed="0.116647"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:38.962106" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:36.960843" elapsed="2.002329"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:36.959843" elapsed="2.003329"/>
+</kw>
+<doc>Adjusts row thickness on the news pagee.</doc>
+<status status="PASS" start="2024-11-11T17:48:36.840176" elapsed="2.122996"/>
+</kw>
+<kw name="Then The admin should be able to adjusts thickness settings on the news page">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:38.968924" level="INFO">Clicks the element '//*[@id=":rh:"]/li[1]'.</msg>
+<arg>//*[@id=":rh:"]/li[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:38.966917" elapsed="0.308484"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:41.280253" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:39.279006" elapsed="2.002255"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:39.276999" elapsed="2.004262"/>
+</kw>
+<doc>Verifies row thickness settings on the news page.</doc>
+<status status="PASS" start="2024-11-11T17:48:38.965107" elapsed="2.316154"/>
+</kw>
+<kw name="When The admin exports the news data to CSV">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:41.287330" level="INFO">Clicks the element '//*[@id=":rm:"]'.</msg>
+<arg>//*[@id=":rm:"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:41.285267" elapsed="0.109603"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-11T17:48:41.396869" level="INFO">Clicks the element '//*[@id=":rn:"]/li[1]'.</msg>
+<arg>//*[@id=":rn:"]/li[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-11T17:48:41.394870" elapsed="0.331891"/>
+</kw>
+<kw name="Sleep For 2 Seconds">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-11T17:48:43.731838" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-11T17:48:41.729934" elapsed="2.002833"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:48:41.727943" elapsed="2.004824"/>
+</kw>
+<doc>Exports news data to a CSV file.</doc>
+<status status="PASS" start="2024-11-11T17:48:41.283270" elapsed="2.449497"/>
+</kw>
+<status status="PASS" start="2024-11-11T17:46:58.528406" elapsed="105.206474"/>
 </test>
 <doc>This Feature verifies the solution E2E scenario of website for user</doc>
-<status status="PASS" start="2024-11-10T20:30:58.204112" elapsed="10.888598"/>
+<status status="PASS" start="2024-11-11T17:46:58.287935" elapsed="105.728634"/>
 </suite>
 <statistics>
 <total>
