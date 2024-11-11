@@ -57,8 +57,8 @@ Test case E2E for admin
     Then The admin should be able to see product page
     # When The admin adds a new product in admin panel
     # Then The product should be able to added successfully
-    # When The admin deletes a product in admin panel
-    # Then The product should be able to deleted successfully
+    When The admin deletes a product in admin panel
+    Then The product should be able to deleted successfully
     When The admin manages columns on the product page
     Then The admin should be able to hide or show column on the product page
     When The admin applies filters on the product page
@@ -71,8 +71,8 @@ Test case E2E for admin
     Then The admin should be able to see news page
     # When The admin adds a new news in admin panel
     # Then The news should be able to added successfully
-    # When The admin deletes a news in admin panel
-    # Then The news should be able to deleted successfully
+    When The admin deletes a news in admin panel
+    Then The news should be able to deleted successfully
     When The admin manages columns on the news page
     Then The admin should be able to hide or show column on the news page
     When The admin applies filters on the news page
@@ -228,16 +228,16 @@ The admin should be able to see product page
 #     Click    //*[@id="ad_addproduct"]/div/div[3]/button[2]
 #     Sleep For 2 Seconds
 
-# The admin deletes a product in admin panel
-#     [Documentation]    Deletes a product in the admin panel.
-#     Click    //*[@id="ad_product"]/div[2]/div/div[3]/div[1]/div[2]/div/div[1]/div[2]/span/input
-#     Click    //*[@id="ad_product"]/div[1]/div[2]/button[2]/span
-#     Sleep For 2 Seconds
+The admin deletes a product in admin panel
+    [Documentation]    Deletes a product in the admin panel.
+    Click    //*[@id="ad_product"]/div[2]/div/div[3]/div[1]/div[2]/div/div[1]/div[2]/span/input
+    Click    //*[@id="ad_product"]/div[1]/div[2]/button[2]/span
+    Sleep For 2 Seconds
     
-# The product should be able to deleted successfully
-#     [Documentation]    Confirms product deletion.
-#     Click    /html/body/div[3]/div/div/div[3]/button[2]
-#     Sleep For 2 Seconds
+The product should be able to deleted successfully
+    [Documentation]    Confirms product deletion.
+    Click    //div[@role='dialog']//button[2]//span[1]
+    Sleep For 2 Seconds
 
 The admin manages columns on the product page
     [Documentation]    Toggles the visibility of columns on the product page.
@@ -306,16 +306,16 @@ The admin should be able to see news page
 #     Click    //*[@id="ad_addnew"]/div/div[3]/button[2]
 #     Sleep For 2 Seconds
 
-# Admin deletes a news item
-#     [Documentation]    Deletes a news item in the admin panel.
-#     Click    //*[@id="ad_new"]/div[2]/div/div[3]/div[1]/div[2]/div/div[1]/div[2]/span/input
-#     Click    //*[@id="ad_new"]/div[1]/div[2]/button[2]/span
-#     Confirm Action
+The admin deletes a news in admin panel
+    [Documentation]    Deletes a news item in the admin panel.
+    Click    //*[@id="ad_new"]/div[2]/div/div[3]/div[1]/div[2]/div/div[1]/div[2]/span/input
+    Click    //*[@id="ad_new"]/div[1]/div[2]/button[2]/span
+    Sleep For 2 Seconds
 
-# Admin should be able to delete news successfully
-#     [Documentation]    Confirms news deletion.
-#     Click    /html/body/div[3]/div/div/div[3]/button[2]
-#     Sleep For 2 Seconds
+The news should be able to deleted successfully
+    [Documentation]    Confirms news deletion.
+    Click    //div[@role='dialog']//button[2]//span[1]
+    Sleep For 2 Seconds
 
 The admin manages columns on the news page
     [Documentation]    Toggles the visibility of columns on the news page.
