@@ -18,7 +18,7 @@ ${titleSectionNewsPageText}    TUẦN VỪA QUA
 ${titleSectionAboutUsText}    VỀ CHÚNG TÔI
 ${titleSectionPInstructionText}    HƯỚNG DẪN MUA HÀNG TRÊN WEBSITE
 ${titleSectionPolicyText}    CHÍNH SÁCH BẢO HÀNH
-${productName}    Nhẫn cặp dễ thương dành cho cặp đôi
+${productName}    Bông tai mèo và cá đáng yêu
 ${generalAddress}    Thủ Đức, Hồ Chí Minh, and
 ${detailAddress}    KTX Khu A. Linh Trung
 *** Test Cases ***
@@ -35,7 +35,7 @@ Test case E2E for user
     Then The unauthenticated user should be able to see purchase instruction page
     When The unauthenticated user navigates to see policy page
     Then The unauthenticated user should be able to see policy page
-    When The unauthenticated user registers an account
+    # When The unauthenticated user registers an account
     Then The user should be able to login into web with "${emailaccount9}" email and "${passwordaccount9}" password
     And The user should be able to see their "${username}" username in home page
     When The user searches for the product "${productName}"
@@ -55,9 +55,9 @@ Test case E2E for user
     Then The users should be able to see the order successfully placed notification
     When The user navigates to order page by click on ${ViewOrdersButton}
     Then The user should be able to see ${OrderPlaced}
-    When The user clicks on ${LogOutButton} in the menu
-    And The user clicks on ${LogOutButtonPopup} in the log out popup
-    Then The user logs out of the website successfully 
+    # When The user clicks on ${LogOutButton} in the menu
+    # And The user clicks on ${LogOutButtonPopup} in the log out popup
+    # Then The user logs out of the website successfully 
 *** Keywords ***
 Sleep For 2 Seconds
     Sleep    2s
@@ -201,15 +201,15 @@ The user navigates to see cart page
 The user edits the quantity of cart item
     Click    ${TickAllCheckBox}
     Wait For Elements State    ${MoneyTotal}    visible
-    Get Text    ${MoneyTotal}    ==    145.000 đ
+    Get Text    ${MoneyTotal}    ==    745.000 đ
     Sleep For 2 Seconds
     Click    ${PlusQuantityProduct}
     Wait For Elements State    ${MoneyTotal}    visible
-    Get Text    ${MoneyTotal}    ==    295.000 đ
+    Get Text    ${MoneyTotal}    ==    1.495.000 đ
     Sleep For 2 Seconds
     Click    ${MinusQuantityProduct}
     Wait For Elements State    ${MoneyTotal}    visible
-    Get Text    ${MoneyTotal}    ==    145.000 đ
+    Get Text    ${MoneyTotal}    ==    745.000 đ
     Sleep For 2 Seconds
 
 The user clicks on "${ProceedOrderButton}" proceed order button

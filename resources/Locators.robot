@@ -22,7 +22,7 @@ ${PersonalInfoUnderAvatar}    //a[normalize-space()='Thông tin cá nhân']
 ${TitleSectionHomePage}    //h1[contains(text(),'Sản phẩm nổi bật trong tuần')]
 ${UsernameHomePage}    //div[@class='user_name col']
 ${SearchFieldHomPages}    //input[@placeholder='Tìm kiếm']
-${SearchedProductText}    //a[contains(text(),'Nhẫn cặp dễ thương dành cho cặp đôi')]
+${SearchedProductText}    //a[contains(text(),'Bông tai mèo và cá đáng yêu')]
 ${SearchButton}    //div[@class='search-bar']//*[name()='svg']
 
 
